@@ -1,0 +1,35 @@
+[gd_scene format=3 uid="uid://b3flcwqhtssm8"]
+
+[ext_resource type="Script" uid="uid://ci7vogd1oaojx" path="res://addons/xbase_plugin/axNode3D.gd" id="1_6yvjf"]
+[ext_resource type="ArrayMesh" uid="uid://b7o8ac7grgmkf" path="res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Meshes/extracted/xw_bathroom.Cube_003.mesh" id="2_74qb8"]
+[ext_resource type="Material" uid="uid://cmbuya3lswiaw" path="res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Materials/xw_generic_colors_gloss.material" id="3_8jndx"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_v0dnm"]
+size = Vector3(0.20194899, 0.26587212, 0.3561809)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_od4ju"]
+size = Vector3(0.20194899, 0.28939915, 0.14159384)
+
+[node name="xw_shower" type="Node3D" unique_id=1381732604]
+script = ExtResource("1_6yvjf")
+useLayers = true
+Layers = "Sanitary,Plumbing"
+EdgeInstanceTypes = PackedStringArray()
+EdgeInstanceValues = PackedInt64Array()
+
+[node name="MeshRenderer" type="MeshInstance3D" parent="." unique_id=148665645]
+gi_mode = 2
+mesh = ExtResource("2_74qb8")
+surface_material_override/0 = ExtResource("3_8jndx")
+
+[node name="BoxCollider" type="StaticBody3D" parent="." unique_id=2080023294]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="BoxCollider" unique_id=1172232249]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.061265, 0.17807645)
+shape = SubResource("BoxShape3D_v0dnm")
+
+[node name="BoxCollider2" type="StaticBody3D" parent="." unique_id=1115756876]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="BoxCollider2" unique_id=1143024359]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.2062044, 0.070782915)
+shape = SubResource("BoxShape3D_od4ju")

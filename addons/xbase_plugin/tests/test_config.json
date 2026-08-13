@@ -1,0 +1,15 @@
+{
+  "test_scenes": [
+    {
+      "path": "res://amb/AMB_Hospital.tscn",
+      "expected_root": {
+        "ThingInstanceLabel": "AMB_Hospital",
+        "PhysicalType": "Site",
+        "AxoExport": true
+      },
+      "expected_extras_components": ["ThingLink", "BoundsHelper"]
+    }
+  ],
+  "output_dir": "res://addons/xbase_plugin/tests/output/"
+}
+

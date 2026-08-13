@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://nthjv4ggprkc"]
+
+[ext_resource type="Script" uid="uid://ci7vogd1oaojx" path="res://addons/xbase_plugin/axNode3D.gd" id="1_a8nv5"]
+[ext_resource type="ArrayMesh" uid="uid://cvfxlqkbik3tl" path="res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Meshes/extracted/xw_bathroom.Cube_001.mesh" id="2_d5c0a"]
+[ext_resource type="Material" uid="uid://dskmc2emaf0yp" path="res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Materials/xw_white.material" id="3_k1ahx"]
+[ext_resource type="Material" uid="uid://dkwvcecm0fgii" path="res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Materials/xw_int_blue_glass.material" id="4_02n2w"]
+[ext_resource type="Material" uid="uid://cmbuya3lswiaw" path="res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Materials/xw_generic_colors_gloss.material" id="5_e4w4s"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ddj7t"]
+size = Vector3(0.49642244, 0.111456096, 0.705918)
+
+[node name="xw_basin" type="Node3D" unique_id=75121031]
+script = ExtResource("1_a8nv5")
+useLayers = true
+isRoutingWaypoint = true
+Layers = "Sanitary,Plumbing"
+EdgeInstanceTypes = PackedStringArray()
+EdgeInstanceValues = PackedInt64Array()
+
+[node name="MeshRenderer" type="MeshInstance3D" parent="." unique_id=1757365627]
+gi_mode = 2
+mesh = ExtResource("2_d5c0a")
+surface_material_override/0 = ExtResource("3_k1ahx")
+surface_material_override/1 = ExtResource("4_02n2w")
+surface_material_override/2 = ExtResource("5_e4w4s")
+
+[node name="BoxCollider" type="StaticBody3D" parent="." unique_id=1826898993]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="BoxCollider" unique_id=1988756808]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.24821119, 0.8553902, 0)
+shape = SubResource("BoxShape3D_ddj7t")

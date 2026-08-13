@@ -1,0 +1,35 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="xworld-routing"
+config/features=PackedStringArray("4.6", "Forward Plus")
+config/icon="res://icon.svg"
+
+[autoload]
+
+DebugMenu="*uid://cggqb75a8w8r"
+
+[dotnet]
+
+project/assembly_name="xworld-routing"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/debug_menu/plugin.cfg", "res://addons/unidot_importer/plugin.cfg", "res://addons/xbase_plugin/plugin.cfg")
+
+[physics]
+
+3d/physics_engine="Jolt Physics"
+
+[rendering]
+
+rendering_device/driver.windows="d3d12"

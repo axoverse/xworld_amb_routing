@@ -1,0 +1,102 @@
+[gd_scene format=3 uid="uid://cfosy6a8765yq"]
+
+[ext_resource type="PackedScene" uid="uid://dftg4hm5cbsmh" path="res://Assets/amb/Prefabs/amb_8x10_room.prefab.tscn" id="1_h6ukq"]
+[ext_resource type="PackedScene" uid="uid://b2ca8mbanmxfp" path="res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Meshes/xw_ext_wall_window_8m.fbx" id="2_cpm5e"]
+[ext_resource type="PackedScene" uid="uid://muctdar2p8yi" path="res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Prefabs/xw_floor_with_ceiling_3m.prefab.tscn" id="3_f4qkk"]
+
+[node name="AMB_hospital_rooms" type="Node3D" unique_id=1208601261]
+
+[node name="left" type="Node3D" parent="." unique_id=131836915]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.29, 0, -11.73)
+
+[node name="amb_8x10_room" parent="left" unique_id=1258654679 instance=ExtResource("1_h6ukq")]
+transform = Transform3D(-1, 0, 0, 0, 1, 0, 0, 0, -1, -2.04, 0, 0.019999504)
+
+[node name="amb_8x10_room (1)" parent="left" unique_id=2074259984 instance=ExtResource("1_h6ukq")]
+transform = Transform3D(-1, 0, 0, 0, 1, 0, 0, 0, -1, 13.813895, 0, 0.020067215)
+
+[node name="amb_ext_wall_window_8m (3)" parent="left" unique_id=1622493443 instance=ExtResource("2_cpm5e")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.71, -0.20000003, 23.73)
+
+[node name="amb_ext_wall_window_8m (4)" parent="left" unique_id=1533461621 instance=ExtResource("2_cpm5e")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.29, -0.20000005, 23.73)
+
+[node name="amb_ext_wall_window_8m (5)" parent="left" unique_id=1086346720 instance=ExtResource("2_cpm5e")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.29, -0.2000001, 23.73)
+
+[node name="amb_ext_wall_window_8m (6)" parent="left" unique_id=1253450817 instance=ExtResource("2_cpm5e")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.709999, -0.20000003, 23.73)
+
+[node name="right" type="Node3D" parent="." unique_id=1399123124]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -0.75, 0, -11.71)
+
+[node name="amb_8x10_room (2)" parent="right" unique_id=2038875674 instance=ExtResource("1_h6ukq")]
+transform = Transform3D(-1, 0, 0, 0, 1, 0, 0, 0, -1, 6.4, 0, -23.39)
+
+[node name="amb_8x10_room (3)" parent="right" unique_id=1152484629 instance=ExtResource("1_h6ukq")]
+transform = Transform3D(-1, 0, 0, 0, 1, 0, 0, 0, -1, -9.42, 0, -23.39)
+
+[node name="amb_ext_wall_window_8m" parent="right" unique_id=1238091059 instance=ExtResource("2_cpm5e")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.75, -0.19999982, 0.28999996)
+
+[node name="amb_ext_wall_window_8m (1)" parent="right" unique_id=974530128 instance=ExtResource("2_cpm5e")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.75, -0.19999984, 0.28999996)
+
+[node name="amb_ext_wall_window_8m (2)" parent="right" unique_id=872276874 instance=ExtResource("2_cpm5e")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.25, -0.1999999, 0.28999996)
+
+[node name="amb_ext_wall_window_8m (3)" parent="right" unique_id=565975287 instance=ExtResource("2_cpm5e")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20.75, -0.19999982, 0.28999996)
+
+[node name="xw_floor_with_ceiling_3m" parent="." unique_id=583058357 instance=ExtResource("3_f4qkk")]
+transform = Transform3D(32, 0, 0, 0, 1, 0, 0, 0, 24, 4.000001, -0.10000011, 0.049999237)
+
+[editable path="left/amb_8x10_room"]
+[editable path="left/amb_8x10_room/xw_wall_8m"]
+[editable path="left/amb_8x10_room/xw_wall_8m2"]
+[editable path="left/amb_8x10_room/xw_wall_8m3"]
+[editable path="left/amb_8x10_room/xw_wall_4m"]
+[editable path="left/amb_8x10_room/xw_wall_4m2"]
+[editable path="left/amb_8x10_room/xw_doorframe_wd"]
+[editable path="left/amb_8x10_room/xw_doorframe_wd2"]
+[editable path="left/amb_8x10_room/xw_door_std_right"]
+[editable path="left/amb_8x10_room/xw_door_std_left"]
+[editable path="left/amb_8x10_room (1)"]
+[editable path="left/amb_8x10_room (1)/xw_wall_8m"]
+[editable path="left/amb_8x10_room (1)/xw_wall_8m2"]
+[editable path="left/amb_8x10_room (1)/xw_wall_8m3"]
+[editable path="left/amb_8x10_room (1)/xw_wall_4m"]
+[editable path="left/amb_8x10_room (1)/xw_wall_4m2"]
+[editable path="left/amb_8x10_room (1)/xw_doorframe_wd"]
+[editable path="left/amb_8x10_room (1)/xw_doorframe_wd2"]
+[editable path="left/amb_8x10_room (1)/xw_door_std_right"]
+[editable path="left/amb_8x10_room (1)/xw_door_std_left"]
+[editable path="left/amb_ext_wall_window_8m (3)"]
+[editable path="left/amb_ext_wall_window_8m (4)"]
+[editable path="left/amb_ext_wall_window_8m (5)"]
+[editable path="left/amb_ext_wall_window_8m (6)"]
+[editable path="right/amb_8x10_room (2)"]
+[editable path="right/amb_8x10_room (2)/xw_wall_8m"]
+[editable path="right/amb_8x10_room (2)/xw_wall_8m2"]
+[editable path="right/amb_8x10_room (2)/xw_wall_8m3"]
+[editable path="right/amb_8x10_room (2)/xw_wall_4m"]
+[editable path="right/amb_8x10_room (2)/xw_wall_4m2"]
+[editable path="right/amb_8x10_room (2)/xw_doorframe_wd"]
+[editable path="right/amb_8x10_room (2)/xw_doorframe_wd2"]
+[editable path="right/amb_8x10_room (2)/xw_door_std_right"]
+[editable path="right/amb_8x10_room (2)/xw_door_std_left"]
+[editable path="right/amb_8x10_room (3)"]
+[editable path="right/amb_8x10_room (3)/xw_wall_8m"]
+[editable path="right/amb_8x10_room (3)/xw_wall_8m2"]
+[editable path="right/amb_8x10_room (3)/xw_wall_8m3"]
+[editable path="right/amb_8x10_room (3)/xw_wall_4m"]
+[editable path="right/amb_8x10_room (3)/xw_wall_4m2"]
+[editable path="right/amb_8x10_room (3)/xw_doorframe_wd"]
+[editable path="right/amb_8x10_room (3)/xw_doorframe_wd2"]
+[editable path="right/amb_8x10_room (3)/xw_door_std_right"]
+[editable path="right/amb_8x10_room (3)/xw_door_std_left"]
+[editable path="right/amb_ext_wall_window_8m"]
+[editable path="right/amb_ext_wall_window_8m (1)"]
+[editable path="right/amb_ext_wall_window_8m (2)"]
+[editable path="right/amb_ext_wall_window_8m (3)"]
+[editable path="xw_floor_with_ceiling_3m"]

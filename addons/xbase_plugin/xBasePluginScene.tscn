@@ -1,0 +1,61 @@
+[gd_scene format=3 uid="uid://c04d0ug3jopjn"]
+
+[node name="XBasePluginDock" type="VFlowContainer" unique_id=1450597199]
+offset_right = 340.0
+offset_bottom = 146.0
+metadata/__editor_plugin_changed__ = true
+
+[node name="exportSceneToGLB" type="Button" parent="." unique_id=988813111]
+layout_mode = 2
+text = "Export Addressables"
+
+[node name="exportSkipExistingCheck" type="CheckBox" parent="." unique_id=1549185449]
+layout_mode = 2
+text = "Skip already exported"
+
+[node name="exportOpenOnlyCheck" type="CheckBox" parent="." unique_id=802813986]
+layout_mode = 2
+text = "Export open scenes only"
+
+[node name="exportSkipGlbCheck" type="CheckBox" parent="." unique_id=1655982574]
+layout_mode = 2
+text = "Skip GLB (ThingLink CSV only)"
+
+[node name="exportDisableExtrasCheck" type="CheckBox" parent="." unique_id=941998930]
+layout_mode = 2
+text = "Disable extras (diagnostics)"
+
+[node name="exportAsPckCheck" type="CheckBox" parent="." unique_id=669251488]
+layout_mode = 2
+text = "Export as PCK (instead of GLB)"
+
+[node name="addRoomButton" type="Button" parent="." unique_id=121575290]
+layout_mode = 2
+text = "Add ThingLink to Node"
+
+[node name="serializeButton" type="Button" parent="." unique_id=767405450]
+visible = false
+layout_mode = 2
+text = "Save to server"
+
+[node name="loadFromServerButton" type="Button" parent="." unique_id=1972922527]
+visible = false
+layout_mode = 2
+text = "Load from server...
+"
+
+[node name="clearThingInstanceLabelsButton" type="Button" parent="." unique_id=1786149802]
+layout_mode = 2
+text = "Clear ThingInstance Labels"
+
+[node name="syncAmThingLinkButton" type="Button" parent="." unique_id=1699803957]
+layout_mode = 2
+text = "Sync AM AxNode3D"
+
+[node name="syncOpenOnlyCheck" type="CheckBox" parent="." unique_id=391622652]
+layout_mode = 2
+text = "Sync open scenes only"
+
+[node name="syncAmOverrideCheck" type="CheckBox" parent="." unique_id=1831761534]
+layout_mode = 2
+text = "Sync override existing"

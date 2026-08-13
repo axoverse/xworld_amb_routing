@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://boicmy43crejc"]
+
+[ext_resource type="Material" uid="uid://c1wmblnuxvmcl" path="res://Packages/io.axomem.xworld.core/Materials/xw_routing_redmarker.material" id="1_orgbb"]
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_dw1ew"]
+resource_name = "Cylinder"
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_orgbb"]
+radius = 0.4999999
+height = 0.9999998
+
+[node name="RoutingSpawnPoint" type="Node3D" unique_id=1960644573]
+
+[node name="MonoBehaviour" type="Node" parent="." unique_id=1776607812]
+
+[node name="Cylinder" type="Node3D" parent="." unique_id=1058316265]
+transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0, 0.1, 0)
+
+[node name="MeshRenderer" type="MeshInstance3D" parent="Cylinder" unique_id=2144842279]
+gi_mode = 2
+mesh = SubResource("CylinderMesh_dw1ew")
+surface_material_override/0 = ExtResource("1_orgbb")
+
+[node name="CapsuleCollider" type="StaticBody3D" parent="Cylinder" unique_id=1306546663]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Cylinder/CapsuleCollider" unique_id=662568325]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.9604645e-08, 0, -8.940697e-08)
+visible = false
+shape = SubResource("CapsuleShape3D_orgbb")

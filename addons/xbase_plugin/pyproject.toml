@@ -1,0 +1,65 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "xworld-xbase-plugin"
+version = "0.1.0"
+description = "ThingLink metadata tools for GLTF files - xbase_plugin Python utilities"
+readme = "share/docs/README.md"
+license = {text = "MIT"}
+authors = [
+    {name = "Axomem"}
+]
+requires-python = ">=3.9"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+dependencies = [
+    "pygltflib>=1.16.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "pytest-cov>=4.0.0",
+]
+
+[project.scripts]
+thinglink-inject = "xworld_xbase_plugin.thinglink_injector:main"
+
+[tool.setuptools.packages.find]
+where = ["share/scripts"]
+
+[tool.setuptools.package-data]
+"*" = ["py.typed"]
+
+[tool.pytest.ini_options]
+testpaths = ["share/tests"]
+python_files = ["test_*.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
+markers = [
+    "godot: marks tests that require Godot runtime (run with: pytest -m godot)",
+    "slow: marks tests as slow (deselect with: pytest -m 'not slow')",
+]
+addopts = "-v --tb=short"
+
+[tool.coverage.run]
+source = ["share/scripts/xworld_xbase_plugin"]
+omit = ["*/tests/*"]
+
+[tool.coverage.report]
+exclude_lines = [
+    "pragma: no cover",
+    "if __name__ == .__main__.:",
+    "raise NotImplementedError",
+]
+

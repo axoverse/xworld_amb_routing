@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://dvufc6cnfxlng"]
+
+[ext_resource type="Script" uid="uid://ci7vogd1oaojx" path="res://addons/xbase_plugin/axNode3D.gd" id="1_cvm4m"]
+[ext_resource type="ArrayMesh" uid="uid://dyixdak44n8wu" path="res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Meshes/extracted/xw_hvac_vents.xw_hvac_ahu.mesh" id="2_ltu8b"]
+[ext_resource type="Material" uid="uid://c5wo1aahrd8ux" path="res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Materials/xv_hvac_ceiling_vent_symbol.material" id="3_ocfyk"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_urdle"]
+size = Vector3(1, 1.3466519, 1)
+
+[node name="xw_hvac_ceiling_ahu" type="Node3D" unique_id=1433151572]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0, 0, 0)
+script = ExtResource("1_cvm4m")
+useTransformLock = true
+useLayers = true
+LockX = "None"
+LockY = "Zero"
+LockZ = "None"
+Layers = "Hvac"
+EdgeInstanceTypes = PackedStringArray()
+EdgeInstanceValues = PackedInt64Array()
+
+[node name="MeshRenderer" type="MeshInstance3D" parent="." unique_id=1308560877]
+gi_mode = 2
+mesh = ExtResource("2_ltu8b")
+surface_material_override/0 = ExtResource("3_ocfyk")
+
+[node name="BoxCollider" type="StaticBody3D" parent="." unique_id=1472680844]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="BoxCollider" unique_id=387650154]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.06768352, 0)
+shape = SubResource("BoxShape3D_urdle")

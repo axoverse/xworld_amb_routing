@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://jx23wqsesdwm"]
+
+[ext_resource type="Script" uid="uid://ci7vogd1oaojx" path="res://addons/xbase_plugin/axNode3D.gd" id="1_yw7sn"]
+[ext_resource type="ArrayMesh" uid="uid://cc3dekqbe5aqx" path="res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Meshes/extracted/xw_furniture.Cube_005.mesh" id="2_c4wx6"]
+[ext_resource type="Material" uid="uid://me4g48hksqh5" path="res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Materials/xw_gloss_silver.material" id="3_jv1lk"]
+
+[node name="xw_shelf" type="Node3D" unique_id=941710385]
+script = ExtResource("1_yw7sn")
+useLayers = true
+Layers = "Furniture"
+EdgeInstanceTypes = PackedStringArray()
+EdgeInstanceValues = PackedInt64Array()
+
+[node name="MeshRenderer" type="MeshInstance3D" parent="." unique_id=2042186954]
+gi_mode = 2
+mesh = ExtResource("2_c4wx6")
+surface_material_override/0 = ExtResource("3_jv1lk")

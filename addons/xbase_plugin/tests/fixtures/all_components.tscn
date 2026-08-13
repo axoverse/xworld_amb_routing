@@ -1,0 +1,103 @@
+[gd_scene format=3 uid="uid://bm7wcl7wrjwqd"]
+
+[ext_resource type="Script" uid="uid://ci7vogd1oaojx" path="res://addons/xbase_plugin/axNode3D.gd" id="1_tl"]
+
+[node name="AllComponentsRoot" type="Node3D" unique_id=1275024571]
+script = ExtResource("1_tl")
+useThingLink = true
+AxoExport = true
+ThingLabelOverride = "AllComponentsRoot"
+ThingNameOverride = "All Components Test Root"
+PhysicalType = "Building"
+ThingInstanceLabel = "all-components-root"
+ObjectInstanceGuid = "allcomp00000000000000000000001"
+ThingGuid = "allcomp00000000000000000000001"
+metadata/extras = {
+"ObjectInstanceGuid": "allcomp00000000000000000000001",
+"PrefabPath": "",
+"ThingInstanceLabel": "all-components-root"
+}
+
+[node name="FullyLoaded" type="Node3D" parent="." unique_id=407702549]
+script = ExtResource("1_tl")
+useThingLink = true
+usePivotOverride = true
+useEdges = true
+useLayers = true
+ThingLabelOverride = "&FullRoom"
+ThingNameOverride = "Fully Loaded Room"
+PhysicalType = "Room"
+ObjectInstanceGuid = "allcomp00000000000000000000002"
+ThingGuid = "allcomp00000000000000000000002"
+PivotRotation = Vector3(0, 45, 0)
+Edges = "child,location,member"
+Layers = "Default,Doors,Furniture"
+LayerFlags = 3073
+metadata/extras = {
+"ObjectInstanceGuid": "allcomp00000000000000000000002",
+"PrefabPath": "",
+"ThingInstanceLabel": ""
+}
+
+[node name="LayersOnly" type="Node3D" parent="." unique_id=224521037]
+script = ExtResource("1_tl")
+useThingLink = true
+useLayers = true
+ThingLabelOverride = "&LayersRoom"
+ThingNameOverride = "Layers Only Room"
+PhysicalType = "Room"
+ObjectInstanceGuid = "allcomp00000000000000000000003"
+ThingGuid = "allcomp00000000000000000000003"
+Layers = "Environment,Hvac,Plumbing"
+LayerFlags = 114688
+metadata/extras = {
+"ObjectInstanceGuid": "allcomp00000000000000000000003",
+"PrefabPath": "",
+"ThingInstanceLabel": ""
+}
+
+[node name="EdgesOnly" type="Node3D" parent="." unique_id=43996006]
+script = ExtResource("1_tl")
+useThingLink = true
+useEdges = true
+ThingLabelOverride = "&EdgesRoom"
+ThingNameOverride = "Edges Only Room"
+PhysicalType = "Room"
+ObjectInstanceGuid = "allcomp00000000000000000000004"
+ThingGuid = "allcomp00000000000000000000004"
+Edges = "sibling,reference,external"
+metadata/extras = {
+"ObjectInstanceGuid": "allcomp00000000000000000000004",
+"PrefabPath": "",
+"ThingInstanceLabel": ""
+}
+
+[node name="PivotOnly" type="Node3D" parent="." unique_id=405305017]
+script = ExtResource("1_tl")
+useThingLink = true
+usePivotOverride = true
+ThingLabelOverride = "&PivotRoom"
+ThingNameOverride = "Pivot Override Room"
+PhysicalType = "Room"
+ObjectInstanceGuid = "allcomp00000000000000000000005"
+ThingGuid = "allcomp00000000000000000000005"
+PivotRotation = Vector3(15, 90, 0)
+metadata/extras = {
+"ObjectInstanceGuid": "allcomp00000000000000000000005",
+"PrefabPath": "",
+"ThingInstanceLabel": ""
+}
+
+[node name="MinimalThingLink" type="Node3D" parent="." unique_id=293989934]
+script = ExtResource("1_tl")
+useThingLink = true
+ThingLabelOverride = "&MinimalRoom"
+ThingNameOverride = "Minimal ThingLink Room"
+PhysicalType = "Room"
+ObjectInstanceGuid = "allcomp00000000000000000000006"
+ThingGuid = "allcomp00000000000000000000006"
+metadata/extras = {
+"ObjectInstanceGuid": "allcomp00000000000000000000006",
+"PrefabPath": "",
+"ThingInstanceLabel": ""
+}

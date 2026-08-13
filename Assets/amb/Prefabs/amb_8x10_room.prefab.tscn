@@ -1,0 +1,46 @@
+[gd_scene format=3 uid="uid://dftg4hm5cbsmh"]
+
+[ext_resource type="PackedScene" uid="uid://buhxe2l3ct1vm" path="res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Prefabs/xw_wall_8m.prefab.tscn" id="1_ye1ho"]
+[ext_resource type="PackedScene" uid="uid://c403gxhxxd1ar" path="res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Prefabs/xw_wall_4m.prefab.tscn" id="2_wcknh"]
+[ext_resource type="PackedScene" uid="uid://dx68unwf5kl8v" path="res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Prefabs/xw_doorframe_wd.prefab.tscn" id="3_atg8c"]
+[ext_resource type="PackedScene" uid="uid://nw0gdmugstr6" path="res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Prefabs/xw_door_std_right.prefab.tscn" id="4_c4kob"]
+[ext_resource type="PackedScene" uid="uid://dfemfe5c0n1f4" path="res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Prefabs/xw_door_std_left.prefab.tscn" id="5_1vrrt"]
+
+[node name="amb_8x10_room" type="Node3D" unique_id=1258654679]
+
+[node name="xw_wall_8m" parent="." unique_id=229294837 instance=ExtResource("1_ye1ho")]
+transform = Transform3D(1, 0, 0, 0, 1, -5.6824803e-08, 0, 4.371139e-08, 1.3, 11.059624, 0, -13.295332)
+
+[node name="xw_wall_8m2" parent="." unique_id=1800502804 instance=ExtResource("1_ye1ho")]
+transform = Transform3D(1, 0, 0, 0, 1, -5.6824803e-08, 0, 4.371139e-08, 1.3, 3.2799997, 0, -13.2954)
+
+[node name="xw_wall_8m3" parent="." unique_id=1866237055 instance=ExtResource("1_ye1ho")]
+transform = Transform3D(1, 0, 0, 0, 1, -5.6824803e-08, 0, 4.371139e-08, 1.3, -4.81, 0, -13.2954)
+
+[node name="xw_wall_4m" parent="." unique_id=563635597 instance=ExtResource("2_wcknh")]
+transform = Transform3D(-4.371139e-08, 0, -1.4682884, 0, 1, 0, 1, 0, -6.4180924e-08, 3.44, -0.01, -13.495368)
+
+[node name="xw_wall_4m2" parent="." unique_id=503733845 instance=ExtResource("2_wcknh")]
+transform = Transform3D(-4.371139e-08, 0, -1.5640202, 0, 1, 0, 1, 0, -6.8365495e-08, -2.8117, 0, -13.495366)
+
+[node name="xw_doorframe_wd" parent="." unique_id=1537647508 instance=ExtResource("3_atg8c")]
+transform = Transform3D(0, 0, -1, 0, 1, 0, 1, 0, 0, 9.259624, 0, -13.495332)
+
+[node name="xw_doorframe_wd2" parent="." unique_id=1919556701 instance=ExtResource("3_atg8c")]
+transform = Transform3D(0, 0, -1, 0, 1, 0, 1, 0, 0, -4.8100257, 0, -13.495366)
+
+[node name="xw_door_std_right" parent="." unique_id=426490031 instance=ExtResource("4_c4kob")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.72, 0, -13.325002)
+
+[node name="xw_door_std_left" parent="." unique_id=1890444022 instance=ExtResource("5_1vrrt")]
+transform = Transform3D(-0.9918786, 0, 0.1271888, 0, 1, 0, -0.1271888, 0, -0.9918786, -3.28, 0, -13.318)
+
+[editable path="xw_wall_8m"]
+[editable path="xw_wall_8m2"]
+[editable path="xw_wall_8m3"]
+[editable path="xw_wall_4m"]
+[editable path="xw_wall_4m2"]
+[editable path="xw_doorframe_wd"]
+[editable path="xw_doorframe_wd2"]
+[editable path="xw_door_std_right"]
+[editable path="xw_door_std_left"]

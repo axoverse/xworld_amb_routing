@@ -1,0 +1,36 @@
+[gd_scene format=3 uid="uid://bgm0nwubmlm7n"]
+
+[ext_resource type="Script" uid="uid://ci7vogd1oaojx" path="res://addons/xbase_plugin/axNode3D.gd" id="1_hp24f"]
+[ext_resource type="ArrayMesh" uid="uid://cggirb1r1snsy" path="res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Meshes/extracted/xw_doorframes.Cube_002.mesh" id="2_tx8d8"]
+[ext_resource type="Material" uid="uid://djhpjogo73sfy" path="res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Materials/xw_WallDefault.material" id="3_rbxam"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_nqaow"]
+size = Vector3(0.22193028, 4.0406814, 0.10282248)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_mx0ub"]
+size = Vector3(0.19999997, 4, 0.094177246)
+
+[node name="xw_doorframe_nw" type="Node3D" unique_id=100136217]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.011)
+script = ExtResource("1_hp24f")
+useLayers = true
+Layers = "Walls"
+EdgeInstanceTypes = PackedStringArray()
+EdgeInstanceValues = PackedInt64Array()
+
+[node name="MeshRenderer" type="MeshInstance3D" parent="." unique_id=345380472]
+gi_mode = 2
+mesh = ExtResource("2_tx8d8")
+surface_material_override/0 = ExtResource("3_rbxam")
+
+[node name="BoxCollider" type="StaticBody3D" parent="." unique_id=1920054588]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="BoxCollider" unique_id=2029566176]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.10203188, 1.9796593, -0.05141124)
+shape = SubResource("BoxShape3D_nqaow")
+
+[node name="BoxCollider2" type="StaticBody3D" parent="." unique_id=1647988]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="BoxCollider2" unique_id=389890822]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.09999999, 2, -1.2229114)
+shape = SubResource("BoxShape3D_mx0ub")

@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://c81gq7w5h70je"]
+
+[ext_resource type="Script" uid="uid://ci7vogd1oaojx" path="res://addons/xbase_plugin/axNode3D.gd" id="1_qq6j1"]
+[ext_resource type="ArrayMesh" uid="uid://t7kr144hvbc" path="res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Meshes/extracted/xw_doors.Cube_001.mesh" id="2_clrxq"]
+[ext_resource type="Material" uid="uid://b4hn8upqh2qke" path="res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Meshes/Materials/xw_door_default.material" id="3_4ik2v"]
+[ext_resource type="Material" uid="uid://cmbuya3lswiaw" path="res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Materials/xw_generic_colors_gloss.material" id="4_00lmf"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_67utw"]
+size = Vector3(0.13615924, 2.2, 0.89337325)
+
+[node name="xw_toilet_door_right" type="Node3D" unique_id=152413966]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 12.980049, 0, -22.37)
+script = ExtResource("1_qq6j1")
+useLayers = true
+Layers = "Doors"
+EdgeInstanceTypes = PackedStringArray()
+EdgeInstanceValues = PackedInt64Array()
+
+[node name="MeshRenderer" type="MeshInstance3D" parent="." unique_id=1176678123]
+gi_mode = 2
+mesh = ExtResource("2_clrxq")
+surface_material_override/0 = ExtResource("3_4ik2v")
+surface_material_override/1 = ExtResource("4_00lmf")
+
+[node name="BoxCollider" type="StaticBody3D" parent="." unique_id=5594698]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="BoxCollider" unique_id=351602078]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.022004822, 1.1, -0.43331364)
+shape = SubResource("BoxShape3D_67utw")

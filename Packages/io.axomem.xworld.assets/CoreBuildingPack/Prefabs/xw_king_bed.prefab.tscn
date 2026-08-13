@@ -1,0 +1,35 @@
+[gd_scene format=3 uid="uid://c5ta1b131liig"]
+
+[ext_resource type="Script" uid="uid://ci7vogd1oaojx" path="res://addons/xbase_plugin/axNode3D.gd" id="1_38oqd"]
+[ext_resource type="ArrayMesh" uid="uid://dktyjtiotksw8" path="res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Meshes/extracted/xw_furniture.Cube_019.mesh" id="2_d0yqm"]
+[ext_resource type="Material" uid="uid://n0u6bwgpq0to" path="res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Materials/xw_Dark_Grey.material" id="3_e6kli"]
+[ext_resource type="Material" uid="uid://dskmc2emaf0yp" path="res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Materials/xw_white.material" id="4_l2kiq"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ntpvi"]
+size = Vector3(2.95128, 0.97176725, 2.4673662)
+
+[node name="xw_king_bed" type="Node3D" unique_id=1696650180]
+script = ExtResource("1_38oqd")
+useThingLink = true
+useLayers = true
+ThingLabelOverride = "&01'"
+PhysicalType = "Bed"
+PrefabPath = "s/io.axomem.xworld.assets/CoreBuildingPack/Prefabs/xw_king_bed"
+Layers = "Furniture"
+EdgeInstanceTypes = PackedStringArray()
+EdgeInstanceValues = PackedInt64Array()
+metadata/extras = {
+"PrefabPath": "s/io.axomem.xworld.assets/CoreBuildingPack/Prefabs/xw_king_bed"
+}
+
+[node name="MeshRenderer" type="MeshInstance3D" parent="." unique_id=1288163922]
+gi_mode = 2
+mesh = ExtResource("2_d0yqm")
+surface_material_override/0 = ExtResource("3_e6kli")
+surface_material_override/1 = ExtResource("4_l2kiq")
+
+[node name="BoxCollider" type="StaticBody3D" parent="." unique_id=1951570094]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="BoxCollider" unique_id=1093687845]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.48588362, 0)
+shape = SubResource("BoxShape3D_ntpvi")

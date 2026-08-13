@@ -1,0 +1,249 @@
+[gd_scene format=3 uid="uid://dlkv23nr2bdte"]
+
+[ext_resource type="PackedScene" uid="uid://bpwg2ni1us4ik" path="res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Prefabs/GenericWall.prefab.tscn" id="1_2o0cb"]
+[ext_resource type="PackedScene" uid="uid://d0b0dproc726p" path="res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Prefabs/xw_generic_table_top.prefab.tscn" id="2_kay45"]
+[ext_resource type="PackedScene" uid="uid://cfagc0w2olfyn" path="res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Prefabs/xw_wall_2m.prefab.tscn" id="3_e204h"]
+[ext_resource type="PackedScene" uid="uid://c403gxhxxd1ar" path="res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Prefabs/xw_wall_4m.prefab.tscn" id="4_hcqvl"]
+[ext_resource type="Material" uid="uid://dmmgpyjwmth6i" path="res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Materials/xw_ext_window_glass.material" id="5_y3aii"]
+[ext_resource type="PackedScene" uid="uid://buhxe2l3ct1vm" path="res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Prefabs/xw_wall_8m.prefab.tscn" id="6_d2tf4"]
+[ext_resource type="PackedScene" uid="uid://dfemfe5c0n1f4" path="res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Prefabs/xw_door_std_left.prefab.tscn" id="7_ich32"]
+[ext_resource type="PackedScene" uid="uid://ds0ug6mun141c" path="res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Prefabs/xw_door_nw_win_push_left.prefab.tscn" id="8_d5y8n"]
+[ext_resource type="PackedScene" uid="uid://dx68unwf5kl8v" path="res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Prefabs/xw_doorframe_wd.prefab.tscn" id="9_ikd85"]
+[ext_resource type="PackedScene" uid="uid://s0ydko0awkn4" path="res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Prefabs/xw_doorframe_std.prefab.tscn" id="10_lavgl"]
+[ext_resource type="PackedScene" uid="uid://nthjv4ggprkc" path="res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Prefabs/xw_basin.prefab.tscn" id="11_werdn"]
+[ext_resource type="PackedScene" uid="uid://ob5gr7gdotwc" path="res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Prefabs/xw_toilet.prefab.tscn" id="12_f340b"]
+[ext_resource type="PackedScene" uid="uid://b3flcwqhtssm8" path="res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Prefabs/xw_shower.prefab.tscn" id="13_8i6ya"]
+[ext_resource type="PackedScene" uid="uid://mmltuxqppro" path="res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Prefabs/xw_basin_mirrorless.prefab.tscn" id="14_effg7"]
+
+[node name="amb_toilet_block" type="Node3D" unique_id=617881666]
+
+[node name="GenericWall" parent="." unique_id=958156717 instance=ExtResource("1_2o0cb")]
+transform = Transform3D(0.1, 0, 0, 0, 2.8, 0, 0, 0, 1.3942164, 16.232752, 1.4, -17.261349)
+
+[node name="GenericWall (1)" parent="." unique_id=215715735 instance=ExtResource("1_2o0cb")]
+transform = Transform3D(0.1, 0, 0, 0, 2.8, 0, 0, 0, 1.3942164, 15.0927515, 1.4, -17.261349)
+
+[node name="GenericWall (2)" parent="." unique_id=1400416872 instance=ExtResource("1_2o0cb")]
+transform = Transform3D(0.1, 0, 0, 0, 2.8, 0, 0, 0, 1.3942164, 13.922751, 1.4, -17.261349)
+
+[node name="GenericWall (3)" parent="." unique_id=1525840285 instance=ExtResource("1_2o0cb")]
+transform = Transform3D(0.1, 0, 0, 0, 3.96, 0, 0, 0, 1.491164, 12.723468, 2.0303297, -17.241623)
+
+[node name="GenericWall (4)" parent="." unique_id=796673635 instance=ExtResource("1_2o0cb")]
+transform = Transform3D(0.1, 0, 0, 0, 2.8, 0, 0, 0, 1.3942164, 16.232752, 1.4, -14.241349)
+
+[node name="GenericWall (5)" parent="." unique_id=1443326325 instance=ExtResource("1_2o0cb")]
+transform = Transform3D(0.1, 0, 0, 0, 2.8, 0, 0, 0, 1.3942164, 15.0927515, 1.4, -14.241349)
+
+[node name="GenericWall (6)" parent="." unique_id=806640261 instance=ExtResource("1_2o0cb")]
+transform = Transform3D(0.1, 0, 0, 0, 2.8, 0, 0, 0, 1.3942164, 13.942751, 1.4, -14.241349)
+
+[node name="GenericWall (7)" parent="." unique_id=1066785910 instance=ExtResource("1_2o0cb")]
+transform = Transform3D(0.1, 0, 0, 0, 4.0633564, 0, 0, 0, 2.8630688, 12.72764, 1.9819, -13.498813)
+
+[node name="xw_generic_table_top" parent="." unique_id=1594222234 instance=ExtResource("2_kay45")]
+transform = Transform3D(3.7088904, 0, 0, 0, 0.03, 0, 0, 0, 0.7, 10.413752, 0.79999995, -17.442)
+
+[node name="GenericWall (8)" parent="." unique_id=1362319101 instance=ExtResource("1_2o0cb")]
+transform = Transform3D(0.1, 0, 0, 0, 4.0641694, 0, 0, 0, 2.3179824, 12.22, 1.9825, -13.6836)
+
+[node name="GenericWall (9)" parent="." unique_id=346032547 instance=ExtResource("1_2o0cb")]
+transform = Transform3D(0.1, 0, 0, 0, 2.8, 0, 0, 0, 1.3942164, 16.232752, 1.4, -12.75)
+
+[node name="GenericWall (10)" parent="." unique_id=184674391 instance=ExtResource("1_2o0cb")]
+transform = Transform3D(0.1, 0, 0, 0, 2.8, 0, 0, 0, 1.3942164, 15.0927515, 1.4, -12.75)
+
+[node name="GenericWall (11)" parent="." unique_id=1171432465 instance=ExtResource("1_2o0cb")]
+transform = Transform3D(0.1, 0, 0, 0, 2.8, 0, 0, 0, 1.3942164, 13.922751, 1.4, -12.78)
+
+[node name="xw_generic_table_top (1)" parent="." unique_id=1822830608 instance=ExtResource("2_kay45")]
+transform = Transform3D(0.8363548, 0, 0, 0, 0.03, 0, 0, 0, 0.7, 10.32, 0.79999995, -13.07)
+
+[node name="GenericWall (12)" parent="." unique_id=865666998 instance=ExtResource("1_2o0cb")]
+transform = Transform3D(0.2, 0, 0, 0, 4.012717, 0, 0, 0, 1.62271, 17.55999, 2.003972, -8.876156)
+
+[node name="xw_generic_table_top (2)" parent="." unique_id=1546433322 instance=ExtResource("2_kay45")]
+transform = Transform3D(3.7088904, 0, 0, 0, 0.03, 0, 0, 0, 0.7, 10.413752, 0.79999995, -12.165)
+
+[node name="xw_wall_2m" parent="." unique_id=59104627 instance=ExtResource("3_e204h")]
+transform = Transform3D(1, 0, 0, 0, 1, -1.8660119e-08, 0, 4.371139e-08, 0.42689377, 9.667872, 0, -12.529348)
+
+[node name="xw_wall_2m2" parent="." unique_id=1641727843 instance=ExtResource("3_e204h")]
+transform = Transform3D(1, 0, 0, 0, 1, -1.9542094e-08, 0, 4.371139e-08, 0.447071, 9.667872, 0, -14.858)
+
+[node name="xw_wall_2m3" parent="." unique_id=570734619 instance=ExtResource("3_e204h")]
+transform = Transform3D(1, 0, 0, 0, 1, -4.216197e-08, 0, 4.371139e-08, 0.9645535, 7.7233934, 0, -11.0696335)
+
+[node name="xw_wall_4m" parent="." unique_id=563635597 instance=ExtResource("4_hcqvl")]
+transform = Transform3D(-4.371139e-08, 0, -0.777452, 0, 1, 0, 1, 0, -3.3983508e-08, 9.667851, 0, -14.930348)
+
+[node name="xw_wall_4m2" parent="." unique_id=614321973 instance=ExtResource("4_hcqvl")]
+transform = Transform3D(-4.371139e-08, 0, -1.1892768, 0, 1, 0, 1, 0, -5.198494e-08, 12.7287, 0, -13.610348)
+
+[node name="xw_wall_4m3" parent="." unique_id=866684602 instance=ExtResource("4_hcqvl")]
+transform = Transform3D(-8.742278e-09, 0, -0.9974798, 0, 0.6335, 0, 0.2, 0, -4.3601226e-08, 8.4276, 0.79, -17.811)
+
+[node name="MeshRenderer" parent="xw_wall_4m3" index="0" unique_id=1109022322]
+surface_material_override/0 = ExtResource("5_y3aii")
+
+[node name="xw_wall_4m4" parent="." unique_id=1623404953 instance=ExtResource("4_hcqvl")]
+transform = Transform3D(-4.371139e-08, 0, -1.2237093, 0, 1, 0, 1, 0, -5.3490034e-08, 7.8826513, 0, -12.710348)
+
+[node name="xw_wall_4m5" parent="." unique_id=1731097 instance=ExtResource("4_hcqvl")]
+transform = Transform3D(-4.371139e-08, 0, -2.4840207, 0, 1, 0, 1, 0, -1.0858e-07, 7.7256, 0, -17.987206)
+
+[node name="xw_wall_4m6" parent="." unique_id=769071888 instance=ExtResource("4_hcqvl")]
+transform = Transform3D(-8.742278e-09, 0, -0.9974798, 0, 0.6335, 0, 0.2, 0, -4.3601226e-08, 8.4276, 0.79, -12.545)
+
+[node name="MeshRenderer" parent="xw_wall_4m6" index="0" unique_id=1109022322]
+surface_material_override/0 = ExtResource("5_y3aii")
+
+[node name="xw_wall_8m" parent="." unique_id=229294837 instance=ExtResource("6_d2tf4")]
+transform = Transform3D(1, 0, 0, 0, 1, -1.3117057e-08, 0, 4.371139e-08, 0.30008328, 7.7233944, 0, -15.5886)
+
+[node name="xw_wall_8m2" parent="." unique_id=1535941926 instance=ExtResource("6_d2tf4")]
+transform = Transform3D(-1, -3.821371e-15, -9.065438e-08, 0, 1, -4.532719e-08, 8.742278e-08, -4.371139e-08, -1.0369653, 17.65999, 0, -17.9834)
+
+[node name="xw_door_std_left" parent="." unique_id=1890444022 instance=ExtResource("7_ich32")]
+transform = Transform3D(-0.98393744, 0, 0.17851372, 0, 1, 0, -0.17851372, 0, -0.98393744, 16.981, 0.0638597, -9.845)
+
+[node name="xw_door_std_left2" parent="." unique_id=61596156 instance=ExtResource("7_ich32")]
+transform = Transform3D(0.10501402, 0, 0.9944707, 0, 1, 0, -0.9944707, 0, 0.10501402, 9.797, 0, -14.592)
+
+[node name="xw_door_nw_win_push_left" parent="." unique_id=675667097 instance=ExtResource("8_d5y8n")]
+transform = Transform3D(0.05541389, -1.972448e-08, 0.99846345, -3.7855198e-08, 1, 2.1855765e-08, -0.99846345, -3.9008146e-08, 0.05541389, 7.719, 0, -13.611)
+
+[node name="xw_doorframe_wd" parent="." unique_id=1537647508 instance=ExtResource("9_ikd85")]
+transform = Transform3D(-1, 0, -1.136496e-07, 0, 1, 0, 8.742278e-08, 0, -1.2999998, 7.923394, 0, -15.597)
+
+[node name="xw_doorframe_wd2" parent="." unique_id=1000225506 instance=ExtResource("9_ikd85")]
+transform = Transform3D(0, 0, -1, 0, 1, 0, 1, 0, 0, 15.468, 0, -9.890348)
+
+[node name="xw_doorframe_std" parent="." unique_id=1290316505 instance=ExtResource("10_lavgl")]
+transform = Transform3D(1, 0, 0, 0, 1, -4.371139e-08, 0, 4.371139e-08, 1, 9.667873, 0, -13.300348)
+
+[node name="xw_doorframe_std2" parent="." unique_id=520217810 instance=ExtResource("10_lavgl")]
+transform = Transform3D(-4.371139e-08, 0, -1.264046, 0, 1, 0, 1, 0, -5.5253203e-08, 7.845335, 0, -15.752153)
+
+[node name="xw_basin" parent="." unique_id=75121031 instance=ExtResource("11_werdn")]
+transform = Transform3D(0, 0, -1, 0, 1, 0, 1, 0, 0, 10.29, 0, -12.712)
+
+[node name="xw_toilet" parent="." unique_id=443543630 instance=ExtResource("12_f340b")]
+transform = Transform3D(-1, 0, 0, 0, 1, 0, 0, 0, -1, 16.77, 0, -13.61)
+
+[node name="xw_toilet2" parent="." unique_id=1274635541 instance=ExtResource("12_f340b")]
+transform = Transform3D(-1, 0, 0, 0, 1, 0, 0, 0, -1, 15.63, 0, -13.61)
+
+[node name="xw_toilet3" parent="." unique_id=1133213748 instance=ExtResource("12_f340b")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16.77, 0, -17.82)
+
+[node name="xw_toilet4" parent="." unique_id=1805266431 instance=ExtResource("12_f340b")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.63, 0, -17.82)
+
+[node name="xw_toilet5" parent="." unique_id=81188173 instance=ExtResource("12_f340b")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.46, 0, -17.82)
+
+[node name="xw_toilet6" parent="." unique_id=1496584217 instance=ExtResource("12_f340b")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.34, 0, -17.82)
+
+[node name="xw_toilet7" parent="." unique_id=22937832 instance=ExtResource("12_f340b")]
+transform = Transform3D(-1, 0, 0, 0, 1, 0, 0, 0, -1, 14.48, 0, -13.61)
+
+[node name="xw_toilet8" parent="." unique_id=986777070 instance=ExtResource("12_f340b")]
+transform = Transform3D(-1, 0, 0, 0, 1, 0, 0, 0, -1, 13.31, 0, -13.61)
+
+[node name="xw_toilet9" parent="." unique_id=1304432344 instance=ExtResource("12_f340b")]
+transform = Transform3D(0, 0, -1, 0, 1, 0, 1, 0, 0, 12.19, 0, -14.16)
+
+[node name="xw_toilet10" parent="." unique_id=1088713954 instance=ExtResource("12_f340b")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16.77, 0, -13.308651)
+
+[node name="xw_toilet11" parent="." unique_id=789641153 instance=ExtResource("12_f340b")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.63, 0, -13.308651)
+
+[node name="xw_shower" parent="." unique_id=1381732604 instance=ExtResource("13_8i6ya")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.470752, -0.1, -13.416532)
+
+[node name="xw_shower2" parent="." unique_id=298937986 instance=ExtResource("13_8i6ya")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.304751, -0.1, -13.416532)
+
+[node name="xw_basin_mirrorless" parent="." unique_id=1969612381 instance=ExtResource("14_effg7")]
+transform = Transform3D(0, 0, 1, 0, 1, 0, -1, 0, 0, 9.035751, 0, -12.422)
+
+[node name="xw_basin_mirrorless2" parent="." unique_id=1417205261 instance=ExtResource("14_effg7")]
+transform = Transform3D(0, 0, 1, 0, 1, 0, -1, 0, 0, 10.937752, 0, -17.687)
+
+[node name="xw_basin_mirrorless3" parent="." unique_id=1659492635 instance=ExtResource("14_effg7")]
+transform = Transform3D(0, 0, 1, 0, 1, 0, -1, 0, 0, 11.778751, 0, -17.687)
+
+[node name="xw_basin_mirrorless4" parent="." unique_id=1429839913 instance=ExtResource("14_effg7")]
+transform = Transform3D(0, 0, 1, 0, 1, 0, -1, 0, 0, 10.015751, 0, -17.687)
+
+[node name="xw_basin_mirrorless5" parent="." unique_id=455619085 instance=ExtResource("14_effg7")]
+transform = Transform3D(0, 0, 1, 0, 1, 0, -1, 0, 0, 9.035751, 0, -17.687)
+
+[node name="xw_basin_mirrorless6" parent="." unique_id=1620351315 instance=ExtResource("14_effg7")]
+transform = Transform3D(0, 0, 1, 0, 1, 0, -1, 0, 0, 10.937752, 0, -12.422)
+
+[node name="xw_basin_mirrorless7" parent="." unique_id=1993806179 instance=ExtResource("14_effg7")]
+transform = Transform3D(0, 0, 1, 0, 1, 0, -1, 0, 0, 10.015751, 0, -12.422)
+
+[node name="xw_basin_mirrorless8" parent="." unique_id=2086476193 instance=ExtResource("14_effg7")]
+transform = Transform3D(0, 0, 1, 0, 1, 0, -1, 0, 0, 11.778751, 0, -12.422)
+
+[editable path="GenericWall"]
+[editable path="GenericWall (1)"]
+[editable path="GenericWall (2)"]
+[editable path="GenericWall (3)"]
+[editable path="GenericWall (4)"]
+[editable path="GenericWall (5)"]
+[editable path="GenericWall (6)"]
+[editable path="GenericWall (7)"]
+[editable path="xw_generic_table_top"]
+[editable path="GenericWall (8)"]
+[editable path="GenericWall (9)"]
+[editable path="GenericWall (10)"]
+[editable path="GenericWall (11)"]
+[editable path="xw_generic_table_top (1)"]
+[editable path="GenericWall (12)"]
+[editable path="xw_generic_table_top (2)"]
+[editable path="xw_wall_2m"]
+[editable path="xw_wall_2m2"]
+[editable path="xw_wall_2m3"]
+[editable path="xw_wall_4m"]
+[editable path="xw_wall_4m2"]
+[editable path="xw_wall_4m3"]
+[editable path="xw_wall_4m4"]
+[editable path="xw_wall_4m5"]
+[editable path="xw_wall_4m6"]
+[editable path="xw_wall_8m"]
+[editable path="xw_wall_8m2"]
+[editable path="xw_door_std_left"]
+[editable path="xw_door_std_left2"]
+[editable path="xw_door_nw_win_push_left"]
+[editable path="xw_doorframe_wd"]
+[editable path="xw_doorframe_wd2"]
+[editable path="xw_doorframe_std"]
+[editable path="xw_doorframe_std2"]
+[editable path="xw_basin"]
+[editable path="xw_toilet"]
+[editable path="xw_toilet2"]
+[editable path="xw_toilet3"]
+[editable path="xw_toilet4"]
+[editable path="xw_toilet5"]
+[editable path="xw_toilet6"]
+[editable path="xw_toilet7"]
+[editable path="xw_toilet8"]
+[editable path="xw_toilet9"]
+[editable path="xw_toilet10"]
+[editable path="xw_toilet11"]
+[editable path="xw_shower"]
+[editable path="xw_shower2"]
+[editable path="xw_basin_mirrorless"]
+[editable path="xw_basin_mirrorless2"]
+[editable path="xw_basin_mirrorless3"]
+[editable path="xw_basin_mirrorless4"]
+[editable path="xw_basin_mirrorless5"]
+[editable path="xw_basin_mirrorless6"]
+[editable path="xw_basin_mirrorless7"]
+[editable path="xw_basin_mirrorless8"]

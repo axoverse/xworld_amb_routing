@@ -1,0 +1,33 @@
+[gd_scene format=3 uid="uid://muctdar2p8yi"]
+
+[ext_resource type="Script" uid="uid://ci7vogd1oaojx" path="res://addons/xbase_plugin/axNode3D.gd" id="1_2xo80"]
+[ext_resource type="ArrayMesh" uid="uid://cvyefdxh6kdgq" path="res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Meshes/extracted/xw_floor_with_ceiling_3m.Mesh_002.mesh" id="2_e8pu7"]
+[ext_resource type="Material" uid="uid://c0edkvm7p1nvp" path="res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Materials/xw_BaseFloor.material" id="3_kejo1"]
+[ext_resource type="Material" uid="uid://cehxyqwt4qbuk" path="res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Materials/xw_Floor.material" id="4_eyrsc"]
+[ext_resource type="Material" uid="uid://dc4ybthnyrl77" path="res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Materials/xw_Ceiling.material" id="5_jlm1a"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_rg8h5"]
+size = Vector3(1, 0.20121947, 1)
+
+[node name="xw_floor_with_ceiling_3m" type="Node3D" unique_id=583058357]
+script = ExtResource("1_2xo80")
+useLayers = true
+Layers = "Floor"
+EdgeInstanceTypes = PackedStringArray()
+EdgeInstanceValues = PackedInt64Array()
+
+[node name="MeshRenderer" type="MeshInstance3D" parent="." unique_id=825053998]
+gi_mode = 2
+mesh = ExtResource("2_e8pu7")
+surface_material_override/0 = ExtResource("3_kejo1")
+surface_material_override/1 = ExtResource("4_eyrsc")
+surface_material_override/2 = ExtResource("5_jlm1a")
+
+[node name="BoxCollider" type="StaticBody3D" parent="." unique_id=688022275]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="BoxCollider" unique_id=1704521872]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.09939097, 0)
+visible = false
+shape = SubResource("BoxShape3D_rg8h5")
+
+[node name="MonoBehaviour" type="Node" parent="." unique_id=248642690]

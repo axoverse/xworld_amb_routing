@@ -1,0 +1,184 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://bjr6q7sv2j5c4"
+path="res://.godot/imported/xw_doors.fbx-7f3a824f3261a959e2646d824fddbae4.scn"
+
+[deps]
+
+source_file="res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Meshes/xw_doors.fbx"
+dest_files=["res://.godot/imported/xw_doors.fbx-7f3a824f3261a959e2646d824fddbae4.scn"]
+
+[params]
+
+nodes/root_type=""
+nodes/root_name=""
+nodes/root_script=null
+nodes/apply_root_scale=true
+nodes/root_scale=1.0
+nodes/import_as_skeleton_bones=false
+nodes/use_name_suffixes=true
+nodes/use_node_type_suffixes=true
+meshes/ensure_tangents=1
+meshes/generate_lods=true
+meshes/create_shadow_meshes=false
+meshes/light_baking=1
+meshes/lightmap_texel_size=0.2
+meshes/force_disable_compression=false
+skins/use_named_skins=true
+animation/import=true
+animation/fps=30.0
+animation/trimming=true
+animation/remove_immutable_tracks=false
+animation/import_rest_as_RESET=true
+import_script/path=""
+materials/extract=0
+materials/extract_format=0
+materials/extract_path=""
+_subresources={
+"animations": {},
+"materials": {
+"xw_aqua": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Materials/xw_aqua.material",
+"use_external/path": "uid://ylsvna71kfte"
+},
+"xw_door_default": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Meshes/Materials/xw_door_default.material",
+"use_external/path": "uid://b4hn8upqh2qke"
+},
+"xw_generic_colors_gloss": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Materials/xw_generic_colors_gloss.material",
+"use_external/path": "uid://cmbuya3lswiaw"
+}
+},
+"meshes": {
+"Cube_001": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 20.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Meshes/extracted/xw_doors.Cube_001.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://t7kr144hvbc"
+},
+"Cube_009": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 20.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Meshes/extracted/xw_doors.Cube_009.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://cbfgfuoyhavhv"
+},
+"Cube_014": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 20.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Meshes/extracted/xw_doors.Cube_014.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://bl76ea62gqfbw"
+},
+"Cube_017": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 20.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Meshes/extracted/xw_doors.Cube_017.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://dut37sllyl18d"
+},
+"Cube_020": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 20.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Meshes/extracted/xw_doors.Cube_020.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://bbv4p4mogie3s"
+},
+"Cube_021": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 20.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Meshes/extracted/xw_doors.Cube_021.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://dy0mpne1fllvt"
+},
+"Cube_023": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 20.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Meshes/extracted/xw_doors.Cube_023.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://ysvitta4xbln"
+},
+"Root Scene_Cube_001": {
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Meshes/extracted/xw_doors.Cube_001.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://t7kr144hvbc"
+},
+"Root Scene_Cube_009": {
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Meshes/extracted/xw_doors.Cube_009.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://cbfgfuoyhavhv"
+},
+"Root Scene_Cube_014": {
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Meshes/extracted/xw_doors.Cube_014.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://bl76ea62gqfbw"
+},
+"Root Scene_Cube_017": {
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Meshes/extracted/xw_doors.Cube_017.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://dut37sllyl18d"
+},
+"Root Scene_Cube_020": {
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Meshes/extracted/xw_doors.Cube_020.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://bbv4p4mogie3s"
+},
+"Root Scene_Cube_021": {
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Meshes/extracted/xw_doors.Cube_021.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://dy0mpne1fllvt"
+},
+"Root Scene_Cube_023": {
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Meshes/extracted/xw_doors.Cube_023.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://ysvitta4xbln"
+}
+},
+"nodes": {
+"PATH:AnimationPlayer": {
+"optimizer/enabled": true,
+"optimizer/max_angular_error": 0.00277777777777777,
+"optimizer/max_linear_error": 0.5
+}
+}
+}
+fbx/importer=0
+fbx/allow_geometry_helper_nodes=false
+fbx/embedded_image_handling=1
+fbx/naming_version=2

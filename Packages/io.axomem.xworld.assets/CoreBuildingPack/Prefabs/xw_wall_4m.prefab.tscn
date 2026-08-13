@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://c403gxhxxd1ar"]
+
+[ext_resource type="Script" uid="uid://ci7vogd1oaojx" path="res://addons/xbase_plugin/axNode3D.gd" id="1_lqmyf"]
+[ext_resource type="ArrayMesh" uid="uid://b2n2b0w2y7ryr" path="res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Meshes/extracted/xw_wall_4m.Cube_002.mesh" id="2_kfy0v"]
+[ext_resource type="Material" uid="uid://djhpjogo73sfy" path="res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Materials/xw_WallDefault.material" id="3_nwrby"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_bbwm2"]
+size = Vector3(0.19999999, 4, 4)
+
+[node name="xw_wall_4m" type="Node3D" unique_id=563635597]
+script = ExtResource("1_lqmyf")
+useLayers = true
+Layers = "Walls"
+EdgeInstanceTypes = PackedStringArray()
+EdgeInstanceValues = PackedInt64Array()
+
+[node name="MeshRenderer" type="MeshInstance3D" parent="." unique_id=1109022322]
+gi_mode = 2
+mesh = ExtResource("2_kfy0v")
+surface_material_override/0 = ExtResource("3_nwrby")
+
+[node name="MonoBehaviour" type="Node" parent="." unique_id=1816424873]
+
+[node name="BoxCollider" type="StaticBody3D" parent="." unique_id=1226161966]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="BoxCollider" unique_id=1928305583]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.099999994, 2, -2)
+shape = SubResource("BoxShape3D_bbwm2")

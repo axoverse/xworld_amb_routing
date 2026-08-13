@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://dkrjp6svnaab6"]
+
+[ext_resource type="Script" uid="uid://ci7vogd1oaojx" path="res://addons/xbase_plugin/axNode3D.gd" id="1_hnn7t"]
+[ext_resource type="ArrayMesh" uid="uid://7xo3b6ywtp4c" path="res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Meshes/extracted/xw_floorplan.Plane.mesh" id="2_kukab"]
+[ext_resource type="Material" uid="uid://cehxyqwt4qbuk" path="res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Materials/xw_Floor.material" id="3_43u2n"]
+
+[node name="XW_Floorplan" type="Node3D" unique_id=787375640]
+script = ExtResource("1_hnn7t")
+useLayers = true
+Layers = "Never"
+EdgeInstanceTypes = PackedStringArray()
+EdgeInstanceValues = PackedInt64Array()
+
+[node name="MeshRenderer" type="MeshInstance3D" parent="." unique_id=901290657]
+gi_mode = 2
+mesh = ExtResource("2_kukab")
+surface_material_override/0 = ExtResource("3_43u2n")

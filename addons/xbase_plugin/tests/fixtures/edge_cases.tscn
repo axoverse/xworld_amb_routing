@@ -1,0 +1,92 @@
+[gd_scene format=3 uid="uid://da5vekvexbygc"]
+
+[ext_resource type="Script" uid="uid://ci7vogd1oaojx" path="res://addons/xbase_plugin/axNode3D.gd" id="1_tl"]
+
+[node name="EdgeCasesRoot" type="Node3D" unique_id=118979121]
+script = ExtResource("1_tl")
+useThingLink = true
+AxoExport = true
+ThingLabelOverride = "EdgeCasesRoot"
+ThingNameOverride = "Edge Cases Test Root"
+PhysicalType = "Building"
+ThingInstanceLabel = "edge-cases-root"
+ObjectInstanceGuid = "edgecases0000000000000000000001"
+ThingGuid = "edgecases0000000000000000000001"
+metadata/extras = {
+"ObjectInstanceGuid": "edgecases0000000000000000000001",
+"PrefabPath": "",
+"ThingInstanceLabel": "edge-cases-root"
+}
+
+[node name="EmptyStrings" type="Node3D" parent="." unique_id=27846539]
+script = ExtResource("1_tl")
+useThingLink = true
+PhysicalType = "Room"
+ThingInstanceLabel = "empty-strings-node"
+ObjectInstanceGuid = "edgecases0000000000000000000002"
+ThingGuid = "edgecases0000000000000000000002"
+metadata/extras = {
+"ObjectInstanceGuid": "edgecases0000000000000000000002",
+"PrefabPath": "",
+"ThingInstanceLabel": "empty-strings-node"
+}
+
+[node name="SpecialChars" type="Node3D" parent="." unique_id=1831084231]
+script = ExtResource("1_tl")
+useThingLink = true
+ThingLabelOverride = "Room-101_A"
+ThingNameOverride = "Room 101 (Main)"
+PhysicalType = "Room"
+ThingInstanceLabel = "special-chars-room-101_a"
+ObjectInstanceGuid = "edgecases0000000000000000000003"
+ThingGuid = "edgecases0000000000000000000003"
+metadata/extras = {
+"ObjectInstanceGuid": "edgecases0000000000000000000003",
+"PrefabPath": "",
+"ThingInstanceLabel": "special-chars-room-101_a"
+}
+
+[node name="Unicode" type="Node3D" parent="." unique_id=1461842637]
+script = ExtResource("1_tl")
+useThingLink = true
+ThingLabelOverride = "Büro-München"
+ThingNameOverride = "办公室 Tokyo オフィス"
+PhysicalType = "Room"
+ThingInstanceLabel = "unicode-office"
+ObjectInstanceGuid = "edgecases0000000000000000000004"
+ThingGuid = "edgecases0000000000000000000004"
+metadata/extras = {
+"ObjectInstanceGuid": "edgecases0000000000000000000004",
+"PrefabPath": "",
+"ThingInstanceLabel": "unicode-office"
+}
+
+[node name="LongLabel" type="Node3D" parent="." unique_id=257462848]
+script = ExtResource("1_tl")
+useThingLink = true
+ThingLabelOverride = "VeryLongLabelThatExceedsNormalLengthToTestTruncationOrHandling"
+ThingNameOverride = "A very long name that might exceed normal display limits in some UI contexts"
+PhysicalType = "Room"
+ThingInstanceLabel = "long-label-test-room-with-extended-identifier"
+ObjectInstanceGuid = "edgecases0000000000000000000005"
+ThingGuid = "edgecases0000000000000000000005"
+metadata/extras = {
+"ObjectInstanceGuid": "edgecases0000000000000000000005",
+"PrefabPath": "",
+"ThingInstanceLabel": "long-label-test-room-with-extended-identifier"
+}
+
+[node name="NonePhysicalType" type="Node3D" parent="." unique_id=1435364082]
+script = ExtResource("1_tl")
+useThingLink = true
+ThingLabelOverride = "NoType"
+ThingNameOverride = "Node with None physical type"
+PhysicalType = "None"
+ThingInstanceLabel = "none-physical-type"
+ObjectInstanceGuid = "edgecases0000000000000000000006"
+ThingGuid = "edgecases0000000000000000000006"
+metadata/extras = {
+"ObjectInstanceGuid": "edgecases0000000000000000000006",
+"PrefabPath": "",
+"ThingInstanceLabel": "none-physical-type"
+}

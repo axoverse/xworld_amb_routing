@@ -1,0 +1,535 @@
+[gd_scene format=3 uid="uid://3w64amrtohbs"]
+
+[ext_resource type="PackedScene" uid="uid://muctdar2p8yi" path="res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Prefabs/xw_floor_with_ceiling_3m.prefab.tscn" id="1_jdwly"]
+[ext_resource type="PackedScene" uid="uid://2w6abfhjp4ef" path="res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Prefabs/xw_ext_wall_window_8m.prefab.tscn" id="2_ark4k"]
+[ext_resource type="PackedScene" uid="uid://buhxe2l3ct1vm" path="res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Prefabs/xw_wall_8m.prefab.tscn" id="3_pynpy"]
+[ext_resource type="PackedScene" uid="uid://dx68unwf5kl8v" path="res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Prefabs/xw_doorframe_wd.prefab.tscn" id="4_xlf75"]
+[ext_resource type="PackedScene" uid="uid://c403gxhxxd1ar" path="res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Prefabs/xw_wall_4m.prefab.tscn" id="5_7lp5o"]
+[ext_resource type="PackedScene" uid="uid://dfemfe5c0n1f4" path="res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Prefabs/xw_door_std_left.prefab.tscn" id="6_g7b7b"]
+[ext_resource type="PackedScene" uid="uid://dt5q04tbg5l2c" path="res://Assets/amb/Prefabs/amb_stair_a.prefab.tscn" id="7_7bakw"]
+[ext_resource type="PackedScene" uid="uid://cvsexw2m68w2s" path="res://Assets/amb/Prefabs/amb_lifts.prefab.tscn" id="8_3cayg"]
+[ext_resource type="PackedScene" uid="uid://dlkv23nr2bdte" path="res://Assets/amb/Prefabs/amb_toilet_block.prefab.tscn" id="9_kq6j7"]
+[ext_resource type="PackedScene" uid="uid://4abnsdhvr4vm" path="res://Assets/amb/Prefabs/amb_toilet_block_male.prefab.tscn" id="10_20a86"]
+[ext_resource type="PackedScene" uid="uid://bestmu8sear5a" path="res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Prefabs/xw_pillar.prefab.tscn" id="11_isjpq"]
+[ext_resource type="PackedScene" uid="uid://dvufc6cnfxlng" path="res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Prefabs/xw_hvac_ceiling_ahu.prefab.tscn" id="12_xvwyn"]
+[ext_resource type="PackedScene" uid="uid://cfagc0w2olfyn" path="res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Prefabs/xw_wall_2m.prefab.tscn" id="13_ib54j"]
+[ext_resource type="PackedScene" uid="uid://c4uqvrthjom5u" path="res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Prefabs/xw_door_std_win_left.prefab.tscn" id="14_ylyyd"]
+[ext_resource type="PackedScene" uid="uid://ddyyc41smjylh" path="res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Prefabs/xw_door_std_win_right.prefab.tscn" id="15_3goxp"]
+
+[node name="AMB_liftwell" type="Node3D" unique_id=595580747]
+
+[node name="base" type="Node3D" parent="." unique_id=1319992354]
+
+[node name="xw_floor_with_ceiling_3m" parent="base" unique_id=583058357 instance=ExtResource("1_jdwly")]
+transform = Transform3D(24, 0, 0, 0, 1, 0, 0, 0, 6.93, 0, 0.01, -8.5208)
+
+[node name="xw_floor_with_ceiling_3m2" parent="base" unique_id=620804766 instance=ExtResource("1_jdwly")]
+transform = Transform3D(19.864906, 0, 0, 0, 1, 0, 0, 0, 4.2665215, -0.189, 0.01, 0.0148)
+
+[node name="xw_floor_with_ceiling_3m3" parent="base" unique_id=1898722123 instance=ExtResource("1_jdwly")]
+transform = Transform3D(17.162842, 0, 0, 0, 1, 0, 0, 0, 2.6300404, -0.0015, 0.01, 10.6853)
+
+[node name="xw_floor_with_ceiling_3m4" parent="base" unique_id=555695137 instance=ExtResource("1_jdwly")]
+transform = Transform3D(14.009224, 0, 0, 0, 1, 0, 0, 0, 3.6968079, 4.996, 0.01, 7.6747)
+
+[node name="xw_floor_with_ceiling_3m5" parent="base" unique_id=1545000181 instance=ExtResource("1_jdwly")]
+transform = Transform3D(2.148599, 0, 0, 0, 1, 0, 0, 0, 14.605028, -10.9263, 0.01, 1.8451)
+
+[node name="xw_floor_with_ceiling_3m6" parent="base" unique_id=1885454798 instance=ExtResource("1_jdwly")]
+transform = Transform3D(2.2577817, 0, 0, 0, 1, 0, 0, 0, 7.1405497, 10.8716, 0.01, -1.576)
+
+[node name="xw_floor_with_ceiling_3m7" parent="base" unique_id=392096540 instance=ExtResource("1_jdwly")]
+transform = Transform3D(4.444603, 0, 0, 0, 1, 0, 0, 0, 4.1844068, -7.9614, 0.01, 7.0557)
+
+[node name="xw_floor_with_ceiling_3m8" parent="base" unique_id=878165282 instance=ExtResource("1_jdwly")]
+transform = Transform3D(4.2243876, 0, 0, 0, 1, 0, 0, 0, 3.187259, 0.0077, 0.01, -3.5233)
+
+[node name="xw_floor_with_ceiling_3m9" parent="base" unique_id=1556294618 instance=ExtResource("1_jdwly")]
+transform = Transform3D(4.2243876, 0, 0, 0, 1, 0, 0, 0, 3.8362055, 0.0077, 0.01, 4.0409)
+
+[node name="xw_floor_with_ceiling_3m10" parent="base" unique_id=1045520278 instance=ExtResource("1_jdwly")]
+transform = Transform3D(1.0824258, 0, 0, 0, 1, 0, 0, 0, 4.5296984, -2.6726, 0.01, 7.2583)
+
+[node name="Teleportation" type="Node3D" parent="base" unique_id=1576138843]
+transform = Transform3D(2.4974537, 0, 0, 0, 1, 0, 0, 0, 2.3981802, 0.4877, 0, 0.0095)
+
+[node name="left" type="Node3D" parent="." unique_id=1788349961]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.29, 0, -11.73)
+
+[node name="amb_ext_wall_window_8m (2)" parent="left" unique_id=2077251310 instance=ExtResource("2_ark4k")]
+transform = Transform3D(-1.1924961, 0, -2.6226832e-07, 0, 1, 0, 1.0425131e-07, 0, -3, -3.750032, 0, -0.21961117)
+visible = false
+
+[node name="amb_ext_wall_window_8m (1)" parent="left" unique_id=1512847143 instance=ExtResource("2_ark4k")]
+transform = Transform3D(-0.62156415, 0, -2.6226832e-07, 0, 1, 0, 5.4338862e-08, 0, -3, 1.2224803, 0, -0.21961117)
+visible = false
+
+[node name="xw_wall_8m" parent="left" unique_id=229294837 instance=ExtResource("3_pynpy")]
+transform = Transform3D(1, 0, 0, 0, 1, -3.83677e-09, 0, 4.371139e-08, 0.08777507, -7.9200006, 0, 21.7571)
+
+[node name="xw_wall_8m2" parent="left" unique_id=834672380 instance=ExtResource("3_pynpy")]
+transform = Transform3D(-4.371139e-08, 0, -1.2376395, 0, 1, 0, 1, 0, -5.4098944e-08, -13.2217, 0, 20.913599)
+
+[node name="xw_doorframe_wd" parent="left" unique_id=1537647508 instance=ExtResource("4_xlf75")]
+transform = Transform3D(-4.371139e-08, 0, -1.0933, 0, 1, 0, 1, 0, -4.778966e-08, -13.243, 0, 13.7565775)
+
+[node name="xw_doorframe_wd2" parent="left" unique_id=1364925761 instance=ExtResource("4_xlf75")]
+transform = Transform3D(-4.371139e-08, 0, -1.104233, 0, 1, 0, 1, 0, -4.826756e-08, -13.18, 0, 9.447045)
+
+[node name="right" type="Node3D" parent="." unique_id=717295849]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -0.75, 0, -11.71)
+
+[node name="amb_ext_wall_window_8m (3)" parent="right" unique_id=373255249 instance=ExtResource("2_ark4k")]
+transform = Transform3D(-0.51607305, 0, -2.6226832e-07, 0, 1, 0, 4.511654e-08, 0, -3, -3.2418, 0, -23.73)
+
+[node name="amb_ext_wall_window_8m (5)" parent="right" unique_id=1984549488 instance=ExtResource("2_ark4k")]
+transform = Transform3D(-0.49497625, 0, -2.6226832e-07, 0, 1, 0, 4.32722e-08, 0, -3, 5.6877236, 0, -23.73)
+
+[node name="amb_ext_wall_window_8m (6)" parent="right" unique_id=1733029842 instance=ExtResource("2_ark4k")]
+transform = Transform3D(-0.6313175, 0, -2.6226832e-07, 0, 1, 0, 5.5191528e-08, 0, -3, 1.7393473, 0, -23.73)
+visible = false
+
+[node name="xw_wall_8m" parent="right" unique_id=116948645 instance=ExtResource("3_pynpy")]
+transform = Transform3D(1, 0, 0, 0, 1, -5.438722e-08, 0, 4.371139e-08, 1.2442346, -12.77, 0, 0.3054)
+
+[node name="xw_wall_8m2" parent="right" unique_id=76034890 instance=ExtResource("3_pynpy")]
+transform = Transform3D(-4.371139e-08, 0, -0.6954248, 0, 1, 0, 1, 0, -3.0397985e-08, 5.6877236, 0, -23.73)
+
+[node name="xw_wall_8m3" parent="right" unique_id=1766563273 instance=ExtResource("3_pynpy")]
+transform = Transform3D(1, 0, 0, 0, 1, -5.4633354e-08, 0, 4.371139e-08, 1.2498654, 11.05, 0, -13.73101)
+
+[node name="xw_wall_8m4" parent="right" unique_id=1232939488 instance=ExtResource("3_pynpy")]
+transform = Transform3D(1, 0, 0, 0, 1, -3.379087e-08, 0, 4.371139e-08, 0.773045, -12.75, 0, -17.517567)
+
+[node name="xw_wall_8m5" parent="right" unique_id=448889248 instance=ExtResource("3_pynpy")]
+transform = Transform3D(-4.371139e-08, 0, -0.6734379, 0, 1, 0, 1, 0, -2.9436904e-08, -12.7579, 0, -23.73)
+
+[node name="xw_wall_4m" parent="right" unique_id=563635597 instance=ExtResource("5_7lp5o")]
+transform = Transform3D(-4.371139e-08, 0, -1.2784086, 0, 1, 0, 1, 0, -5.5881017e-08, -12.6657, 0, -21.128933)
+
+[node name="xw_door_std_left" parent="right" unique_id=1890444022 instance=ExtResource("6_g7b7b")]
+transform = Transform3D(-0.98756754, 0, 0.15719515, 0, 1, 0, -0.15719515, 0, -0.98756754, 10.69, 0, -13.763)
+
+[node name="xw_door_std_left2" parent="right" unique_id=1802222388 instance=ExtResource("6_g7b7b")]
+transform = Transform3D(-1, 0, 0, 0, 1, 0, 0, 0, -1, 1.3355825, -2.3841858e-07, -19.5436)
+
+[node name="xw_door_std_left3" parent="right" unique_id=123987319 instance=ExtResource("6_g7b7b")]
+transform = Transform3D(-4.371139e-08, 0, 1.104233, 0, 1, 0, -1, 0, -4.826756e-08, 9.459919, 0.0009772778, -9.54)
+
+[node name="xw_door_std_left4" parent="right" unique_id=1878801617 instance=ExtResource("6_g7b7b")]
+transform = Transform3D(-1, 0, 0, 0, 1, 0, 0, 0, -1, 1.3355823, -2.3841858e-07, -17.009)
+
+[node name="amb_stair_a" parent="." unique_id=454867321 instance=ExtResource("7_7bakw")]
+transform = Transform3D(0, 0, 1, 0, 1, 0, -1, 0, 0, -21.91, 0, 0.5)
+
+[node name="amb_lifts" parent="." unique_id=2058359301 instance=ExtResource("8_3cayg")]
+
+[node name="amb_lifts (1)" parent="." unique_id=540184585 instance=ExtResource("8_3cayg")]
+transform = Transform3D(-1, 0, 0, 0, 1, 0, 0, 0, -1, 0.020298995, 0, -0.080078885)
+
+[node name="amb_lifts (2)" parent="." unique_id=1699811056 instance=ExtResource("8_3cayg")]
+transform = Transform3D(-1.28, 0, -1.1190115e-07, 0, 1, 0, 1.1190115e-07, 0, -1.28, -0.583474, 0, 8.409817)
+
+[node name="amb_lifts (3)" parent="." unique_id=530107345 instance=ExtResource("8_3cayg")]
+transform = Transform3D(-1, 0, -8.305164e-08, 0, 1, 0, 8.742278e-08, 0, -0.95, -11.863298, 0, -0.156)
+
+[node name="amb_stair_a (1)" parent="." unique_id=1293359562 instance=ExtResource("7_7bakw")]
+transform = Transform3D(0, 0, -1, 0, 1, 0, 1, 0, 0, 21.922, 0, 20.741)
+
+[node name="amb_toilet_block" parent="." unique_id=617881666 instance=ExtResource("9_kq6j7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.6722603, 0, 5.9875927)
+
+[node name="amb_toilet_block_male" parent="." unique_id=1742770380 instance=ExtResource("10_20a86")]
+transform = Transform3D(-1, 0, 0, 0, 1, 0, 0, 0, -1, 5.6900954, 0, -22.88)
+
+[node name="xw_pillar" parent="." unique_id=1759507619 instance=ExtResource("11_isjpq")]
+transform = Transform3D(0.5, 0, 0, 0, 1.2, 0, 0, 0, 0.5, 2.2666867, -0.010280132, 11.751241)
+
+[node name="xw_pillar (1)" parent="." unique_id=867562493 instance=ExtResource("11_isjpq")]
+transform = Transform3D(0.5, 0, 0, 0, 1.2, 0, 0, 0, 0.5, -2.2365, -0.010280132, 11.751233)
+
+[node name="xw_pillar (2)" parent="." unique_id=2052252264 instance=ExtResource("11_isjpq")]
+transform = Transform3D(0.5, 0, 0, 0, 1.2, 0, 0, 0, 0.5, 2.241901, 0, -11.751688)
+
+[node name="xw_pillar (3)" parent="." unique_id=634444889 instance=ExtResource("11_isjpq")]
+transform = Transform3D(0.5, 0, 0, 0, 1.2, 0, 0, 0, 0.5, -2.2299922, 0, -11.738989)
+
+[node name="xw_hvac_ceiling_ahu" parent="." unique_id=1433151572 instance=ExtResource("12_xvwyn")]
+transform = Transform3D(-8.678718e-06, 0, -1.82, 0, 2, 0, 2.87, 0, -5.5035775e-06, -10.1, 0, 7.34)
+
+[node name="xw_hvac_ceiling_ahu (1)" parent="." unique_id=1571587240 instance=ExtResource("12_xvwyn")]
+transform = Transform3D(-8.678718e-06, 0, -1.82, 0, 2, 0, 2.87, 0, -5.5035775e-06, -7.49, 0, 7.34)
+
+[node name="xw_wall_2m" parent="." unique_id=59104627 instance=ExtResource("13_ib54j")]
+transform = Transform3D(-4.371139e-08, 0, -2.0018187, 0, 1, 0, 1, 0, -8.750227e-08, -6.4377584, 0, 11.800001)
+visible = false
+
+[node name="xw_wall_2m2" parent="." unique_id=1310545212 instance=ExtResource("13_ib54j")]
+transform = Transform3D(-4.371139e-08, 0, -0.5757922, 0, 1, 0, 1, 0, -2.5168676e-08, 5.6506, 0, 9.218929)
+
+[node name="xw_wall_2m3" parent="." unique_id=1739235318 instance=ExtResource("13_ib54j")]
+transform = Transform3D(-1, 0, 2.7031103e-06, 0, 1, 0, -8.734065e-06, 0, -0.30949053, -11.801885, 0, 1.4199293)
+
+[node name="xw_wall_2m4" parent="." unique_id=1857827206 instance=ExtResource("13_ib54j")]
+transform = Transform3D(-4.371139e-08, 0, -0.23374106, 0, 1, 0, 1, 0, -1.0217146e-08, -1.9865, 0, 11.801233)
+
+[node name="xw_wall_2m5" parent="." unique_id=78909009 instance=ExtResource("13_ib54j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.3108032, 2.0234, 0, 9.431208)
+
+[node name="xw_wall_2m6" parent="." unique_id=1950524135 instance=ExtResource("13_ib54j")]
+transform = Transform3D(5.6783347e-06, 0, 0.23790537, 0, 1, 0, -1, 0, 1.3509062e-06, -1.5042, 0, -11.788985)
+
+[node name="xw_wall_2m7" parent="." unique_id=1131415694 instance=ExtResource("13_ib54j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.3782996, -2.2306416, 0, 7.526)
+
+[node name="xw_wall_2m8" parent="." unique_id=1775043946 instance=ExtResource("13_ib54j")]
+transform = Transform3D(1, 0, 0, 0, 1, -2.1565185e-07, 0, 4.371139e-08, 4.9335394, -12.014139, 0, -2.0860894)
+
+[node name="xw_wall_2m9" parent="." unique_id=117753626 instance=ExtResource("13_ib54j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.39088324, 6.5989594, 0, 10.06)
+
+[node name="xw_wall_2m10" parent="." unique_id=2067347706 instance=ExtResource("13_ib54j")]
+transform = Transform3D(-4.371139e-08, 0, -0.36704487, 0, 1, 0, 1, 0, -1.604404e-08, 2.0234, 0, 9.231208)
+
+[node name="xw_wall_2m11" parent="." unique_id=2139084248 instance=ExtResource("13_ib54j")]
+transform = Transform3D(1, 0, -8.108059e-07, 0, 1, 0, 2.9206276e-06, 0, 0.27761358, 11.799998, 0, 2.0073)
+
+[node name="xw_wall_2m12" parent="." unique_id=108942683 instance=ExtResource("13_ib54j")]
+transform = Transform3D(1, 0, -9.4458926e-07, 0, 1, 0, 2.9206276e-06, 0, 0.32341996, 11.787727, 0, -1.4582199)
+
+[node name="xw_wall_2m13" parent="." unique_id=1527879015 instance=ExtResource("13_ib54j")]
+transform = Transform3D(-1, 0, 2.3324842e-06, 0, 1, 0, -8.734065e-06, 0, -0.26705596, -11.814139, 0, -2.08597)
+
+[node name="xw_wall_2m14" parent="." unique_id=1043098127 instance=ExtResource("13_ib54j")]
+transform = Transform3D(5.6783347e-06, 0, 0.25450826, 0, 1, 0, -1, 0, 1.4451831e-06, 1.9919, 0, -11.801688)
+
+[node name="xw_wall_2m15" parent="." unique_id=512925025 instance=ExtResource("13_ib54j")]
+transform = Transform3D(-1.1726222e-05, 0, -0.26784313, 0, 1, 0, 1, 0, -3.1407878e-06, 1.4810028, 0, 11.801234)
+
+[node name="xw_wall_2m16" parent="." unique_id=56423088 instance=ExtResource("13_ib54j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 2.1614606, -5.68, 0, 9.2347)
+
+[node name="xw_wall_2m17" parent="." unique_id=291841761 instance=ExtResource("13_ib54j")]
+transform = Transform3D(-4.371139e-08, 0, -1.642309, 0, 1, 0, 1, 0, -7.17876e-08, -5.4956, 0, 6.99)
+
+[node name="xw_wall_2m18" parent="." unique_id=220097249 instance=ExtResource("13_ib54j")]
+transform = Transform3D(5.6783347e-06, 0, 4.798875, 0, 1, 0, -1, 0, 2.7249618e-05, -2.4250507, 0, -11.788985)
+
+[node name="xw_doorframe_wd" parent="." unique_id=1616182346 instance=ExtResource("4_xlf75")]
+transform = Transform3D(1, 0, 0, 0, 1, -4.371139e-08, 0, 4.371139e-08, 1, -2.2305825, -2.3841858e-07, 6.8336)
+
+[node name="xw_doorframe_wd2" parent="." unique_id=201863429 instance=ExtResource("4_xlf75")]
+transform = Transform3D(0.00407881, -4.3711108e-08, -1.4999875, -2.131628e-14, 1, -6.556721e-08, 0.99999166, 1.7831212e-10, 0.006118215, 2.73, 0, 9.232434)
+
+[node name="xw_doorframe_wd3" parent="." unique_id=866871093 instance=ExtResource("4_xlf75")]
+transform = Transform3D(-0.99994445, -4.6079252e-10, -0.010542195, 2.2551405e-14, 1, -4.371149e-08, 0.010542195, -4.370906e-08, -0.99994445, 6.799301, 0, 10.018001)
+
+[node name="xw_doorframe_wd4" parent="." unique_id=272223765 instance=ExtResource("4_xlf75")]
+transform = Transform3D(1, 0, 0, 0, 1, -4.371139e-08, 0, 4.371139e-08, 1, -6.6377234, 0, 12.0199995)
+
+[node name="xw_doorframe_wd5" parent="." unique_id=1080917283 instance=ExtResource("4_xlf75")]
+transform = Transform3D(1, 0, 0, 0, 1, -4.371139e-08, 0, 4.371139e-08, 1, -2.2305825, -2.3841858e-07, 9.3836)
+
+[node name="xw_doorframe_wd6" parent="." unique_id=1452172981 instance=ExtResource("4_xlf75")]
+transform = Transform3D(-0.99999166, -1.7845006e-10, -0.0062777055, -2.5791869e-14, 1, -6.722603e-08, 0.004081866, -4.3711086e-08, -1.5379372, 2.2144856, 0, 5.805)
+
+[node name="xw_doorframe_wd7" parent="." unique_id=476760009 instance=ExtResource("4_xlf75")]
+transform = Transform3D(0.9999917, 1.7818805e-10, 0.006113725, -2.8095581e-14, 1, -6.5567214e-08, -0.0040758164, 4.3711115e-08, 1.4999876, 11.801226, 0, 1.477)
+
+[node name="xw_doorframe_wd8" parent="." unique_id=741253410 instance=ExtResource("4_xlf75")]
+transform = Transform3D(-0.9999917, -1.7793153e-10, -0.006105275, -1.7784387e-14, 1, -6.556723e-08, 0.0040701833, -4.3711122e-08, -1.4999876, -11.815369, 0, -1.58)
+
+[node name="xw_doorframe_wd9" parent="." unique_id=953055487 instance=ExtResource("4_xlf75")]
+transform = Transform3D(-0.0040731756, 4.3711132e-08, 1.4999876, -2.1316282e-14, 1, -6.556724e-08, -0.9999917, -1.7806591e-10, -0.0061097634, 1.493, 0, -11.802428)
+
+[node name="xw_doorframe_wd10" parent="." unique_id=137923395 instance=ExtResource("4_xlf75")]
+transform = Transform3D(-4.371139e-08, 0, -1.5, 0, 1, 0, 1, 0, -6.556708e-08, -1.519, 0, 11.801233)
+
+[node name="xw_door_std_win_left" parent="." unique_id=2051909412 instance=ExtResource("14_ylyyd")]
+transform = Transform3D(-0.97589177, 0, 0.17460394, 0, 1, 0, -0.21825492, 0, -0.78071344, 0.809, 0, 11.956)
+
+[node name="xw_door_std_win_left2" parent="." unique_id=1256341799 instance=ExtResource("14_ylyyd")]
+transform = Transform3D(0.9758931, 0, -0.17459936, 0, 1, 0, 0.2182492, 0, 0.78071445, -0.816, 0, -11.975)
+
+[node name="xw_door_std_win_left3" parent="." unique_id=1681073116 instance=ExtResource("14_ylyyd")]
+transform = Transform3D(0.06788951, 0, -0.9976929, 0, 1, 0, 0.9976929, 0, 0.06788951, -6.431, 0, 10.481)
+
+[node name="xw_door_std_win_left4" parent="." unique_id=1505172254 instance=ExtResource("14_ylyyd")]
+transform = Transform3D(0.21824089, 0, 0.78071594, 0, 1, 0, -0.9758949, 0, 0.17459272, 2.053, 0, 8.164)
+
+[node name="xw_door_std_win_left5" parent="." unique_id=857524219 instance=ExtResource("14_ylyyd")]
+transform = Transform3D(-0.078403115, 0, 0.9969217, 0, 1, 0, -0.9969217, 0, -0.078403115, 6.641, 0, 11.56)
+
+[node name="xw_door_std_win_left6" parent="." unique_id=1773700477 instance=ExtResource("14_ylyyd")]
+transform = Transform3D(-0.9758943, 0, 0.17459501, 0, 1, 0, -0.21824376, 0, -0.7807154, 5.033, 0, 9.395)
+
+[node name="xw_door_std_win_left7" parent="." unique_id=1843484726 instance=ExtResource("14_ylyyd")]
+transform = Transform3D(-0.21824645, 0, -0.7807149, 0, 1, 0, 0.9758937, 0, -0.17459716, 12.002218, 0, -0.84)
+
+[node name="xw_door_std_win_left8" parent="." unique_id=1670298243 instance=ExtResource("14_ylyyd")]
+transform = Transform3D(0.21825194, 0, 0.780714, 0, 1, 0, -0.9758925, 0, 0.17460155, -12.0037565, 0, 0.723)
+
+[node name="xw_door_std_win_right" parent="." unique_id=1135974635 instance=ExtResource("15_3goxp")]
+transform = Transform3D(0.9898134, 0, 0.11389672, 0, 1, 0, -0.1423709, 0, 0.79185075, 3.411, 0, 9.403)
+
+[node name="xw_door_std_win_right2" parent="." unique_id=651388215 instance=ExtResource("15_3goxp")]
+transform = Transform3D(0.14237362, 0, -0.7918504, 0, 1, 0, 0.98981297, 0, 0.113898896, 2.0200665, 0, 6.514)
+
+[node name="xw_door_std_win_right3" parent="." unique_id=2129525314 instance=ExtResource("15_3goxp")]
+transform = Transform3D(0.98981506, 0, 0.113887385, 0, 1, 0, -0.14235923, 0, 0.79185206, -0.841, 0, 11.968036)
+
+[node name="xw_door_std_win_right4" parent="." unique_id=1955301106 instance=ExtResource("15_3goxp")]
+transform = Transform3D(-0.14236805, 0, 0.79185104, 0, 1, 0, -0.9898138, 0, -0.11389444, 12.014266, 0, 0.78795886)
+
+[node name="xw_door_std_win_right5" parent="." unique_id=642231810 instance=ExtResource("15_3goxp")]
+transform = Transform3D(-0.9898142, 0, -0.113891974, 0, 1, 0, 0.14236496, 0, -0.7918514, 0.812, 0, -11.976)
+
+[node name="xw_door_std_win_right6" parent="." unique_id=1094439040 instance=ExtResource("15_3goxp")]
+transform = Transform3D(0.14236194, 0, -0.7918517, 0, 1, 0, 0.98981464, 0, 0.11388955, -12.015796, 0, -0.887)
+
+[editable path="base/xw_floor_with_ceiling_3m"]
+[editable path="base/xw_floor_with_ceiling_3m2"]
+[editable path="base/xw_floor_with_ceiling_3m3"]
+[editable path="base/xw_floor_with_ceiling_3m4"]
+[editable path="base/xw_floor_with_ceiling_3m5"]
+[editable path="base/xw_floor_with_ceiling_3m6"]
+[editable path="base/xw_floor_with_ceiling_3m7"]
+[editable path="base/xw_floor_with_ceiling_3m8"]
+[editable path="base/xw_floor_with_ceiling_3m9"]
+[editable path="base/xw_floor_with_ceiling_3m10"]
+[editable path="left/amb_ext_wall_window_8m (2)"]
+[editable path="left/amb_ext_wall_window_8m (1)"]
+[editable path="left/xw_wall_8m"]
+[editable path="left/xw_wall_8m2"]
+[editable path="left/xw_doorframe_wd"]
+[editable path="left/xw_doorframe_wd2"]
+[editable path="right/amb_ext_wall_window_8m (3)"]
+[editable path="right/amb_ext_wall_window_8m (5)"]
+[editable path="right/amb_ext_wall_window_8m (6)"]
+[editable path="right/xw_wall_8m"]
+[editable path="right/xw_wall_8m2"]
+[editable path="right/xw_wall_8m3"]
+[editable path="right/xw_wall_8m4"]
+[editable path="right/xw_wall_8m5"]
+[editable path="right/xw_wall_4m"]
+[editable path="right/xw_door_std_left"]
+[editable path="right/xw_door_std_left2"]
+[editable path="right/xw_door_std_left3"]
+[editable path="right/xw_door_std_left4"]
+[editable path="amb_stair_a"]
+[editable path="amb_stair_a/GenericWall"]
+[editable path="amb_stair_a/xw_standalone_stairs"]
+[editable path="amb_stair_a/xw_standalone_stairs (1)"]
+[editable path="amb_lifts"]
+[editable path="amb_lifts/xw_lift_doors"]
+[editable path="amb_lifts/xw_lift"]
+[editable path="amb_lifts/xw_lift (1)"]
+[editable path="amb_lifts/xw_lift (2)"]
+[editable path="amb_lifts (1)"]
+[editable path="amb_lifts (1)/xw_lift_doors"]
+[editable path="amb_lifts (1)/xw_lift"]
+[editable path="amb_lifts (1)/xw_lift (1)"]
+[editable path="amb_lifts (1)/xw_lift (2)"]
+[editable path="amb_lifts (2)"]
+[editable path="amb_lifts (2)/xw_lift_doors"]
+[editable path="amb_lifts (2)/xw_lift"]
+[editable path="amb_lifts (2)/xw_lift (1)"]
+[editable path="amb_lifts (2)/xw_lift (2)"]
+[editable path="amb_lifts (3)"]
+[editable path="amb_lifts (3)/xw_lift_doors"]
+[editable path="amb_lifts (3)/xw_lift"]
+[editable path="amb_lifts (3)/xw_lift (1)"]
+[editable path="amb_lifts (3)/xw_lift (2)"]
+[editable path="amb_stair_a (1)"]
+[editable path="amb_stair_a (1)/GenericWall"]
+[editable path="amb_stair_a (1)/xw_standalone_stairs"]
+[editable path="amb_stair_a (1)/xw_standalone_stairs (1)"]
+[editable path="amb_toilet_block"]
+[editable path="amb_toilet_block/GenericWall"]
+[editable path="amb_toilet_block/GenericWall (1)"]
+[editable path="amb_toilet_block/GenericWall (2)"]
+[editable path="amb_toilet_block/GenericWall (3)"]
+[editable path="amb_toilet_block/GenericWall (4)"]
+[editable path="amb_toilet_block/GenericWall (5)"]
+[editable path="amb_toilet_block/GenericWall (6)"]
+[editable path="amb_toilet_block/GenericWall (7)"]
+[editable path="amb_toilet_block/xw_generic_table_top"]
+[editable path="amb_toilet_block/GenericWall (8)"]
+[editable path="amb_toilet_block/GenericWall (9)"]
+[editable path="amb_toilet_block/GenericWall (10)"]
+[editable path="amb_toilet_block/GenericWall (11)"]
+[editable path="amb_toilet_block/xw_generic_table_top (1)"]
+[editable path="amb_toilet_block/GenericWall (12)"]
+[editable path="amb_toilet_block/xw_generic_table_top (2)"]
+[editable path="amb_toilet_block/xw_wall_2m"]
+[editable path="amb_toilet_block/xw_wall_2m2"]
+[editable path="amb_toilet_block/xw_wall_2m3"]
+[editable path="amb_toilet_block/xw_wall_4m"]
+[editable path="amb_toilet_block/xw_wall_4m2"]
+[editable path="amb_toilet_block/xw_wall_4m3"]
+[editable path="amb_toilet_block/xw_wall_4m4"]
+[editable path="amb_toilet_block/xw_wall_4m5"]
+[editable path="amb_toilet_block/xw_wall_4m6"]
+[editable path="amb_toilet_block/xw_wall_8m"]
+[editable path="amb_toilet_block/xw_wall_8m2"]
+[editable path="amb_toilet_block/xw_door_std_left"]
+[editable path="amb_toilet_block/xw_door_std_left2"]
+[editable path="amb_toilet_block/xw_door_nw_win_push_left"]
+[editable path="amb_toilet_block/xw_doorframe_wd"]
+[editable path="amb_toilet_block/xw_doorframe_wd2"]
+[editable path="amb_toilet_block/xw_doorframe_std"]
+[editable path="amb_toilet_block/xw_doorframe_std2"]
+[editable path="amb_toilet_block/xw_basin"]
+[editable path="amb_toilet_block/xw_toilet"]
+[editable path="amb_toilet_block/xw_toilet2"]
+[editable path="amb_toilet_block/xw_toilet3"]
+[editable path="amb_toilet_block/xw_toilet4"]
+[editable path="amb_toilet_block/xw_toilet5"]
+[editable path="amb_toilet_block/xw_toilet6"]
+[editable path="amb_toilet_block/xw_toilet7"]
+[editable path="amb_toilet_block/xw_toilet8"]
+[editable path="amb_toilet_block/xw_toilet9"]
+[editable path="amb_toilet_block/xw_toilet10"]
+[editable path="amb_toilet_block/xw_toilet11"]
+[editable path="amb_toilet_block/xw_shower"]
+[editable path="amb_toilet_block/xw_shower2"]
+[editable path="amb_toilet_block/xw_basin_mirrorless"]
+[editable path="amb_toilet_block/xw_basin_mirrorless2"]
+[editable path="amb_toilet_block/xw_basin_mirrorless3"]
+[editable path="amb_toilet_block/xw_basin_mirrorless4"]
+[editable path="amb_toilet_block/xw_basin_mirrorless5"]
+[editable path="amb_toilet_block/xw_basin_mirrorless6"]
+[editable path="amb_toilet_block/xw_basin_mirrorless7"]
+[editable path="amb_toilet_block/xw_basin_mirrorless8"]
+[editable path="amb_toilet_block_male"]
+[editable path="amb_toilet_block_male/GenericWall"]
+[editable path="amb_toilet_block_male/GenericWall (1)"]
+[editable path="amb_toilet_block_male/GenericWall (2)"]
+[editable path="amb_toilet_block_male/GenericWall (3)"]
+[editable path="amb_toilet_block_male/GenericWall (4)"]
+[editable path="amb_toilet_block_male/GenericWall (5)"]
+[editable path="amb_toilet_block_male/GenericWall (6)"]
+[editable path="amb_toilet_block_male/GenericWall (7)"]
+[editable path="amb_toilet_block_male/GenericWall (8)"]
+[editable path="amb_toilet_block_male/GenericWall (9)"]
+[editable path="amb_toilet_block_male/GenericWall (10)"]
+[editable path="amb_toilet_block_male/GenericWall (11)"]
+[editable path="amb_toilet_block_male/xw_generic_table_top (1)"]
+[editable path="amb_toilet_block_male/xw_generic_table_top"]
+[editable path="amb_toilet_block_male/xw_generic_table_top (2)"]
+[editable path="amb_toilet_block_male/xw_doorframe_std"]
+[editable path="amb_toilet_block_male/xw_doorframe_std2"]
+[editable path="amb_toilet_block_male/xw_doorframe_std3"]
+[editable path="amb_toilet_block_male/xw_doorframe_wd"]
+[editable path="amb_toilet_block_male/xw_door_std_left"]
+[editable path="amb_toilet_block_male/xw_door_nw_win_push_left"]
+[editable path="amb_toilet_block_male/xw_wall_4m"]
+[editable path="amb_toilet_block_male/xw_wall_4m2"]
+[editable path="amb_toilet_block_male/xw_wall_4m3"]
+[editable path="amb_toilet_block_male/xw_wall_4m4"]
+[editable path="amb_toilet_block_male/xw_wall_4m5"]
+[editable path="amb_toilet_block_male/xw_wall_4m6"]
+[editable path="amb_toilet_block_male/xw_wall_2m"]
+[editable path="amb_toilet_block_male/xw_wall_2m2"]
+[editable path="amb_toilet_block_male/xw_wall_2m3"]
+[editable path="amb_toilet_block_male/xw_wall_8m"]
+[editable path="amb_toilet_block_male/xw_wall_8m2"]
+[editable path="amb_toilet_block_male/xw_toilet"]
+[editable path="amb_toilet_block_male/xw_toilet2"]
+[editable path="amb_toilet_block_male/xw_toilet3"]
+[editable path="amb_toilet_block_male/xw_toilet4"]
+[editable path="amb_toilet_block_male/xw_toilet5"]
+[editable path="amb_toilet_block_male/xw_toilet6"]
+[editable path="amb_toilet_block_male/xw_toilet7"]
+[editable path="amb_toilet_block_male/xw_toilet8"]
+[editable path="amb_toilet_block_male/xw_toilet9"]
+[editable path="amb_toilet_block_male/xw_toilet10"]
+[editable path="amb_toilet_block_male/xw_toilet11"]
+[editable path="amb_toilet_block_male/xw_basin"]
+[editable path="amb_toilet_block_male/xw_shower"]
+[editable path="amb_toilet_block_male/xw_shower2"]
+[editable path="amb_toilet_block_male/xw_urinal"]
+[editable path="amb_toilet_block_male/xw_urinal2"]
+[editable path="amb_toilet_block_male/xw_basin_mirrorless"]
+[editable path="amb_toilet_block_male/xw_basin_mirrorless2"]
+[editable path="amb_toilet_block_male/xw_basin_mirrorless3"]
+[editable path="amb_toilet_block_male/xw_basin_mirrorless4"]
+[editable path="amb_toilet_block_male/xw_basin_mirrorless5"]
+[editable path="amb_toilet_block_male/xw_basin_mirrorless6"]
+[editable path="amb_toilet_block_male/xw_basin_mirrorless7"]
+[editable path="amb_toilet_block_male/xw_door_std_right"]
+[editable path="amb_toilet_block_male/GenericWall (12)"]
+[editable path="amb_toilet_block_male/GenericWall (13)"]
+[editable path="amb_toilet_block_male/GenericWall (14)"]
+[editable path="amb_toilet_block_male/GenericWall (15)"]
+[editable path="amb_toilet_block_male/xw_toilet_door_right"]
+[editable path="amb_toilet_block_male/xw_toilet_door_right (1)"]
+[editable path="amb_toilet_block_male/xw_toilet_door_right (2)"]
+[editable path="amb_toilet_block_male/xw_toilet_door_right (3)"]
+[editable path="amb_toilet_block_male/GenericWall (16)"]
+[editable path="amb_toilet_block_male/xw_toilet_door_right (4)"]
+[editable path="amb_toilet_block_male/GenericWall (17)"]
+[editable path="amb_toilet_block_male/GenericWall (18)"]
+[editable path="amb_toilet_block_male/xw_toilet_door_right (5)"]
+[editable path="amb_toilet_block_male/xw_toilet_door_right (6)"]
+[editable path="amb_toilet_block_male/GenericWall (19)"]
+[editable path="amb_toilet_block_male/GenericWall (20)"]
+[editable path="amb_toilet_block_male/GenericWall (21)"]
+[editable path="amb_toilet_block_male/xw_toilet_door_right (7)"]
+[editable path="amb_toilet_block_male/GenericWall (22)"]
+[editable path="amb_toilet_block_male/GenericWall (23)"]
+[editable path="amb_toilet_block_male/GenericWall (24)"]
+[editable path="amb_toilet_block_male/GenericWall (25)"]
+[editable path="amb_toilet_block_male/xw_toilet_door_right (8)"]
+[editable path="amb_toilet_block_male/xw_toilet_door_right (9)"]
+[editable path="amb_toilet_block_male/xw_toilet_door_right (10)"]
+[editable path="amb_toilet_block_male/xw_toilet_door_right (11)"]
+[editable path="amb_toilet_block_male/GenericWall (26)"]
+[editable path="xw_pillar"]
+[editable path="xw_pillar (1)"]
+[editable path="xw_pillar (2)"]
+[editable path="xw_pillar (3)"]
+[editable path="xw_hvac_ceiling_ahu"]
+[editable path="xw_hvac_ceiling_ahu (1)"]
+[editable path="xw_wall_2m"]
+[editable path="xw_wall_2m2"]
+[editable path="xw_wall_2m3"]
+[editable path="xw_wall_2m4"]
+[editable path="xw_wall_2m5"]
+[editable path="xw_wall_2m6"]
+[editable path="xw_wall_2m7"]
+[editable path="xw_wall_2m8"]
+[editable path="xw_wall_2m9"]
+[editable path="xw_wall_2m10"]
+[editable path="xw_wall_2m11"]
+[editable path="xw_wall_2m12"]
+[editable path="xw_wall_2m13"]
+[editable path="xw_wall_2m14"]
+[editable path="xw_wall_2m15"]
+[editable path="xw_wall_2m16"]
+[editable path="xw_wall_2m17"]
+[editable path="xw_wall_2m18"]
+[editable path="xw_doorframe_wd"]
+[editable path="xw_doorframe_wd2"]
+[editable path="xw_doorframe_wd3"]
+[editable path="xw_doorframe_wd4"]
+[editable path="xw_doorframe_wd5"]
+[editable path="xw_doorframe_wd6"]
+[editable path="xw_doorframe_wd7"]
+[editable path="xw_doorframe_wd8"]
+[editable path="xw_doorframe_wd9"]
+[editable path="xw_doorframe_wd10"]
+[editable path="xw_door_std_win_left"]
+[editable path="xw_door_std_win_left2"]
+[editable path="xw_door_std_win_left3"]
+[editable path="xw_door_std_win_left4"]
+[editable path="xw_door_std_win_left5"]
+[editable path="xw_door_std_win_left6"]
+[editable path="xw_door_std_win_left7"]
+[editable path="xw_door_std_win_left8"]
+[editable path="xw_door_std_win_right"]
+[editable path="xw_door_std_win_right2"]
+[editable path="xw_door_std_win_right3"]
+[editable path="xw_door_std_win_right4"]
+[editable path="xw_door_std_win_right5"]
+[editable path="xw_door_std_win_right6"]

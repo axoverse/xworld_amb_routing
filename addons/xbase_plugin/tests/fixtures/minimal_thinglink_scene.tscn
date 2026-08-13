@@ -1,0 +1,57 @@
+[gd_scene format=3 uid="uid://4uwyj7tsm34s"]
+
+[ext_resource type="Script" uid="uid://ci7vogd1oaojx" path="res://addons/xbase_plugin/axNode3D.gd" id="1_tl"]
+
+[node name="TestRoot" type="Node3D" unique_id=974486604]
+script = ExtResource("1_tl")
+useThingLink = true
+AxoExport = true
+ThingLabelOverride = "TestRoot"
+ThingNameOverride = "Test Root Node"
+PhysicalType = "Building"
+ThingInstanceLabel = "TestRoot"
+ObjectInstanceGuid = "00000000000000000000000000000001"
+ThingGuid = "00000000000000000000000000000001"
+metadata/extras = {
+"ObjectInstanceGuid": "00000000000000000000000000000001",
+"PrefabPath": "",
+"ThingInstanceLabel": "TestRoot"
+}
+
+[node name="Level1" type="Node3D" parent="." unique_id=1046921714]
+script = ExtResource("1_tl")
+useThingLink = true
+useLayers = true
+ThingLabelOverride = "&L1"
+ThingNameOverride = "Level 1"
+PhysicalType = "Level"
+ObjectInstanceGuid = "00000000000000000000000000000002"
+ThingGuid = "00000000000000000000000000000002"
+Layers = "Default,Floor"
+LayerFlags = 129
+metadata/extras = {
+"ObjectInstanceGuid": "00000000000000000000000000000002",
+"PrefabPath": "",
+"ThingInstanceLabel": ""
+}
+
+[node name="Room1" type="Node3D" parent="Level1" unique_id=1034356555]
+script = ExtResource("1_tl")
+useThingLink = true
+useEdges = true
+useLayers = true
+ThingLabelOverride = "&R1"
+ThingNameOverride = "Room 1"
+PhysicalType = "Room"
+ObjectInstanceGuid = "00000000000000000000000000000003"
+ThingGuid = "00000000000000000000000000000003"
+Edges = "child,location"
+Layers = "Default,Walls,Doors"
+LayerFlags = 1537
+metadata/extras = {
+"ObjectInstanceGuid": "00000000000000000000000000000003",
+"PrefabPath": "",
+"ThingInstanceLabel": ""
+}
+
+[node name="RoomMesh" type="MeshInstance3D" parent="Level1/Room1" unique_id=623377773]

@@ -1,0 +1,91 @@
+[gd_scene format=3 uid="uid://e3yt70stku1c"]
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_dw1ew"]
+resource_name = "Cylinder"
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hbon4"]
+resource_name = "Default-Line"
+
+[sub_resource type="BoxMesh" id="BoxMesh_d7qno"]
+resource_name = "Cube"
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_3v2ib"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_gitkp"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_jrkgh"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_wriki"]
+
+[node name="BasicAvatar" type="Node3D" unique_id=1596854463]
+
+[node name="MonoBehaviour" type="Node" parent="." unique_id=1423604628]
+
+[node name="Body" type="Node3D" parent="." unique_id=45932890]
+transform = Transform3D(0.5, 0, 0, 0, 0.6, 0, 0, 0, 0.3, 0, 0, 0)
+
+[node name="MeshRenderer" type="MeshInstance3D" parent="Body" unique_id=952588264]
+gi_mode = 2
+mesh = SubResource("CylinderMesh_dw1ew")
+surface_material_override/0 = SubResource("StandardMaterial3D_hbon4")
+
+[node name="Cube" type="Node3D" parent="Body" unique_id=1893680162]
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0, 0.731, 0.47)
+
+[node name="MeshRenderer" type="MeshInstance3D" parent="Body/Cube" unique_id=2378337]
+gi_mode = 2
+mesh = SubResource("BoxMesh_d7qno")
+
+[node name="BoxCollider" type="StaticBody3D" parent="Body/Cube" unique_id=1616808251]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Body/Cube/BoxCollider" unique_id=1372632785]
+shape = SubResource("BoxShape3D_3v2ib")
+
+[node name="Cube (1)" type="Node3D" parent="Body" unique_id=351392107]
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0, 0.526, 0.47)
+
+[node name="MeshRenderer" type="MeshInstance3D" parent="Body/Cube (1)" unique_id=1988549368]
+gi_mode = 2
+mesh = SubResource("BoxMesh_d7qno")
+
+[node name="BoxCollider" type="StaticBody3D" parent="Body/Cube (1)" unique_id=1871510583]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Body/Cube (1)/BoxCollider" unique_id=1347094728]
+shape = SubResource("BoxShape3D_gitkp")
+
+[node name="Cube (2)" type="Node3D" parent="Body" unique_id=922439163]
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0, 0.312, 0.47)
+
+[node name="MeshRenderer" type="MeshInstance3D" parent="Body/Cube (2)" unique_id=400180343]
+gi_mode = 2
+mesh = SubResource("BoxMesh_d7qno")
+
+[node name="BoxCollider" type="StaticBody3D" parent="Body/Cube (2)" unique_id=1902417996]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Body/Cube (2)/BoxCollider" unique_id=1902386310]
+shape = SubResource("BoxShape3D_jrkgh")
+
+[node name="Head" type="Node3D" parent="." unique_id=725867369]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 0, 0.779, 0)
+
+[node name="MeshRenderer" type="MeshInstance3D" parent="Head" unique_id=1066950481]
+gi_mode = 2
+mesh = SubResource("BoxMesh_d7qno")
+surface_material_override/0 = SubResource("StandardMaterial3D_hbon4")
+
+[node name="Cube" type="Node3D" parent="Head" unique_id=1064656842]
+transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0, 0, 0.47)
+
+[node name="MeshRenderer" type="MeshInstance3D" parent="Head/Cube" unique_id=318968655]
+gi_mode = 2
+mesh = SubResource("BoxMesh_d7qno")
+
+[node name="BoxCollider" type="StaticBody3D" parent="Head/Cube" unique_id=643387093]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Head/Cube/BoxCollider" unique_id=1180943714]
+shape = SubResource("BoxShape3D_wriki")
+
+[node name="Label" type="Node3D" parent="." unique_id=1985422416]
+transform = Transform3D(0.4, 0, 0, 0, 0.4, 0, 0, 0, 0.4, 0, 0, 0)
+
+[node name="MonoBehaviour" type="Node" parent="Label" unique_id=1355615728]

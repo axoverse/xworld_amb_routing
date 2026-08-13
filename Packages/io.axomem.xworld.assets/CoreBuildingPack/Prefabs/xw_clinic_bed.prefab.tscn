@@ -1,0 +1,36 @@
+[gd_scene format=3 uid="uid://ccjw0dua0a4gw"]
+
+[ext_resource type="Script" uid="uid://ci7vogd1oaojx" path="res://addons/xbase_plugin/axNode3D.gd" id="1_bhstv"]
+[ext_resource type="ArrayMesh" uid="uid://dqptqyh8ar5un" path="res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Meshes/extracted/xw_furniture.Cube_004.mesh" id="2_bbawk"]
+[ext_resource type="Material" uid="uid://bbptyqd1u038k" path="res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Materials/xw_med_blue.material" id="3_xrxqq"]
+[ext_resource type="Material" uid="uid://cmbuya3lswiaw" path="res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Materials/xw_generic_colors_gloss.material" id="4_40w1l"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_v4sk4"]
+size = Vector3(1.1, 0.67432547, 2.4503994)
+
+[node name="xw_clinic_bed" type="Node3D" unique_id=762850114]
+script = ExtResource("1_bhstv")
+useThingLink = true
+useLayers = true
+PhysicalType = "Bed"
+PrefabPath = "s/io.axomem.xworld.assets/CoreBuildingPack/Prefabs/xw_clinic_bed"
+Layers = "Equipment"
+EdgeInstanceTypes = PackedStringArray()
+EdgeInstanceValues = PackedInt64Array()
+metadata/extras = {
+"PrefabPath": "s/io.axomem.xworld.assets/CoreBuildingPack/Prefabs/xw_clinic_bed"
+}
+
+[node name="MeshRenderer" type="MeshInstance3D" parent="." unique_id=1897098088]
+gi_mode = 2
+mesh = ExtResource("2_bbawk")
+surface_material_override/0 = ExtResource("3_xrxqq")
+surface_material_override/1 = ExtResource("4_40w1l")
+
+[node name="BoxCollider" type="StaticBody3D" parent="." unique_id=1233177836]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="BoxCollider" unique_id=1927656561]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.33716267, 0.0248003)
+shape = SubResource("BoxShape3D_v4sk4")
+
+[node name="MonoBehaviour" type="Node" parent="." unique_id=2093322262]

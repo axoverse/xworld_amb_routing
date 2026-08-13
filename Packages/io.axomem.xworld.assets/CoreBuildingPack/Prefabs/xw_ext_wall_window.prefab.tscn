@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://i6506a57xccl"]
+
+[ext_resource type="Script" uid="uid://ci7vogd1oaojx" path="res://addons/xbase_plugin/axNode3D.gd" id="1_g0hle"]
+[ext_resource type="ArrayMesh" uid="uid://3tbem4uqclgb" path="res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Meshes/extracted/xw_ext_wall_window.amb_wall_window.mesh" id="2_6m5re"]
+[ext_resource type="Material" uid="uid://bhihh7coshhh0" path="res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Materials/xw_blue_glass.material" id="3_ti5wl"]
+[ext_resource type="Material" uid="uid://b304q8v10kq1q" path="res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Materials/xw_window_generic_colors.material" id="4_kwr4m"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_dvq4t"]
+size = Vector3(1.0019861, 4, 0.050000127)
+
+[node name="xw_ext_wall_window" type="Node3D" unique_id=595492693]
+transform = Transform3D(1.0000038, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+script = ExtResource("1_g0hle")
+useLayers = true
+Layers = "Exterior"
+EdgeInstanceTypes = PackedStringArray()
+EdgeInstanceValues = PackedInt64Array()
+
+[node name="MeshRenderer" type="MeshInstance3D" parent="." unique_id=883988896]
+gi_mode = 2
+mesh = ExtResource("2_6m5re")
+surface_material_override/0 = ExtResource("3_ti5wl")
+surface_material_override/1 = ExtResource("4_kwr4m")
+
+[node name="BoxCollider" type="StaticBody3D" parent="." unique_id=1281700900]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="BoxCollider" unique_id=585098343]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5009938, 2, 0.024999944)
+shape = SubResource("BoxShape3D_dvq4t")

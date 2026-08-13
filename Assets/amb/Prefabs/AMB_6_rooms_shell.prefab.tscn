@@ -1,0 +1,60 @@
+[gd_scene format=3 uid="uid://dsp3qq5a8x5bi"]
+
+[ext_resource type="PackedScene" uid="uid://2w6abfhjp4ef" path="res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Prefabs/xw_ext_wall_window_8m.prefab.tscn" id="1_f4wb0"]
+[ext_resource type="PackedScene" uid="uid://muctdar2p8yi" path="res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Prefabs/xw_floor_with_ceiling_3m.prefab.tscn" id="2_o7d55"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_s73u6"]
+size = Vector3(10, 0.01, 10)
+
+[node name="AMB_6_rooms_shell" type="Node3D" unique_id=438286175]
+
+[node name="left" type="Node3D" parent="." unique_id=385214579]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.29, 0, -11.73)
+
+[node name="amb_ext_wall_window_8m (3)" parent="left" unique_id=2077251310 instance=ExtResource("1_f4wb0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.71, 0, 23.78)
+
+[node name="amb_ext_wall_window_8m (4)" parent="left" unique_id=1190532530 instance=ExtResource("1_f4wb0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.290001, 0, 23.779999)
+
+[node name="amb_ext_wall_window_8m (5)" parent="left" unique_id=1282098395 instance=ExtResource("1_f4wb0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.29, 0, 23.779999)
+
+[node name="amb_ext_wall_window_8m (6)" parent="left" unique_id=1937999386 instance=ExtResource("1_f4wb0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.709999, 0, 23.779999)
+
+[node name="right" type="Node3D" parent="." unique_id=79722639]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -0.75, 0, -11.71)
+
+[node name="amb_ext_wall_window_8m" parent="right" unique_id=1338068691 instance=ExtResource("1_f4wb0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.749999, -2.9802322e-08, 0.2400007)
+
+[node name="amb_ext_wall_window_8m (1)" parent="right" unique_id=1960710520 instance=ExtResource("1_f4wb0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.749999, -2.9802322e-08, 0.2400007)
+
+[node name="amb_ext_wall_window_8m (2)" parent="right" unique_id=1559790698 instance=ExtResource("1_f4wb0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.25, -2.9802322e-08, 0.2400007)
+
+[node name="amb_ext_wall_window_8m (3)" parent="right" unique_id=654058882 instance=ExtResource("1_f4wb0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20.75, -2.9802322e-08, 0.24000072)
+
+[node name="xw_floor_with_ceiling_3m" parent="." unique_id=583058357 instance=ExtResource("2_o7d55")]
+transform = Transform3D(32, 0, 0, 0, 1, 0, 0, 0, 24, 4, 0.01, 0.049999237)
+
+[node name="Teleportation" type="Node3D" parent="." unique_id=1901519913]
+transform = Transform3D(3.195742, 0, 0, 0, 1, 0, 0, 0, 2.4038122, 3.9789, 0, -0.0199)
+
+[node name="BoxCollider" type="StaticBody3D" parent="Teleportation" unique_id=168790658]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Teleportation/BoxCollider" unique_id=1018417952]
+shape = SubResource("BoxShape3D_s73u6")
+
+[editable path="left/amb_ext_wall_window_8m (3)"]
+[editable path="left/amb_ext_wall_window_8m (4)"]
+[editable path="left/amb_ext_wall_window_8m (5)"]
+[editable path="left/amb_ext_wall_window_8m (6)"]
+[editable path="right/amb_ext_wall_window_8m"]
+[editable path="right/amb_ext_wall_window_8m (1)"]
+[editable path="right/amb_ext_wall_window_8m (2)"]
+[editable path="right/amb_ext_wall_window_8m (3)"]
+[editable path="xw_floor_with_ceiling_3m"]

@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://d210umqy3x11u"]
+
+[ext_resource type="Material" uid="uid://c1wmblnuxvmcl" path="res://Packages/io.axomem.xworld.core/Materials/xw_routing_redmarker.material" id="1_b585r"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_d7qno"]
+resource_name = "Cube"
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_b585r"]
+
+[node name="PathPoint" type="Node3D" unique_id=1026186427]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, 0, 0)
+
+[node name="MeshRenderer" type="MeshInstance3D" parent="." unique_id=409373911]
+gi_mode = 2
+mesh = SubResource("BoxMesh_d7qno")
+surface_material_override/0 = ExtResource("1_b585r")
+
+[node name="BoxCollider" type="StaticBody3D" parent="." unique_id=1985443818]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="BoxCollider" unique_id=1517725565]
+visible = false
+shape = SubResource("BoxShape3D_b585r")

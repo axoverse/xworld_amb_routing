@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://crvq3nflvltq4"]
+
+[ext_resource type="ArrayMesh" uid="uid://81a5w1qr22me" path="res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Meshes/extracted/xw_lifts.Cube_005.mesh" id="1_mnrnp"]
+[ext_resource type="Material" uid="uid://cmbuya3lswiaw" path="res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Materials/xw_generic_colors_gloss.material" id="2_jvitd"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_sxgai"]
+size = Vector3(1.9500003, 2, 0.049999997)
+
+[node name="xw_lift_doors" type="Node3D" unique_id=1738788551]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.7292213, -4.9359865, 7.556713)
+
+[node name="MeshRenderer" type="MeshInstance3D" parent="." unique_id=984598880]
+gi_mode = 2
+mesh = ExtResource("1_mnrnp")
+surface_material_override/0 = ExtResource("2_jvitd")
+
+[node name="BoxCollider" type="StaticBody3D" parent="." unique_id=352518354]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="BoxCollider" unique_id=1198563593]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.2936003, 1, -0.024999999)
+shape = SubResource("BoxShape3D_sxgai")

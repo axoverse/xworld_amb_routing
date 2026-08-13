@@ -1,0 +1,145 @@
+[gd_scene format=3 uid="uid://e3yw1ttolk7k"]
+
+[ext_resource type="Script" uid="uid://ci7vogd1oaojx" path="res://addons/xbase_plugin/axNode3D.gd" id="1_tl"]
+
+[node name="Site" type="Node3D" unique_id=2094153787]
+script = ExtResource("1_tl")
+useThingLink = true
+AxoExport = true
+ThingLabelOverride = "TestSite"
+ThingNameOverride = "Test Site"
+PhysicalType = "Site"
+ThingInstanceLabel = "test-site"
+ObjectInstanceGuid = "nested00000000000000000000000001"
+ThingGuid = "nested00000000000000000000000001"
+metadata/extras = {
+"ObjectInstanceGuid": "nested00000000000000000000000001",
+"PrefabPath": "",
+"ThingInstanceLabel": "test-site"
+}
+
+[node name="Building" type="Node3D" parent="." unique_id=98533763]
+script = ExtResource("1_tl")
+useThingLink = true
+ThingLabelOverride = "&Building1"
+ThingNameOverride = "Building 1"
+PhysicalType = "Building"
+ObjectInstanceGuid = "nested00000000000000000000000002"
+ThingGuid = "nested00000000000000000000000002"
+metadata/extras = {
+"ObjectInstanceGuid": "nested00000000000000000000000002",
+"PrefabPath": "",
+"ThingInstanceLabel": ""
+}
+
+[node name="Wing" type="Node3D" parent="Building" unique_id=182142835]
+script = ExtResource("1_tl")
+useThingLink = true
+ThingLabelOverride = "&WingA"
+ThingNameOverride = "Wing A"
+PhysicalType = "Wing"
+ObjectInstanceGuid = "nested00000000000000000000000003"
+ThingGuid = "nested00000000000000000000000003"
+metadata/extras = {
+"ObjectInstanceGuid": "nested00000000000000000000000003",
+"PrefabPath": "",
+"ThingInstanceLabel": ""
+}
+
+[node name="Level1" type="Node3D" parent="Building/Wing" unique_id=981053047]
+script = ExtResource("1_tl")
+useThingLink = true
+ThingLabelOverride = "&L1"
+ThingNameOverride = "Level 1"
+PhysicalType = "Level"
+ObjectInstanceGuid = "nested00000000000000000000000004"
+ThingGuid = "nested00000000000000000000000004"
+metadata/extras = {
+"ObjectInstanceGuid": "nested00000000000000000000000004",
+"PrefabPath": "",
+"ThingInstanceLabel": ""
+}
+
+[node name="Ward" type="Node3D" parent="Building/Wing/Level1" unique_id=14232560]
+script = ExtResource("1_tl")
+useThingLink = true
+ThingLabelOverride = "&WardA"
+ThingNameOverride = "Ward A"
+PhysicalType = "Ward"
+ObjectInstanceGuid = "nested00000000000000000000000005"
+ThingGuid = "nested00000000000000000000000005"
+metadata/extras = {
+"ObjectInstanceGuid": "nested00000000000000000000000005",
+"PrefabPath": "",
+"ThingInstanceLabel": ""
+}
+
+[node name="Room1" type="Node3D" parent="Building/Wing/Level1/Ward" unique_id=33029622]
+script = ExtResource("1_tl")
+useThingLink = true
+ThingLabelOverride = "&R1"
+ThingNameOverride = "Room 1"
+PhysicalType = "Room"
+ObjectInstanceGuid = "nested00000000000000000000000006"
+ThingGuid = "nested00000000000000000000000006"
+metadata/extras = {
+"ObjectInstanceGuid": "nested00000000000000000000000006",
+"PrefabPath": "",
+"ThingInstanceLabel": ""
+}
+
+[node name="Bed1" type="Node3D" parent="Building/Wing/Level1/Ward/Room1" unique_id=65142099]
+script = ExtResource("1_tl")
+useThingLink = true
+ThingLabelOverride = "&B1"
+ThingNameOverride = "Bed 1"
+PhysicalType = "Bed"
+ObjectInstanceGuid = "nested00000000000000000000000007"
+ThingGuid = "nested00000000000000000000000007"
+metadata/extras = {
+"ObjectInstanceGuid": "nested00000000000000000000000007",
+"PrefabPath": "",
+"ThingInstanceLabel": ""
+}
+
+[node name="Bed2" type="Node3D" parent="Building/Wing/Level1/Ward/Room1" unique_id=285174182]
+script = ExtResource("1_tl")
+useThingLink = true
+ThingLabelOverride = "&B2"
+ThingNameOverride = "Bed 2"
+PhysicalType = "Bed"
+ObjectInstanceGuid = "nested00000000000000000000000008"
+ThingGuid = "nested00000000000000000000000008"
+metadata/extras = {
+"ObjectInstanceGuid": "nested00000000000000000000000008",
+"PrefabPath": "",
+"ThingInstanceLabel": ""
+}
+
+[node name="Room2" type="Node3D" parent="Building/Wing/Level1/Ward" unique_id=1971959445]
+script = ExtResource("1_tl")
+useThingLink = true
+ThingLabelOverride = "&R2"
+ThingNameOverride = "Room 2"
+PhysicalType = "Room"
+ObjectInstanceGuid = "nested00000000000000000000000009"
+ThingGuid = "nested00000000000000000000000009"
+metadata/extras = {
+"ObjectInstanceGuid": "nested00000000000000000000000009",
+"PrefabPath": "",
+"ThingInstanceLabel": ""
+}
+
+[node name="Corridor" type="Node3D" parent="Building/Wing/Level1" unique_id=1222268509]
+script = ExtResource("1_tl")
+useThingLink = true
+ThingLabelOverride = "&Corridor1"
+ThingNameOverride = "Main Corridor"
+PhysicalType = "Corridor"
+ObjectInstanceGuid = "nested00000000000000000000000010"
+ThingGuid = "nested00000000000000000000000010"
+metadata/extras = {
+"ObjectInstanceGuid": "nested00000000000000000000000010",
+"PrefabPath": "",
+"ThingInstanceLabel": ""
+}

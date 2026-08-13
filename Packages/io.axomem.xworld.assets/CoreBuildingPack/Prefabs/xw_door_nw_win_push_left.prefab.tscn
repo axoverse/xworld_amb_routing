@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://ds0ug6mun141c"]
+
+[ext_resource type="Script" uid="uid://ci7vogd1oaojx" path="res://addons/xbase_plugin/axNode3D.gd" id="1_knkke"]
+[ext_resource type="ArrayMesh" uid="uid://dut37sllyl18d" path="res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Meshes/extracted/xw_doors.Cube_017.mesh" id="2_x15mu"]
+[ext_resource type="Material" uid="uid://buelerjaqspi4" path="res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Materials/xw_DoorDefault.material" id="3_8lhyx"]
+[ext_resource type="Material" uid="uid://cmbuya3lswiaw" path="res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Materials/xw_generic_colors_gloss.material" id="4_dwhh8"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_lt5bp"]
+size = Vector3(0.07961704, 2, 0.9188775)
+
+[node name="xw_door_nw_win_push_left" type="Node3D" unique_id=675667097]
+script = ExtResource("1_knkke")
+useLayers = true
+Layers = "Doors"
+EdgeInstanceTypes = PackedStringArray()
+EdgeInstanceValues = PackedInt64Array()
+
+[node name="MeshRenderer" type="MeshInstance3D" parent="." unique_id=1349356259]
+gi_mode = 2
+mesh = ExtResource("2_x15mu")
+surface_material_override/0 = ExtResource("3_8lhyx")
+surface_material_override/1 = ExtResource("4_dwhh8")
+
+[node name="BoxCollider" type="StaticBody3D" parent="." unique_id=244481422]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="BoxCollider" unique_id=621100225]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.015191479, 1, 0.44056123)
+shape = SubResource("BoxShape3D_lt5bp")

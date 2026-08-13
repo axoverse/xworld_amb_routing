@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://fefeiv4va7iu"]
+
+[ext_resource type="Script" uid="uid://ci7vogd1oaojx" path="res://addons/xbase_plugin/axNode3D.gd" id="1_6y0fr"]
+[ext_resource type="ArrayMesh" uid="uid://5xt008rlxs0u" path="res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Meshes/extracted/xw_tables.Cube_001.mesh" id="2_le7t3"]
+[ext_resource type="Material" uid="uid://n0u6bwgpq0to" path="res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Materials/xw_Dark_Grey.material" id="3_wk574"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_uivil"]
+points = PackedVector3Array(0.85, 1, -0.5, 0.85, 0.92012537, -0.5, 0, 1, -1, 0.8498336, 1, 0.5, 0.8498336, 0.92012537, 0.5, 0.49988258, -3.2037497e-07, 0.037392378, 0.49988258, -3.2037497e-07, -0.03758812, 0.037441313, -3.2037497e-07, -0.5, 0, 0.92012537, -1, -0.85, 1, -0.5, -0.00016635656, 1, 1, -0.00016635656, 0.92012537, 1, 0.037441313, -3.2037497e-07, 0.5, -0.03760767, -3.2037497e-07, -0.5, -0.85, 0.92012537, -0.5, -0.85, 1, 0.49980426, -0.85, 0.92012537, 0.49980426, -0.03760767, -3.2037497e-07, 0.5, -0.50004894, -3.2037497e-07, -0.03758812, -0.50004894, -3.2037497e-07, 0.037392378)
+
+[node name="xw_6_side_table" type="Node3D" unique_id=1013222458]
+script = ExtResource("1_6y0fr")
+useLayers = true
+Layers = "Furniture"
+EdgeInstanceTypes = PackedStringArray()
+EdgeInstanceValues = PackedInt64Array()
+
+[node name="MeshRenderer" type="MeshInstance3D" parent="." unique_id=564523828]
+gi_mode = 2
+mesh = ExtResource("2_le7t3")
+surface_material_override/0 = ExtResource("3_wk574")
+
+[node name="MeshCollider" type="StaticBody3D" parent="." unique_id=1741110955]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider" unique_id=68033980]
+shape = SubResource("ConvexPolygonShape3D_uivil")

@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://hsrv6m8xn7kj"]
+
+[ext_resource type="Script" uid="uid://ci7vogd1oaojx" path="res://addons/xbase_plugin/axNode3D.gd" id="1_p4kye"]
+[ext_resource type="ArrayMesh" uid="uid://epgigbem0wr4" path="res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Meshes/extracted/xw_standalone_stairs.Scene_001.mesh" id="2_jf536"]
+[ext_resource type="Material" uid="uid://djhpjogo73sfy" path="res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Materials/xw_WallDefault.material" id="3_41k5y"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_s4c4w"]
+points = PackedVector3Array(-2.1291837e-07, -5.4239926e-08, -0.18347692, 1.1999998, -5.4239926e-08, -0.18347692, -2.1291837e-07, -5.4239926e-08, 0, -2.1291837e-07, 1.8332028, -2.2, 1.1999998, -5.4239926e-08, 0, 1.1998823, 1.8332028, -2.2, 1.1999998, 1.3332028, -1.4667385, -2.1291837e-07, 0.16660134, 0, -2.1291837e-07, 2, -2.2, 1.1999998, 0.16660134, 0, 1.1998823, 2, -2.2, 1.1999998, 1.5, -1.4667385, -2.1291837e-07, 2, -2.0167384, 1.1998823, 2, -2.0167384)
+
+[node name="xw_standalone_stairs" type="Node3D" unique_id=579644438]
+script = ExtResource("1_p4kye")
+useLayers = true
+Layers = "Foundations, Fire"
+EdgeInstanceTypes = PackedStringArray()
+EdgeInstanceValues = PackedInt64Array()
+
+[node name="MeshRenderer" type="MeshInstance3D" parent="." unique_id=1830750909]
+gi_mode = 2
+mesh = ExtResource("2_jf536")
+surface_material_override/0 = ExtResource("3_41k5y")
+
+[node name="MeshCollider" type="StaticBody3D" parent="." unique_id=1987637987]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider" unique_id=100417474]
+shape = SubResource("ConvexPolygonShape3D_s4c4w")

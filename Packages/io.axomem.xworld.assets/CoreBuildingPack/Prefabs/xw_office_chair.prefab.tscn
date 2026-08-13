@@ -1,0 +1,39 @@
+[gd_scene format=3 uid="uid://1qxfu688fed8"]
+
+[ext_resource type="Script" uid="uid://ci7vogd1oaojx" path="res://addons/xbase_plugin/axNode3D.gd" id="1_mmjuy"]
+[ext_resource type="ArrayMesh" uid="uid://cj8jw6yks4n12" path="res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Meshes/extracted/xw_chairs.Cube_003.mesh" id="2_g2gr8"]
+[ext_resource type="Material" uid="uid://bbptyqd1u038k" path="res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Materials/xw_med_blue.material" id="3_rww2i"]
+[ext_resource type="Material" uid="uid://cmbuya3lswiaw" path="res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Materials/xw_generic_colors_gloss.material" id="4_7l2gu"]
+[ext_resource type="Material" uid="uid://dxenialpj4ubr" path="res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Materials/xw_black.material" id="5_5g5ji"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_qnx76"]
+size = Vector3(0.8000562, 0.6660395, 0.841818)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_0di67"]
+size = Vector3(0.8000562, 0.6423588, 0.07666132)
+
+[node name="xw_office_chair" type="Node3D" unique_id=2146616538]
+script = ExtResource("1_mmjuy")
+useLayers = true
+Layers = "Furniture"
+EdgeInstanceTypes = PackedStringArray()
+EdgeInstanceValues = PackedInt64Array()
+
+[node name="MeshRenderer" type="MeshInstance3D" parent="." unique_id=285442720]
+gi_mode = 2
+mesh = ExtResource("2_g2gr8")
+surface_material_override/0 = ExtResource("3_rww2i")
+surface_material_override/1 = ExtResource("4_7l2gu")
+surface_material_override/2 = ExtResource("5_5g5ji")
+
+[node name="BoxCollider" type="StaticBody3D" parent="." unique_id=1426818687]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="BoxCollider" unique_id=777629849]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0013759732, 0.33269528, 0.00020086765)
+shape = SubResource("BoxShape3D_qnx76")
+
+[node name="BoxCollider2" type="StaticBody3D" parent="." unique_id=595641732]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="BoxCollider2" unique_id=1033474514]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0013759732, 0.9959595, -0.32334244)
+shape = SubResource("BoxShape3D_0di67")

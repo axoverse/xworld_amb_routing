@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://custsthcdt11m"]
+
+[ext_resource type="Script" uid="uid://ci7vogd1oaojx" path="res://addons/xbase_plugin/axNode3D.gd" id="1_p8me5"]
+[ext_resource type="ArrayMesh" uid="uid://b1yo84vd3oopf" path="res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Meshes/extracted/xw_chairs.Cube_005.mesh" id="2_b0tnp"]
+[ext_resource type="Material" uid="uid://ktguh7yui6nu" path="res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Materials/xw_Light_Grey.material" id="3_s55bo"]
+[ext_resource type="Material" uid="uid://n0u6bwgpq0to" path="res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Materials/xw_Dark_Grey.material" id="4_p5bq1"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_67ha7"]
+size = Vector3(1.092837, 0.6292767, 1.0466391)
+
+[node name="xw_tri_couch" type="Node3D" unique_id=1723209204]
+script = ExtResource("1_p8me5")
+useLayers = true
+Layers = "Furniture"
+EdgeInstanceTypes = PackedStringArray()
+EdgeInstanceValues = PackedInt64Array()
+
+[node name="MeshRenderer" type="MeshInstance3D" parent="." unique_id=8660510]
+gi_mode = 2
+mesh = ExtResource("2_b0tnp")
+surface_material_override/0 = ExtResource("3_s55bo")
+surface_material_override/1 = ExtResource("4_p5bq1")
+
+[node name="BoxCollider" type="StaticBody3D" parent="." unique_id=389179295]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="BoxCollider" unique_id=1164115963]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.31463835, -0.1568995)
+shape = SubResource("BoxShape3D_67ha7")

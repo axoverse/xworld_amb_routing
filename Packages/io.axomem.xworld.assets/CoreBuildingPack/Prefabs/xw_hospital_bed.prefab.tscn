@@ -1,0 +1,43 @@
+[gd_scene format=3 uid="uid://d0ewd70iqf7vr"]
+
+[ext_resource type="Script" uid="uid://ci7vogd1oaojx" path="res://addons/xbase_plugin/axNode3D.gd" id="1_okqns"]
+[ext_resource type="ArrayMesh" uid="uid://disl87lwrlvyp" path="res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Meshes/extracted/xw_furniture.Cube.mesh" id="2_1rclo"]
+[ext_resource type="Material" uid="uid://dskmc2emaf0yp" path="res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Materials/xw_white.material" id="3_4cbvk"]
+[ext_resource type="Material" uid="uid://cmbuya3lswiaw" path="res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Materials/xw_generic_colors_gloss.material" id="4_kn4iq"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_8ri72"]
+size = Vector3(1.1638917, 0.8359818, 2.5707302)
+
+[node name="xw_hospital_bed" type="Node3D" unique_id=1112812120]
+script = ExtResource("1_okqns")
+useThingLink = true
+usePivotOverride = true
+useLayers = true
+useLabel3D = true
+isRoutingWaypoint = true
+PhysicalType = "Bed"
+PrefabPath = "s/io.axomem.xworld.assets/CoreBuildingPack/Prefabs/xw_hospital_bed"
+PivotRotation = Vector3(25, 180, 0)
+CamDistanceMultiplier = 1.5
+Layers = "Equipment"
+EdgeInstanceTypes = PackedStringArray()
+EdgeInstanceValues = PackedInt64Array()
+metadata/extras = {
+"PrefabPath": "s/io.axomem.xworld.assets/CoreBuildingPack/Prefabs/xw_hospital_bed"
+}
+
+[node name="MeshRenderer" type="MeshInstance3D" parent="." unique_id=1955618790]
+gi_mode = 2
+mesh = ExtResource("2_1rclo")
+surface_material_override/0 = ExtResource("3_4cbvk")
+surface_material_override/1 = ExtResource("4_kn4iq")
+
+[node name="BoxCollider" type="Area3D" parent="." unique_id=1348303627]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="BoxCollider" unique_id=987808712]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.4179909, 0)
+shape = SubResource("BoxShape3D_8ri72")
+
+[node name="MonoBehaviour" type="Node" parent="." unique_id=802253281]
+
+[node name="MonoBehaviour2" type="Node" parent="." unique_id=1951033780]

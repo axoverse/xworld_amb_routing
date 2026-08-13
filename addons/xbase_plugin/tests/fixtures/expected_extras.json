@@ -1,0 +1,223 @@
+{
+  "_comment": "Expected GLTF extras for test fixtures. Used by Python validation tests.",
+  
+  "minimal_thinglink_scene": {
+    "TestRoot": {
+      "components": [
+        {
+          "type": "ThingLink",
+          "ThingInstanceLabel": "TestRoot",
+          "PhysicalType": 2,
+          "PhysicalTypeString": "Building"
+        },
+        {
+          "type": "BoundsHelper"
+        }
+      ]
+    },
+    "Level1": {
+      "components": [
+        {
+          "type": "ThingLink",
+          "PhysicalType": 5,
+          "PhysicalTypeString": "Level"
+        },
+        {
+          "type": "Layer",
+          "Layers": "Default,Floor"
+        }
+      ]
+    },
+    "Room1": {
+      "components": [
+        {
+          "type": "ThingLink",
+          "PhysicalType": 7,
+          "PhysicalTypeString": "Room"
+        },
+        {
+          "type": "Layer",
+          "Layers": "Default,Walls,Doors"
+        },
+        {
+          "type": "Edge",
+          "Edges": "child,location"
+        }
+      ]
+    }
+  },
+  
+  "edge_cases": {
+    "EdgeCasesRoot": {
+      "components": [
+        {
+          "type": "ThingLink",
+          "ThingInstanceLabel": "edge-cases-root",
+          "PhysicalType": 2,
+          "PhysicalTypeString": "Building"
+        }
+      ]
+    },
+    "EmptyStrings": {
+      "components": [
+        {
+          "type": "ThingLink",
+          "ThingInstanceLabel": "empty-strings-node",
+          "PhysicalType": 7,
+          "PhysicalTypeString": "Room"
+        }
+      ]
+    },
+    "SpecialChars": {
+      "components": [
+        {
+          "type": "ThingLink",
+          "ThingInstanceLabel": "special-chars-room-101_a",
+          "PhysicalType": 7,
+          "PhysicalTypeString": "Room"
+        }
+      ]
+    },
+    "Unicode": {
+      "components": [
+        {
+          "type": "ThingLink",
+          "ThingInstanceLabel": "unicode-office",
+          "PhysicalType": 7,
+          "PhysicalTypeString": "Room"
+        }
+      ]
+    },
+    "NonePhysicalType": {
+      "components": [
+        {
+          "type": "ThingLink",
+          "ThingInstanceLabel": "none-physical-type",
+          "PhysicalType": 0,
+          "PhysicalTypeString": "None"
+        }
+      ]
+    }
+  },
+  
+  "nested_hierarchy": {
+    "Site": {
+      "components": [
+        {
+          "type": "ThingLink",
+          "ThingInstanceLabel": "test-site",
+          "PhysicalType": 1,
+          "PhysicalTypeString": "Site"
+        }
+      ]
+    },
+    "Building": {
+      "components": [
+        {
+          "type": "ThingLink",
+          "PhysicalType": 2,
+          "PhysicalTypeString": "Building"
+        }
+      ]
+    },
+    "Ward": {
+      "components": [
+        {
+          "type": "ThingLink",
+          "PhysicalType": 4,
+          "PhysicalTypeString": "Ward"
+        }
+      ]
+    },
+    "Room1": {
+      "components": [
+        {
+          "type": "ThingLink",
+          "PhysicalType": 7,
+          "PhysicalTypeString": "Room"
+        }
+      ]
+    },
+    "Bed1": {
+      "components": [
+        {
+          "type": "ThingLink",
+          "PhysicalType": 8,
+          "PhysicalTypeString": "Bed"
+        }
+      ]
+    }
+  },
+  
+  "all_components": {
+    "AllComponentsRoot": {
+      "components": [
+        {
+          "type": "ThingLink",
+          "ThingInstanceLabel": "all-components-root",
+          "PhysicalType": 2,
+          "PhysicalTypeString": "Building"
+        }
+      ]
+    },
+    "FullyLoaded": {
+      "components": [
+        {
+          "type": "ThingLink",
+          "PhysicalType": 7,
+          "PhysicalTypeString": "Room"
+        },
+        {
+          "type": "Layer",
+          "Layers": "Default,Walls,Doors,Furniture"
+        },
+        {
+          "type": "Edge",
+          "Edges": "child,location,member"
+        },
+        {
+          "type": "PivotOverride"
+        }
+      ]
+    },
+    "LayersOnly": {
+      "components": [
+        {
+          "type": "ThingLink",
+          "PhysicalType": 7,
+          "PhysicalTypeString": "Room"
+        },
+        {
+          "type": "Layer",
+          "Layers": "Environment,Hvac,Plumbing"
+        }
+      ]
+    },
+    "EdgesOnly": {
+      "components": [
+        {
+          "type": "ThingLink",
+          "PhysicalType": 7,
+          "PhysicalTypeString": "Room"
+        },
+        {
+          "type": "Edge",
+          "Edges": "sibling,reference,external"
+        }
+      ]
+    },
+    "PivotOnly": {
+      "components": [
+        {
+          "type": "ThingLink",
+          "PhysicalType": 7,
+          "PhysicalTypeString": "Room"
+        },
+        {
+          "type": "PivotOverride"
+        }
+      ]
+    }
+  }
+}
+

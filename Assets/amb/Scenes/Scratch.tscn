@@ -1,0 +1,44 @@
+[gd_scene format=3 uid="uid://dowa7rrj60qll"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_m4rif"]
+resource_name = "Default-Skybox"
+sky_top_color = Color(0.454902, 0.678431, 0.87451, 1)
+sky_horizon_color = Color(0.894118, 0.952941, 1, 1)
+sky_curve = 0.0731028
+ground_bottom_color = Color(0.454902, 0.470588, 0.490196, 1)
+ground_horizon_color = Color(1, 1, 1, 1)
+
+[sub_resource type="Sky" id="Sky_owfgv"]
+sky_material = SubResource("ProceduralSkyMaterial_m4rif")
+
+[sub_resource type="Environment" id="Environment_xyc00"]
+background_mode = 2
+sky = SubResource("Sky_owfgv")
+fog_light_color = Color(0.5, 0.5, 0.5, 1)
+
+[node name="RootNode3D" type="Node3D" unique_id=198197397]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=893315564]
+environment = SubResource("Environment_xyc00")
+
+[node name="Main Camera" type="Node3D" parent="." unique_id=1508441749]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, -10)
+
+[node name="Camera" type="Camera3D" parent="Main Camera" unique_id=1901288999]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0, 0, 0)
+cull_mask = 16777215
+current = true
+fov = 60.0
+near = 0.3
+far = 1000.0
+
+[node name="Directional Light" type="Node3D" parent="." unique_id=1818070143]
+transform = Transform3D(0.86602545, 0.38302213, 0.3213938, 0, 0.6427877, -0.7660444, -0.4999999, 0.66341394, 0.5566705, 0, 3, 0)
+
+[node name="Light" type="DirectionalLight3D" parent="Directional Light" unique_id=798063305]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0, 0, 0)
+light_color = Color(1, 0.95686275, 0.8392157, 1)
+light_bake_mode = 0
+shadow_enabled = true
+shadow_bias = 0.05
+shadow_normal_bias = 0.4

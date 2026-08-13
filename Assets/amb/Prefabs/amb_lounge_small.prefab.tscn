@@ -1,0 +1,96 @@
+[gd_scene format=3 uid="uid://cugrk1tr37kdk"]
+
+[ext_resource type="PackedScene" uid="uid://2o2357yy6pw8" path="res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Prefabs/xw_bar_table.prefab.tscn" id="1_nevcl"]
+[ext_resource type="PackedScene" uid="uid://5il825xe112i" path="res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Prefabs/xw_coffee_table.prefab.tscn" id="2_8omah"]
+[ext_resource type="PackedScene" uid="uid://cioi3y7p2m3to" path="res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Prefabs/xw_couch_chair.prefab.tscn" id="3_o8vum"]
+[ext_resource type="PackedScene" uid="uid://dd30162htswgs" path="res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Prefabs/xw_couch.prefab.tscn" id="4_eestu"]
+[ext_resource type="PackedScene" uid="uid://k8s1dtfwfd24" path="res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Prefabs/xw_bar_stool.prefab.tscn" id="5_1nx0s"]
+
+[node name="amb_lounge_small" type="Node3D" unique_id=878823460]
+
+[node name="small" type="Node3D" parent="." unique_id=1950887275]
+
+[node name="xw_bar_table" parent="small" unique_id=1591056756 instance=ExtResource("1_nevcl")]
+transform = Transform3D(2.2855132, 0, 0, 0, 0.91852754, 0, 0, 0, 0.46493685, 7.409999, 0, -23.190002)
+
+[node name="xw_coffee_table" parent="small" unique_id=1207126953 instance=ExtResource("2_8omah")]
+transform = Transform3D(-9.661823e-09, 0, -1.0360736, 0, 1, 0, 0.22103675, 0, -4.5288214e-08, 10.41, 0, -19.300001)
+
+[node name="xw_coffee_table2" parent="small" unique_id=1519489783 instance=ExtResource("2_8omah")]
+transform = Transform3D(-9.661823e-09, 0, -1.0360736, 0, 1, 0, 0.22103675, 0, -4.5288214e-08, 10.41, 0, -15.33)
+
+[node name="xw_coffee_table3" parent="small" unique_id=1034836202 instance=ExtResource("2_8omah")]
+transform = Transform3D(-9.661823e-09, 0, -1.0360736, 0, 1, 0, 0.22103675, 0, -4.5288214e-08, 4.56, 0, -15.33)
+
+[node name="xw_coffee_table4" parent="small" unique_id=1192977578 instance=ExtResource("2_8omah")]
+transform = Transform3D(-9.661823e-09, 0, -1.0360736, 0, 1, 0, 0.22103675, 0, -4.5288214e-08, 4.56, 0, -19.300001)
+
+[node name="xw_couch_chair" parent="small" unique_id=196619619 instance=ExtResource("3_o8vum")]
+transform = Transform3D(0, 0, 1, 0, 1, 0, -1, 0, 0, 4.54, 0, -20.27)
+
+[node name="xw_couch_chair2" parent="small" unique_id=806120377 instance=ExtResource("3_o8vum")]
+transform = Transform3D(0, 0, -1, 0, 1, 0, 1, 0, 0, 10.44, 0, -20.27)
+
+[node name="xw_couch_chair3" parent="small" unique_id=1195798606 instance=ExtResource("3_o8vum")]
+transform = Transform3D(0, 0, -1, 0, 1, 0, 1, 0, 0, 10.44, 0, -14.37)
+
+[node name="xw_couch_chair4" parent="small" unique_id=2140610753 instance=ExtResource("3_o8vum")]
+transform = Transform3D(0, 0, -1, 0, 1, 0, 1, 0, 0, 10.44, 0, -16.35)
+
+[node name="xw_couch_chair5" parent="small" unique_id=2072015930 instance=ExtResource("3_o8vum")]
+transform = Transform3D(0, 0, 1, 0, 1, 0, -1, 0, 0, 4.54, 0, -14.37)
+
+[node name="xw_couch_chair6" parent="small" unique_id=1466401564 instance=ExtResource("3_o8vum")]
+transform = Transform3D(0, 0, 1, 0, 1, 0, -1, 0, 0, 4.54, 0, -16.35)
+
+[node name="xw_couch_chair7" parent="small" unique_id=414626108 instance=ExtResource("3_o8vum")]
+transform = Transform3D(0, 0, -1, 0, 1, 0, 1, 0, 0, 10.44, 0, -18.29)
+
+[node name="xw_couch_chair8" parent="small" unique_id=1635117390 instance=ExtResource("3_o8vum")]
+transform = Transform3D(0, 0, 1, 0, 1, 0, -1, 0, 0, 4.54, 0, -18.29)
+
+[node name="xw_couch" parent="small" unique_id=581422778 instance=ExtResource("4_eestu")]
+transform = Transform3D(0, 0, 1, 0, 1, 0, -1, 0, 0, 8.23, 0, -15.21)
+
+[node name="xw_couch2" parent="small" unique_id=306804412 instance=ExtResource("4_eestu")]
+transform = Transform3D(0, 0, -1, 0, 1, 0, 1, 0, 0, 7.05, 0, -15.21)
+
+[node name="xw_couch3" parent="small" unique_id=1565867760 instance=ExtResource("4_eestu")]
+transform = Transform3D(0, 0, 1, 0, 1, 0, -1, 0, 0, 8.23, 0, -19.300001)
+
+[node name="xw_couch4" parent="small" unique_id=1343102535 instance=ExtResource("4_eestu")]
+transform = Transform3D(0, 0, -1, 0, 1, 0, 1, 0, 0, 7.05, 0, -19.300001)
+
+[node name="xw_bar_stool" parent="small" unique_id=1053105527 instance=ExtResource("5_1nx0s")]
+transform = Transform3D(-1, 0, 0, 0, 1, 0, 0, 0, -1, 5.19, 0, -22.2)
+
+[node name="xw_bar_stool2" parent="small" unique_id=2032988560 instance=ExtResource("5_1nx0s")]
+transform = Transform3D(-1, 0, 0, 0, 1, 0, 0, 0, -1, 6.629999, 0, -22.2)
+
+[node name="xw_bar_stool3" parent="small" unique_id=2013138633 instance=ExtResource("5_1nx0s")]
+transform = Transform3D(-1, 0, 0, 0, 1, 0, 0, 0, -1, 8.059999, 0, -22.2)
+
+[node name="xw_bar_stool4" parent="small" unique_id=2061514236 instance=ExtResource("5_1nx0s")]
+transform = Transform3D(-1, 0, 0, 0, 1, 0, 0, 0, -1, 9.549999, 0, -22.2)
+
+[editable path="small/xw_bar_table"]
+[editable path="small/xw_coffee_table"]
+[editable path="small/xw_coffee_table2"]
+[editable path="small/xw_coffee_table3"]
+[editable path="small/xw_coffee_table4"]
+[editable path="small/xw_couch_chair"]
+[editable path="small/xw_couch_chair2"]
+[editable path="small/xw_couch_chair3"]
+[editable path="small/xw_couch_chair4"]
+[editable path="small/xw_couch_chair5"]
+[editable path="small/xw_couch_chair6"]
+[editable path="small/xw_couch_chair7"]
+[editable path="small/xw_couch_chair8"]
+[editable path="small/xw_couch"]
+[editable path="small/xw_couch2"]
+[editable path="small/xw_couch3"]
+[editable path="small/xw_couch4"]
+[editable path="small/xw_bar_stool"]
+[editable path="small/xw_bar_stool2"]
+[editable path="small/xw_bar_stool3"]
+[editable path="small/xw_bar_stool4"]

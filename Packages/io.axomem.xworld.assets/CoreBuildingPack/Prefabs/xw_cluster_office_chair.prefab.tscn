@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://b5hxjq73nxpe3"]
+
+[ext_resource type="Script" uid="uid://ci7vogd1oaojx" path="res://addons/xbase_plugin/axNode3D.gd" id="1_dphqd"]
+[ext_resource type="ArrayMesh" uid="uid://qyskmu81djni" path="res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Meshes/extracted/xw_chairs.Cube_004.mesh" id="2_mjqdg"]
+[ext_resource type="Material" uid="uid://bbptyqd1u038k" path="res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Materials/xw_med_blue.material" id="3_0cmhg"]
+[ext_resource type="Material" uid="uid://cmbuya3lswiaw" path="res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Materials/xw_generic_colors_gloss.material" id="4_qgrau"]
+[ext_resource type="Material" uid="uid://dxenialpj4ubr" path="res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Materials/xw_black.material" id="5_ves52"]
+[ext_resource type="Material" uid="uid://bxbjmkj6lotum" path="res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Materials/xw_med_blue_transparent.material" id="6_abgaf"]
+
+[node name="xw_cluster_office_chair" type="Node3D" unique_id=2076455509]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.11639118, 0.36269522, -18.218483)
+script = ExtResource("1_dphqd")
+useThingLink = true
+ThingLabelOverride = "&XX'"
+PhysicalType = "Container"
+PrefabPath = "s/io.axomem.xworld.assets/CoreBuildingPack/Prefabs/xw_cluster_office_chair"
+EdgeInstanceTypes = PackedStringArray()
+EdgeInstanceValues = PackedInt64Array()
+metadata/extras = {
+"PrefabPath": "s/io.axomem.xworld.assets/CoreBuildingPack/Prefabs/xw_cluster_office_chair"
+}
+
+[node name="MeshRenderer" type="MeshInstance3D" parent="." unique_id=24657139]
+gi_mode = 2
+mesh = ExtResource("2_mjqdg")
+surface_material_override/0 = ExtResource("3_0cmhg")
+surface_material_override/1 = ExtResource("4_qgrau")
+surface_material_override/2 = ExtResource("5_ves52")
+surface_material_override/3 = ExtResource("6_abgaf")

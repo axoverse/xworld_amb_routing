@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://dt5q04tbg5l2c"]
+
+[ext_resource type="PackedScene" uid="uid://bpwg2ni1us4ik" path="res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Prefabs/GenericWall.prefab.tscn" id="1_kxr3x"]
+[ext_resource type="PackedScene" uid="uid://hsrv6m8xn7kj" path="res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Prefabs/xw_standalone_stairs.prefab.tscn" id="2_4lbmm"]
+
+[node name="amb_stair_a" type="Node3D" unique_id=454867321]
+
+[node name="GenericWall" parent="." unique_id=958156717 instance=ExtResource("1_kxr3x")]
+transform = Transform3D(2.4, 0, 0, 0, 0.22704741, 0, 0, 0, 1, -10.0999, 1.8864763, 10.636)
+
+[node name="xw_standalone_stairs" parent="." unique_id=579644438 instance=ExtResource("2_4lbmm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.0999, 0, 13.3359995)
+
+[node name="xw_standalone_stairs (1)" parent="." unique_id=1869087677 instance=ExtResource("2_4lbmm")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -10.0999, 1.8333333, 11.136)
+
+[editable path="GenericWall"]
+[editable path="xw_standalone_stairs"]
+[editable path="xw_standalone_stairs (1)"]

@@ -1,0 +1,19 @@
+[
+  "none",
+  "any",
+  "type",
+  "subtype",
+  "child",
+  "sibling",
+  "member",
+  "owned",
+  "dependent",
+  "instance",
+  "subject",
+  "location",
+  "reference",
+  "element",
+  "valuetype",
+  "external"
+]
+

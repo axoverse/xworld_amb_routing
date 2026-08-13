@@ -1,0 +1,45 @@
+[gd_scene format=3 uid="uid://bx5du462fqcpg"]
+
+[ext_resource type="Script" uid="uid://ci7vogd1oaojx" path="res://addons/xbase_plugin/axNode3D.gd" id="1_2e0cn"]
+[ext_resource type="ArrayMesh" uid="uid://cue5tcyv6palj" path="res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Meshes/extracted/xw_chairs.Cube.mesh" id="2_tkfn3"]
+[ext_resource type="Material" uid="uid://dskmc2emaf0yp" path="res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Materials/xw_white.material" id="3_vs50x"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_7wvcn"]
+points = PackedVector3Array(0.29838496, 0.5331567, 0.39858687, 0.29838496, 0.6276871, 0.39492923, -0.3106503, 0.5331567, 0.39858687, 0.25575548, 1.05627285e-08, 0.34979266, 0.29838496, 0.5331567, -0.30678865, -0.3106503, 0.6276871, 0.39492923, 0.29838496, 1.3525525, -0.3213413, -0.3106503, 0.5331567, -0.30678865, -0.26736498, 1.05627285e-08, -0.20842208, -0.264682, 1.05627285e-08, 0.34979266, 0.25575548, 1.05627285e-08, 0.24971402, 0.25521886, 1.05627285e-08, -0.28437603, 0.29838496, 1.3525525, -0.3964392, -0.3106503, 1.3525525, -0.3213413, -0.26736498, 1.05627285e-08, -0.28437603, -0.3106503, 1.3525525, -0.3964392)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_vkuy0"]
+size = Vector3(0.60909486, 0.63519806, 0.6781223)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_4usk7"]
+size = Vector3(0.60909486, 0.7160722, 0.14484043)
+
+[node name="xw_cafe_chair" type="Node3D" unique_id=89568043]
+script = ExtResource("1_2e0cn")
+useLayers = true
+isRoutingWaypoint = true
+Layers = "Furniture"
+EdgeInstanceTypes = PackedStringArray()
+EdgeInstanceValues = PackedInt64Array()
+
+[node name="MeshRenderer" type="MeshInstance3D" parent="." unique_id=615891825]
+gi_mode = 2
+mesh = ExtResource("2_tkfn3")
+surface_material_override/0 = ExtResource("3_vs50x")
+
+[node name="MeshCollider" type="StaticBody3D" parent="." unique_id=1760446518]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider" unique_id=233735127]
+visible = false
+shape = SubResource("ConvexPolygonShape3D_7wvcn")
+
+[node name="BoxCollider" type="StaticBody3D" parent="." unique_id=925519643]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="BoxCollider" unique_id=751898096]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00610286, 0.31759903, 0.059525713)
+shape = SubResource("BoxShape3D_vkuy0")
+
+[node name="BoxCollider2" type="StaticBody3D" parent="." unique_id=495130657]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="BoxCollider2" unique_id=585666302]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00610286, 0.9945163, -0.32219627)
+shape = SubResource("BoxShape3D_4usk7")

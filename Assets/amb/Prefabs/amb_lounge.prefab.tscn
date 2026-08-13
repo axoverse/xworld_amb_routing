@@ -1,0 +1,181 @@
+[gd_scene format=3 uid="uid://crps0p7sasnik"]
+
+[ext_resource type="PackedScene" uid="uid://i6506a57xccl" path="res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Prefabs/xw_ext_wall_window.prefab.tscn" id="1_ucdx6"]
+[ext_resource type="PackedScene" uid="uid://cfagc0w2olfyn" path="res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Prefabs/xw_wall_2m.prefab.tscn" id="2_na18n"]
+[ext_resource type="PackedScene" uid="uid://c403gxhxxd1ar" path="res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Prefabs/xw_wall_4m.prefab.tscn" id="3_7xa5b"]
+[ext_resource type="PackedScene" uid="uid://buhxe2l3ct1vm" path="res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Prefabs/xw_wall_8m.prefab.tscn" id="4_e1h4w"]
+[ext_resource type="PackedScene" uid="uid://nw0gdmugstr6" path="res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Prefabs/xw_door_std_right.prefab.tscn" id="5_yc4yn"]
+[ext_resource type="PackedScene" uid="uid://bgm0nwubmlm7n" path="res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Prefabs/xw_doorframe_nw.prefab.tscn" id="6_6lup6"]
+[ext_resource type="PackedScene" uid="uid://5il825xe112i" path="res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Prefabs/xw_coffee_table.prefab.tscn" id="7_j0jk6"]
+[ext_resource type="PackedScene" uid="uid://2o2357yy6pw8" path="res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Prefabs/xw_bar_table.prefab.tscn" id="8_3o0ct"]
+[ext_resource type="PackedScene" uid="uid://dd30162htswgs" path="res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Prefabs/xw_couch.prefab.tscn" id="9_qd16c"]
+[ext_resource type="PackedScene" uid="uid://cioi3y7p2m3to" path="res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Prefabs/xw_couch_chair.prefab.tscn" id="10_12qqk"]
+[ext_resource type="PackedScene" uid="uid://custsthcdt11m" path="res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Prefabs/xw_tri_couch.prefab.tscn" id="11_6lsc4"]
+[ext_resource type="PackedScene" uid="uid://k8s1dtfwfd24" path="res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Prefabs/xw_bar_stool.prefab.tscn" id="12_80ir3"]
+
+[node name="amb_lounge" type="Node3D" unique_id=806901246]
+
+[node name="amb_ext_wall_window" parent="." unique_id=595492693 instance=ExtResource("1_ucdx6")]
+transform = Transform3D(9.947506, 0, 0, 0, 1, 0, 0, 0, 1, 1.3027, 0.010328293, -13.345366)
+
+[node name="amb_ext_wall_window (1)" parent="." unique_id=2033195704 instance=ExtResource("1_ucdx6")]
+transform = Transform3D(2.2850456, 0, 0, 0, 1, 0, 0, 0, 1, -4.7933517, 0.010329723, -13.3453665)
+
+[node name="xw_wall_2m" parent="." unique_id=59104627 instance=ExtResource("2_na18n")]
+transform = Transform3D(-3.143153e-06, 4.3711395e-08, 0.5005728, 3.5527137e-15, 1, -2.1880735e-08, -1, -1.3383889e-13, -1.5733768e-06, -3.6269, 0, -20.80046)
+
+[node name="xw_wall_2m2" parent="." unique_id=1702417697 instance=ExtResource("2_na18n")]
+transform = Transform3D(-3.143153e-06, 4.3711395e-08, 2.0284092, 3.5527137e-15, 1, -8.86646e-08, -1, -1.3383889e-13, -6.3756006e-06, 1.76, 0, -20.80046)
+
+[node name="xw_wall_4m" parent="." unique_id=563635597 instance=ExtResource("3_7xa5b")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.72025305, 1.5600324, 0, -20.8004)
+
+[node name="xw_wall_8m" parent="." unique_id=229294837 instance=ExtResource("4_e1h4w")]
+transform = Transform3D(1, 0, 0, 0, 1, -5.6824803e-08, 0, 4.371139e-08, 1.3, -4.81, 0, -13.2954)
+
+[node name="xw_wall_8m2" parent="." unique_id=78653394 instance=ExtResource("4_e1h4w")]
+transform = Transform3D(1, 0, 0, 0, 1, -5.6824803e-08, 0, 4.371139e-08, 1.3, 11.059624, 0, -13.295332)
+
+[node name="xw_door_std_right" parent="." unique_id=426490031 instance=ExtResource("5_yc4yn")]
+transform = Transform3D(0.98211974, 0, 0.18825741, 0, 1, 0, -0.18825741, 0, 0.98211974, -3.602, 0.00090551376, -20.824)
+
+[node name="xw_doorframe_nw" parent="." unique_id=100136217 instance=ExtResource("6_6lup6")]
+transform = Transform3D(-4.371139e-08, 0, -3, 0, 1, 0, 1, 0, -1.3113416e-07, -2.5, 0, -13.495366)
+
+[node name="xw_doorframe_nw2" parent="." unique_id=630865159 instance=ExtResource("6_6lup6")]
+transform = Transform3D(2.9365208e-06, -4.3711395e-08, -1.1528656, 3.5527137e-15, 1, -5.0393368e-08, 1, 1.2480671e-13, 3.385414e-06, -3.69, 0, -21.000452)
+
+[node name="xw_coffee_table" parent="." unique_id=1207126953 instance=ExtResource("7_j0jk6")]
+transform = Transform3D(-2.1855694e-08, 0, -1, 0, 1, 0, 0.5, 0, -4.371139e-08, 8.75, 0, -18.65)
+
+[node name="xw_coffee_table2" parent="." unique_id=158489793 instance=ExtResource("7_j0jk6")]
+transform = Transform3D(-2.1855694e-08, 0, -1, 0, 1, 0, 0.5, 0, -4.371139e-08, 8.75, 0, -14.93)
+
+[node name="xw_coffee_table3" parent="." unique_id=840127314 instance=ExtResource("7_j0jk6")]
+transform = Transform3D(-2.1855694e-08, 0, -1, 0, 1, 0, 0.5, 0, -4.371139e-08, 4.04, 0, -18.65)
+
+[node name="xw_coffee_table4" parent="." unique_id=368374222 instance=ExtResource("7_j0jk6")]
+transform = Transform3D(-2.1855694e-08, 0, -1, 0, 1, 0, 0.5, 0, -4.371139e-08, 4.04, 0, -14.93)
+
+[node name="xw_bar_table" parent="." unique_id=1591056756 instance=ExtResource("8_3o0ct")]
+transform = Transform3D(-9.399027e-08, 0, 0.46493685, 0, 0.7728, 0, -2.1502469, 0, -2.0323036e-08, -2.69, 0, -16.5122)
+
+[node name="xw_bar_table2" parent="." unique_id=1003754115 instance=ExtResource("8_3o0ct")]
+transform = Transform3D(3.4023533, 0, 0, 0, 0.7491, 0, 0, 0, 0.46493685, 6.4186, 0, -23.320002)
+
+[node name="xw_bar_table3" parent="." unique_id=1991535172 instance=ExtResource("8_3o0ct")]
+transform = Transform3D(-1.1671461e-07, 0, 0.46493685, 0, 1, 0, -2.670119, 0, -2.0323036e-08, -4.13, 0, -17.07)
+
+[node name="xw_couch" parent="." unique_id=581422778 instance=ExtResource("9_qd16c")]
+transform = Transform3D(0, 0, 1, 0, 1, 0, -1, 0, 0, 7.07, 0, -18.56)
+
+[node name="xw_couch2" parent="." unique_id=1269065589 instance=ExtResource("9_qd16c")]
+transform = Transform3D(0, 0, -1, 0, 1, 0, 1, 0, 0, 5.63, 0, -14.99)
+
+[node name="xw_couch3" parent="." unique_id=1588735800 instance=ExtResource("9_qd16c")]
+transform = Transform3D(0, 0, 1, 0, 1, 0, -1, 0, 0, 7.07, 0, -14.99)
+
+[node name="xw_couch4" parent="." unique_id=1162516397 instance=ExtResource("9_qd16c")]
+transform = Transform3D(0, 0, -1, 0, 1, 0, 1, 0, 0, 5.63, 0, -18.56)
+
+[node name="xw_couch_chair" parent="." unique_id=196619619 instance=ExtResource("10_12qqk")]
+transform = Transform3D(0, 0, 1, 0, 1, 0, -1, 0, 0, 2.47, 0, -17.73)
+
+[node name="xw_couch_chair2" parent="." unique_id=1815206903 instance=ExtResource("10_12qqk")]
+transform = Transform3D(0, 0, -1, 0, 1, 0, 1, 0, 0, 10.44, 0, -17.74)
+
+[node name="xw_couch_chair3" parent="." unique_id=1396628156 instance=ExtResource("10_12qqk")]
+transform = Transform3D(0, 0, 1, 0, 1, 0, -1, 0, 0, 2.47, 0, -14.18)
+
+[node name="xw_couch_chair4" parent="." unique_id=1189615880 instance=ExtResource("10_12qqk")]
+transform = Transform3D(0, 0, 1, 0, 1, 0, -1, 0, 0, 2.47, 0, -15.82)
+
+[node name="xw_couch_chair5" parent="." unique_id=804455328 instance=ExtResource("10_12qqk")]
+transform = Transform3D(0, 0, -1, 0, 1, 0, 1, 0, 0, 10.44, 0, -14.18)
+
+[node name="xw_couch_chair6" parent="." unique_id=1990688656 instance=ExtResource("10_12qqk")]
+transform = Transform3D(0, 0, 1, 0, 1, 0, -1, 0, 0, 2.47, 0, -19.34)
+
+[node name="xw_couch_chair7" parent="." unique_id=696147072 instance=ExtResource("10_12qqk")]
+transform = Transform3D(0, 0, -1, 0, 1, 0, 1, 0, 0, 10.44, 0, -15.82)
+
+[node name="xw_couch_chair8" parent="." unique_id=260461816 instance=ExtResource("10_12qqk")]
+transform = Transform3D(0, 0, -1, 0, 1, 0, 1, 0, 0, 10.44, 0, -19.35)
+
+[node name="xw_tri_couch" parent="." unique_id=1723209204 instance=ExtResource("11_6lsc4")]
+transform = Transform3D(0.8446384, 0, -0.53533727, 0, 1, 0, 0.53533727, 0, 0.8446384, 0.58, 0, -20.14)
+
+[node name="xw_tri_couch2" parent="." unique_id=379964809 instance=ExtResource("11_6lsc4")]
+transform = Transform3D(0.87396497, 0, 0.48598891, 0, 1, 0, -0.48598891, 0, 0.87396497, -0.87, 0, -20.21)
+
+[node name="xw_bar_stool" parent="." unique_id=1053105527 instance=ExtResource("12_80ir3")]
+transform = Transform3D(-1, 0, 0, 0, 1, 0, 0, 0, -1, 6.97, 0, -22.684)
+
+[node name="xw_bar_stool2" parent="." unique_id=1992176362 instance=ExtResource("12_80ir3")]
+transform = Transform3D(-1, 0, 0, 0, 1, 0, 0, 0, -1, 4.12, 0, -22.684)
+
+[node name="xw_bar_stool3" parent="." unique_id=420814686 instance=ExtResource("12_80ir3")]
+transform = Transform3D(-1, 0, 0, 0, 1, 0, 0, 0, -1, 9.93, 0, -22.684)
+
+[node name="xw_bar_stool4" parent="." unique_id=2030753084 instance=ExtResource("12_80ir3")]
+transform = Transform3D(0, 0, -1, 0, 1, 0, 1, 0, 0, -2, 0, -17.09)
+
+[node name="xw_bar_stool5" parent="." unique_id=1927278112 instance=ExtResource("12_80ir3")]
+transform = Transform3D(0, 0, -1, 0, 1, 0, 1, 0, 0, -2, 0, -15.88)
+
+[node name="xw_bar_stool6" parent="." unique_id=1195909075 instance=ExtResource("12_80ir3")]
+transform = Transform3D(-1, 0, 0, 0, 1, 0, 0, 0, -1, 5.54, 0, -22.684)
+
+[node name="xw_bar_stool7" parent="." unique_id=1129781588 instance=ExtResource("12_80ir3")]
+transform = Transform3D(0, 0, -1, 0, 1, 0, 1, 0, 0, -2, 0, -18.38)
+
+[node name="xw_bar_stool8" parent="." unique_id=1549038632 instance=ExtResource("12_80ir3")]
+transform = Transform3D(-1, 0, 0, 0, 1, 0, 0, 0, -1, 2.6299996, 0, -22.684)
+
+[node name="xw_bar_stool9" parent="." unique_id=2054755802 instance=ExtResource("12_80ir3")]
+transform = Transform3D(-1, 0, 0, 0, 1, 0, 0, 0, -1, 8.46, 0, -22.684)
+
+[node name="xw_bar_stool10" parent="." unique_id=2119647745 instance=ExtResource("12_80ir3")]
+transform = Transform3D(0, 0, -1, 0, 1, 0, 1, 0, 0, -2, 0, -14.69)
+
+[editable path="amb_ext_wall_window"]
+[editable path="amb_ext_wall_window (1)"]
+[editable path="xw_wall_2m"]
+[editable path="xw_wall_2m2"]
+[editable path="xw_wall_4m"]
+[editable path="xw_wall_8m"]
+[editable path="xw_wall_8m2"]
+[editable path="xw_door_std_right"]
+[editable path="xw_doorframe_nw"]
+[editable path="xw_doorframe_nw2"]
+[editable path="xw_coffee_table"]
+[editable path="xw_coffee_table2"]
+[editable path="xw_coffee_table3"]
+[editable path="xw_coffee_table4"]
+[editable path="xw_bar_table"]
+[editable path="xw_bar_table2"]
+[editable path="xw_bar_table3"]
+[editable path="xw_couch"]
+[editable path="xw_couch2"]
+[editable path="xw_couch3"]
+[editable path="xw_couch4"]
+[editable path="xw_couch_chair"]
+[editable path="xw_couch_chair2"]
+[editable path="xw_couch_chair3"]
+[editable path="xw_couch_chair4"]
+[editable path="xw_couch_chair5"]
+[editable path="xw_couch_chair6"]
+[editable path="xw_couch_chair7"]
+[editable path="xw_couch_chair8"]
+[editable path="xw_tri_couch"]
+[editable path="xw_tri_couch2"]
+[editable path="xw_bar_stool"]
+[editable path="xw_bar_stool2"]
+[editable path="xw_bar_stool3"]
+[editable path="xw_bar_stool4"]
+[editable path="xw_bar_stool5"]
+[editable path="xw_bar_stool6"]
+[editable path="xw_bar_stool7"]
+[editable path="xw_bar_stool8"]
+[editable path="xw_bar_stool9"]
+[editable path="xw_bar_stool10"]

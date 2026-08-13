@@ -1,0 +1,258 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://cpiudqsstdram"
+path="res://.godot/imported/xw_furniture.fbx-b7239c0d9b515d0ec179239f430c2d71.scn"
+
+[deps]
+
+source_file="res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Meshes/xw_furniture.fbx"
+dest_files=["res://.godot/imported/xw_furniture.fbx-b7239c0d9b515d0ec179239f430c2d71.scn"]
+
+[params]
+
+nodes/root_type=""
+nodes/root_name=""
+nodes/root_script=null
+nodes/apply_root_scale=true
+nodes/root_scale=1.0
+nodes/import_as_skeleton_bones=false
+nodes/use_name_suffixes=true
+nodes/use_node_type_suffixes=true
+meshes/ensure_tangents=1
+meshes/generate_lods=true
+meshes/create_shadow_meshes=false
+meshes/light_baking=1
+meshes/lightmap_texel_size=0.2
+meshes/force_disable_compression=false
+skins/use_named_skins=true
+animation/import=true
+animation/fps=30.0
+animation/trimming=true
+animation/remove_immutable_tracks=false
+animation/import_rest_as_RESET=true
+import_script/path=""
+materials/extract=0
+materials/extract_format=0
+materials/extract_path=""
+_subresources={
+"animations": {},
+"materials": {
+"xw_dark_grey": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Materials/xw_dark_grey.material",
+"use_external/path": "uid://n0u6bwgpq0to"
+},
+"xw_generic_colors_gloss": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Materials/xw_generic_colors_gloss.material",
+"use_external/path": "uid://cmbuya3lswiaw"
+},
+"xw_generic_colors_matt": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Materials/xw_generic_colors_matt.material",
+"use_external/path": "uid://du85r7al3ss18"
+},
+"xw_light_grey": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Materials/xw_Light_Grey.material",
+"use_external/path": "uid://ktguh7yui6nu"
+},
+"xw_white": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Materials/xw_white.material",
+"use_external/path": "uid://dskmc2emaf0yp"
+}
+},
+"meshes": {
+"Cube": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 20.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Meshes/extracted/xw_furniture.Cube.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://disl87lwrlvyp"
+},
+"Cube_001": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 20.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Meshes/extracted/xw_furniture.Cube_001.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://bimgcl2dmwb3j"
+},
+"Cube_004": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 20.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Meshes/extracted/xw_furniture.Cube_004.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://dqptqyh8ar5un"
+},
+"Cube_005": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 20.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Meshes/extracted/xw_furniture.Cube_005.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://cc3dekqbe5aqx"
+},
+"Cube_007": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 20.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Meshes/extracted/xw_furniture.Cube_007.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://5tky3pxxaixr"
+},
+"Cube_010": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 20.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Meshes/extracted/xw_furniture.Cube_010.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://djipd3mus1lbf"
+},
+"Cube_012": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 20.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Meshes/extracted/xw_furniture.Cube_012.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://6cpgfhvq1gk4"
+},
+"Cube_015": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 20.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Meshes/extracted/xw_furniture.Cube_015.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://bhxdh7fi2xohp"
+},
+"Cube_016": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 20.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Meshes/extracted/xw_furniture.Cube_016.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://bareoquuwm2qo"
+},
+"Cube_017": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 20.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Meshes/extracted/xw_furniture.Cube_017.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://buy153cm1s6xl"
+},
+"Cube_019": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 20.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Meshes/extracted/xw_furniture.Cube_019.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://dktyjtiotksw8"
+},
+"Root Scene_Cube": {
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Meshes/extracted/xw_furniture.Cube.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://disl87lwrlvyp"
+},
+"Root Scene_Cube_001": {
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Meshes/extracted/xw_furniture.Cube_001.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://bimgcl2dmwb3j"
+},
+"Root Scene_Cube_004": {
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Meshes/extracted/xw_furniture.Cube_004.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://dqptqyh8ar5un"
+},
+"Root Scene_Cube_005": {
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Meshes/extracted/xw_furniture.Cube_005.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://cc3dekqbe5aqx"
+},
+"Root Scene_Cube_007": {
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Meshes/extracted/xw_furniture.Cube_007.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://5tky3pxxaixr"
+},
+"Root Scene_Cube_010": {
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Meshes/extracted/xw_furniture.Cube_010.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://djipd3mus1lbf"
+},
+"Root Scene_Cube_012": {
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Meshes/extracted/xw_furniture.Cube_012.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://6cpgfhvq1gk4"
+},
+"Root Scene_Cube_015": {
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Meshes/extracted/xw_furniture.Cube_015.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://bhxdh7fi2xohp"
+},
+"Root Scene_Cube_016": {
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Meshes/extracted/xw_furniture.Cube_016.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://bareoquuwm2qo"
+},
+"Root Scene_Cube_017": {
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Meshes/extracted/xw_furniture.Cube_017.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://buy153cm1s6xl"
+},
+"Root Scene_Cube_019": {
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Meshes/extracted/xw_furniture.Cube_019.mesh",
+"save_to_file/make_streamable": "",
+"save_to_file/path": "uid://dktyjtiotksw8"
+}
+},
+"nodes": {
+"PATH:AnimationPlayer": {
+"optimizer/enabled": true,
+"optimizer/max_angular_error": 0.00277777777777777,
+"optimizer/max_linear_error": 0.5
+}
+}
+}
+fbx/importer=0
+fbx/allow_geometry_helper_nodes=false
+fbx/embedded_image_handling=1
+fbx/naming_version=2

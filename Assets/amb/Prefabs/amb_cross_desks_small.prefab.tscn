@@ -1,0 +1,214 @@
+[gd_scene format=3 uid="uid://naj1ms6c5nwg"]
+
+[ext_resource type="Script" uid="uid://ci7vogd1oaojx" path="res://addons/xbase_plugin/axNode3D.gd" id="1_mqh8h"]
+[ext_resource type="PackedScene" uid="uid://bpwg2ni1us4ik" path="res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Prefabs/GenericWall.prefab.tscn" id="2_chaig"]
+[ext_resource type="PackedScene" uid="uid://d0b0dproc726p" path="res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Prefabs/xw_generic_table_top.prefab.tscn" id="3_wsemc"]
+[ext_resource type="Material" uid="uid://o3tb51a6x6i6" path="res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Materials/xwTableTop.material" id="4_5qkl1"]
+[ext_resource type="PackedScene" uid="uid://dsrys6tdu0uli" path="res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Prefabs/xw_keyboard.prefab.tscn" id="5_xfkk3"]
+[ext_resource type="PackedScene" uid="uid://xwatmmjt188b" path="res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Prefabs/xw_monitor.prefab.tscn" id="6_s2wdl"]
+[ext_resource type="PackedScene" uid="uid://b5hxjq73nxpe3" path="res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Prefabs/xw_cluster_office_chair.prefab.tscn" id="7_4v5u4"]
+
+[node name="amb_cross_desks_small" type="Node3D" unique_id=1672823747]
+script = ExtResource("1_mqh8h")
+useThingLink = true
+ThingLabelOverride = "&XX'"
+PhysicalType = "Desk"
+PrefabPath = "amb/Prefabs/amb_cross_desks_small"
+EdgeInstanceTypes = PackedStringArray()
+EdgeInstanceValues = PackedInt64Array()
+metadata/extras = {
+"PrefabPath": "amb/Prefabs/amb_cross_desks_small"
+}
+
+[node name="GenericWall (1)" parent="." unique_id=958156717 instance=ExtResource("2_chaig")]
+transform = Transform3D(-4.371139e-09, 0, -2.3823783, 0, 2, 0, 0.10000001, 0, -1.04137065e-07, -0.3213, 1.01, -17.27)
+
+[node name="GenericWall (3)" parent="." unique_id=1368595025 instance=ExtResource("2_chaig")]
+transform = Transform3D(0.10000001, 0, -6.9580387e-06, 0, 2, 0, 2.9206274e-07, 0, 2.3823783, 0.8219985, 1.01, -16.1288)
+
+[node name="GenericWall (4)" parent="." unique_id=780126594 instance=ExtResource("2_chaig")]
+transform = Transform3D(5.678335e-07, 0, 2.3823783, 0, 2, 0, -0.10000001, 0, 1.35279415e-05, 1.9792919, 1.01, -17.27004)
+
+[node name="GenericWall (6)" parent="." unique_id=1810421450 instance=ExtResource("2_chaig")]
+transform = Transform3D(-0.10000001, 0, 2.0807847e-05, 0, 2, 0, -8.734066e-07, 0, -2.3823783, 0.836, 1.01, -18.411285)
+
+[node name="desk_a" type="Node3D" parent="." unique_id=325897745]
+script = ExtResource("1_mqh8h")
+useThingLink = true
+ThingLabelOverride = "&A'"
+PhysicalType = "MeetingRoom"
+EdgeInstanceTypes = PackedStringArray()
+EdgeInstanceValues = PackedInt64Array()
+
+[node name="MonoBehaviour" type="Node" parent="desk_a" unique_id=1849347232]
+
+[node name="xw_generic_table_top (4)" parent="desk_a" unique_id=1594222234 instance=ExtResource("3_wsemc")]
+transform = Transform3D(-9.0281716e-08, 0, -0.6999999, 0, 0.03726, 0, 2.065405, 0, -3.059797e-08, 0.407, 0.9, -16.188)
+
+[node name="MeshRenderer" parent="desk_a/xw_generic_table_top (4)" index="0" unique_id=487808914]
+surface_material_override/0 = ExtResource("4_5qkl1")
+
+[node name="xw_generic_table_top (6)" parent="desk_a" unique_id=1528873910 instance=ExtResource("3_wsemc")]
+transform = Transform3D(0.7071068, 0, -0.35355335, 0, 0.03726, 0, 0.7071067, 0, 0.3535534, -0.089, 0.9, -16.334)
+
+[node name="MeshRenderer" parent="desk_a/xw_generic_table_top (6)" index="0" unique_id=487808914]
+surface_material_override/0 = ExtResource("4_5qkl1")
+
+[node name="xw_generic_table_top (7)" parent="desk_a" unique_id=418366310 instance=ExtResource("3_wsemc")]
+transform = Transform3D(2.065405, 0, 0, 0, 0.03726, 0, 0, 0, 0.7, -0.271, 0.9, -16.867)
+
+[node name="MeshRenderer" parent="desk_a/xw_generic_table_top (7)" index="0" unique_id=487808914]
+surface_material_override/0 = ExtResource("4_5qkl1")
+
+[node name="xw_keyboard" parent="desk_a" unique_id=632571919 instance=ExtResource("5_xfkk3")]
+transform = Transform3D(-0.7175108, 0, 0.69654727, 0, 1, 0, -0.69654727, 0, -0.7175108, -0.301, 0.926, -16.519)
+
+[node name="xw_monitor" parent="desk_a" unique_id=2006694916 instance=ExtResource("6_s2wdl")]
+transform = Transform3D(-0.7073463, 0, 0.7068672, 0, 1, 0, -0.7068672, 0, -0.7073463, -0.08, 0.926, -16.734)
+
+[node name="xw_cluster_office_chair" parent="desk_a" unique_id=2076455509 instance=ExtResource("7_4v5u4")]
+transform = Transform3D(-0.70710707, 0, 0.70710653, 0, 1, 0, -0.70710653, 0, -0.70710707, -0.27486107, 0, -16.203136)
+ThingLabelOverride = "&A'"
+
+[node name="desk_b" type="Node3D" parent="." unique_id=579314071]
+script = ExtResource("1_mqh8h")
+useThingLink = true
+ThingLabelOverride = "&B'"
+PhysicalType = "MeetingRoom"
+EdgeInstanceTypes = PackedStringArray()
+EdgeInstanceValues = PackedInt64Array()
+
+[node name="MonoBehaviour" type="Node" parent="desk_b" unique_id=723784505]
+
+[node name="xw_generic_table_top (13)" parent="desk_b" unique_id=296933951 instance=ExtResource("3_wsemc")]
+transform = Transform3D(-2.065405, 0, 6.1138453e-06, 0, 0.03726, 0, -1.803938e-05, 0, -0.7, -0.24600637, 0.9, -17.682991)
+
+[node name="MeshRenderer" parent="desk_b/xw_generic_table_top (13)" index="0" unique_id=487808914]
+surface_material_override/0 = ExtResource("4_5qkl1")
+
+[node name="xw_generic_table_top (14)" parent="desk_b" unique_id=2082105263 instance=ExtResource("3_wsemc")]
+transform = Transform3D(-0.707113, 0, -0.35355026, 0, 0.03726, 0, 0.7071005, 0, -0.3535565, -0.100005746, 0.9, -18.178993)
+
+[node name="MeshRenderer" parent="desk_b/xw_generic_table_top (14)" index="0" unique_id=487808914]
+surface_material_override/0 = ExtResource("4_5qkl1")
+
+[node name="xw_generic_table_top (15)" parent="desk_b" unique_id=2146373685 instance=ExtResource("3_wsemc")]
+transform = Transform3D(-1.8310224e-05, 0, -0.6999999, 0, 0.03726, 0, 2.065405, 0, -6.2056383e-06, 0.432998, 0.9, -18.360989)
+
+[node name="MeshRenderer" parent="desk_b/xw_generic_table_top (15)" index="0" unique_id=487808914]
+surface_material_override/0 = ExtResource("4_5qkl1")
+
+[node name="xw_keyboard" parent="desk_b" unique_id=216826223 instance=ExtResource("5_xfkk3")]
+transform = Transform3D(0.6985382, 0, 0.7155728, 0, 1, 0, -0.7155728, 0, 0.6985382, 0.002, 0.926, -18.39)
+
+[node name="xw_monitor" parent="desk_b" unique_id=223436709 instance=ExtResource("6_s2wdl")]
+transform = Transform3D(0.7068733, 0, 0.7073401, 0, 1, 0, -0.7073401, 0, 0.7068733, 0.187, 0.926, -18.213)
+
+[node name="xw_cluster_office_chair" parent="desk_b" unique_id=46362506 instance=ExtResource("7_4v5u4")]
+transform = Transform3D(0.70687246, 0, 0.7073411, 0, 1, 0, -0.7073411, 0, 0.70687246, -0.22890604, 0, -18.364576)
+ThingLabelOverride = "&B'"
+
+[node name="desk_c" type="Node3D" parent="." unique_id=147666439]
+script = ExtResource("1_mqh8h")
+useThingLink = true
+ThingLabelOverride = "&C'"
+PhysicalType = "MeetingRoom"
+EdgeInstanceTypes = PackedStringArray()
+EdgeInstanceValues = PackedInt64Array()
+
+[node name="MonoBehaviour" type="Node" parent="desk_c" unique_id=1333968332]
+
+[node name="xw_generic_table_top (10)" parent="desk_c" unique_id=1051400911 instance=ExtResource("3_wsemc")]
+transform = Transform3D(1.1728061e-05, 0, 0.6999999, 0, 0.03726, 0, -2.065405, 0, 3.974834e-06, 1.2509961, 0.9, -18.352043)
+
+[node name="MeshRenderer" parent="desk_c/xw_generic_table_top (10)" index="0" unique_id=487808914]
+surface_material_override/0 = ExtResource("4_5qkl1")
+
+[node name="xw_generic_table_top (11)" parent="desk_c" unique_id=827018503 instance=ExtResource("3_wsemc")]
+transform = Transform3D(-0.7071026, 0, 0.3535555, 0, 0.03726, 0, -0.707111, 0, -0.3535513, 1.7469962, 0.9, -18.20604)
+
+[node name="MeshRenderer" parent="desk_c/xw_generic_table_top (11)" index="0" unique_id=487808914]
+surface_material_override/0 = ExtResource("4_5qkl1")
+
+[node name="xw_generic_table_top (12)" parent="desk_c" unique_id=2145922925 instance=ExtResource("3_wsemc")]
+transform = Transform3D(-2.065405, 0, 4.111129e-06, 0, 0.03726, 0, -1.2130209e-05, 0, -0.7, 1.9289944, 0.9, -17.67304)
+
+[node name="MeshRenderer" parent="desk_c/xw_generic_table_top (12)" index="0" unique_id=487808914]
+surface_material_override/0 = ExtResource("4_5qkl1")
+
+[node name="xw_keyboard" parent="desk_c" unique_id=1079459338 instance=ExtResource("5_xfkk3")]
+transform = Transform3D(0.7093414, 0, -0.7048651, 0, 1, 0, 0.7048651, 0, 0.7093414, 1.976, 0.926, -18.038)
+
+[node name="xw_monitor" parent="desk_c" unique_id=859250306 instance=ExtResource("6_s2wdl")]
+transform = Transform3D(0.70734215, 0, -0.7068713, 0, 1, 0, 0.7068713, 0, 0.70734215, 1.759, 0.926, -17.868)
+
+[node name="xw_cluster_office_chair" parent="desk_c" unique_id=1709823635 instance=ExtResource("7_4v5u4")]
+transform = Transform3D(0.7073413, 0, -0.7068722, 0, 1, 0, 0.7068722, 0, 0.7073413, 1.9325795, 0, -18.334944)
+ThingLabelOverride = "&C'"
+
+[node name="desk_d" type="Node3D" parent="." unique_id=864713552]
+script = ExtResource("1_mqh8h")
+useThingLink = true
+ThingLabelOverride = "&D'"
+PhysicalType = "MeetingRoom"
+EdgeInstanceTypes = PackedStringArray()
+EdgeInstanceValues = PackedInt64Array()
+
+[node name="MonoBehaviour" type="Node" parent="desk_d" unique_id=828574974]
+
+[node name="xw_generic_table_top (5)" parent="desk_d" unique_id=1763003858 instance=ExtResource("3_wsemc")]
+transform = Transform3D(2.065405, 0, -2.044439e-06, 0, 0.03726, 0, 6.0322777e-06, 0, 0.7, 1.9039994, 0.9, -16.857058)
+
+[node name="MeshRenderer" parent="desk_d/xw_generic_table_top (5)" index="0" unique_id=487808914]
+surface_material_override/0 = ExtResource("4_5qkl1")
+
+[node name="xw_generic_table_top (8)" parent="desk_d" unique_id=1791340679 instance=ExtResource("3_wsemc")]
+transform = Transform3D(0.70710886, 0, 0.35355234, 0, 0.03726, 0, -0.7071047, 0, 0.35355443, 1.758, 0.9, -16.361055)
+
+[node name="MeshRenderer" parent="desk_d/xw_generic_table_top (8)" index="0" unique_id=487808914]
+surface_material_override/0 = ExtResource("4_5qkl1")
+
+[node name="xw_generic_table_top (9)" parent="desk_d" unique_id=1715073774 instance=ExtResource("3_wsemc")]
+transform = Transform3D(6.0651046e-06, 0, 0.6999999, 0, 0.03726, 0, -2.065405, 0, 2.0555644e-06, 1.2249986, 0.9, -16.179058)
+
+[node name="MeshRenderer" parent="desk_d/xw_generic_table_top (9)" index="0" unique_id=487808914]
+surface_material_override/0 = ExtResource("4_5qkl1")
+
+[node name="xw_keyboard" parent="desk_d" unique_id=124051549 instance=ExtResource("5_xfkk3")]
+transform = Transform3D(-0.7068404, 0, -0.70737284, 0, 1, 0, 0.70737284, 0, -0.7068404, 1.629, 0.926, -16.183)
+
+[node name="xw_monitor" parent="desk_d" unique_id=654985415 instance=ExtResource("6_s2wdl")]
+transform = Transform3D(-0.70686924, 0, -0.70734423, 0, 1, 0, 0.70734423, 0, -0.70686924, 1.404, 0.926, -16.393)
+
+[node name="xw_cluster_office_chair" parent="desk_d" unique_id=928718673 instance=ExtResource("7_4v5u4")]
+transform = Transform3D(-0.7068721, 0, -0.70734143, 0, 1, 0, 0.70734143, 0, -0.7068721, 1.8869038, 0, -16.175476)
+ThingLabelOverride = "&D'"
+
+[editable path="GenericWall (1)"]
+[editable path="GenericWall (3)"]
+[editable path="GenericWall (4)"]
+[editable path="GenericWall (6)"]
+[editable path="desk_a/xw_generic_table_top (4)"]
+[editable path="desk_a/xw_generic_table_top (6)"]
+[editable path="desk_a/xw_generic_table_top (7)"]
+[editable path="desk_a/xw_keyboard"]
+[editable path="desk_a/xw_monitor"]
+[editable path="desk_a/xw_cluster_office_chair"]
+[editable path="desk_b/xw_generic_table_top (13)"]
+[editable path="desk_b/xw_generic_table_top (14)"]
+[editable path="desk_b/xw_generic_table_top (15)"]
+[editable path="desk_b/xw_keyboard"]
+[editable path="desk_b/xw_monitor"]
+[editable path="desk_b/xw_cluster_office_chair"]
+[editable path="desk_c/xw_generic_table_top (10)"]
+[editable path="desk_c/xw_generic_table_top (11)"]
+[editable path="desk_c/xw_generic_table_top (12)"]
+[editable path="desk_c/xw_keyboard"]
+[editable path="desk_c/xw_monitor"]
+[editable path="desk_c/xw_cluster_office_chair"]
+[editable path="desk_d/xw_generic_table_top (5)"]
+[editable path="desk_d/xw_generic_table_top (8)"]
+[editable path="desk_d/xw_generic_table_top (9)"]
+[editable path="desk_d/xw_keyboard"]
+[editable path="desk_d/xw_monitor"]
+[editable path="desk_d/xw_cluster_office_chair"]
