@@ -1,0 +1,110 @@
+[gd_scene format=3 uid="uid://b2ninxboc0fwv"]
+
+[ext_resource type="Script" uid="uid://jfa3w4udsju6" path="res://nav_agent.gd" id="1_agent"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_body"]
+radius = 0.25
+height = 1.6919922
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_body"]
+radius = 0.4
+height = 1.8
+
+[sub_resource type="BoxMesh" id="BoxMesh_nose"]
+size = Vector3(0.12, 0.12, 0.3)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_dw1ew"]
+resource_name = "Cylinder"
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hbon4"]
+resource_name = "Default-Line"
+
+[sub_resource type="BoxMesh" id="BoxMesh_d7qno"]
+resource_name = "Cube"
+
+[node name="NavAgent" type="CharacterBody3D" unique_id=1375088675]
+axis_lock_angular_x = true
+axis_lock_angular_y = true
+axis_lock_angular_z = true
+script = ExtResource("1_agent")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=2111290011]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.8459961, 0)
+shape = SubResource("CapsuleShape3D_body")
+
+[node name="Skin" type="Node3D" parent="." unique_id=1870080009]
+unique_name_in_owner = true
+
+[node name="Capsule" type="MeshInstance3D" parent="Skin" unique_id=1561675172]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.9, 0)
+visible = false
+mesh = SubResource("CapsuleMesh_body")
+
+[node name="Front" type="MeshInstance3D" parent="Skin" unique_id=1290971910]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.35, 0.35)
+mesh = SubResource("BoxMesh_nose")
+
+[node name="NavigationAgent3D" type="NavigationAgent3D" parent="." unique_id=964202831]
+unique_name_in_owner = true
+path_desired_distance = 0.5
+target_desired_distance = 0.5
+path_height_offset = 0.1
+path_max_distance = 3.0
+avoidance_enabled = true
+radius = 0.4
+max_speed = 3.0
+debug_enabled = true
+
+[node name="BasicAvatar" type="Node3D" parent="." unique_id=1596854463]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.64292943, 0)
+
+[node name="MonoBehaviour" type="Node" parent="BasicAvatar" unique_id=1423604628]
+
+[node name="Body" type="Node3D" parent="BasicAvatar" unique_id=45932890]
+transform = Transform3D(0.5, 0, 0, 0, 0.6, 0, 0, 0, 0.3, 0, 0, 0)
+
+[node name="MeshRenderer" type="MeshInstance3D" parent="BasicAvatar/Body" unique_id=952588264]
+gi_mode = 2
+mesh = SubResource("CylinderMesh_dw1ew")
+surface_material_override/0 = SubResource("StandardMaterial3D_hbon4")
+
+[node name="Cube" type="Node3D" parent="BasicAvatar/Body" unique_id=1893680162]
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0, 0.731, 0.47)
+
+[node name="MeshRenderer" type="MeshInstance3D" parent="BasicAvatar/Body/Cube" unique_id=2378337]
+gi_mode = 2
+mesh = SubResource("BoxMesh_d7qno")
+
+[node name="Cube (1)" type="Node3D" parent="BasicAvatar/Body" unique_id=351392107]
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0, 0.526, 0.47)
+
+[node name="MeshRenderer" type="MeshInstance3D" parent="BasicAvatar/Body/Cube (1)" unique_id=1988549368]
+gi_mode = 2
+mesh = SubResource("BoxMesh_d7qno")
+
+[node name="Cube (2)" type="Node3D" parent="BasicAvatar/Body" unique_id=922439163]
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0, 0.312, 0.47)
+
+[node name="MeshRenderer" type="MeshInstance3D" parent="BasicAvatar/Body/Cube (2)" unique_id=400180343]
+gi_mode = 2
+mesh = SubResource("BoxMesh_d7qno")
+
+[node name="Head" type="Node3D" parent="BasicAvatar" unique_id=725867369]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 0, 0.779, 0)
+
+[node name="MeshRenderer" type="MeshInstance3D" parent="BasicAvatar/Head" unique_id=1066950481]
+gi_mode = 2
+mesh = SubResource("BoxMesh_d7qno")
+surface_material_override/0 = SubResource("StandardMaterial3D_hbon4")
+
+[node name="Cube" type="Node3D" parent="BasicAvatar/Head" unique_id=1064656842]
+transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0, 0, 0.47)
+
+[node name="MeshRenderer" type="MeshInstance3D" parent="BasicAvatar/Head/Cube" unique_id=318968655]
+gi_mode = 2
+mesh = SubResource("BoxMesh_d7qno")
+
+[node name="Label" type="Node3D" parent="BasicAvatar" unique_id=1985422416]
+transform = Transform3D(0.4, 0, 0, 0, 0.4, 0, 0, 0, 0.4, 0, 0, 0)
+
+[node name="MonoBehaviour" type="Node" parent="BasicAvatar/Label" unique_id=1355615728]
