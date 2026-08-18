@@ -104,6 +104,21 @@ func stop() -> void:
 	set_avoidance_enabled(false)
 
 
+## Walk to an explicit world position, overriding whatever the agent was doing.
+##
+## Wandering is switched off so the agent stays put once it arrives; pass
+## `keep_wandering = true` if it should carry on roaming after reaching the spot.
+func go_to(world_position: Vector3, keep_wandering: bool = false) -> void:
+	wander = keep_wandering
+	target_global_position = world_position
+
+
+## Hand control back to the roaming behaviour.
+func resume_wander() -> void:
+	wander = true
+	_pick_random_target()
+
+
 func _on_navigation_finished() -> void:
 	stop()
 	destination_reached.emit()
@@ -118,7 +133,8 @@ func _pick_random_target() -> void:
 	if not map.is_valid() or NavigationServer3D.map_get_iteration_id(map) == 0:
 		# Map not ready yet — retry next frame.
 		await get_tree().physics_frame
-		if is_inside_tree():
+		# `wander` may have been cleared by go_to() while we were waiting.
+		if is_inside_tree() and wander:
 			_pick_random_target()
 		return
 	target_global_position = NavigationServer3D.map_get_random_point(map, wander_layers, false)

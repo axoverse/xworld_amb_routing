@@ -10,9 +10,6 @@ height = 1.6919922
 radius = 0.4
 height = 1.8
 
-[sub_resource type="BoxMesh" id="BoxMesh_nose"]
-size = Vector3(0.12, 0.12, 0.3)
-
 [sub_resource type="CylinderMesh" id="CylinderMesh_dw1ew"]
 resource_name = "Cylinder"
 
@@ -22,7 +19,7 @@ resource_name = "Default-Line"
 [sub_resource type="BoxMesh" id="BoxMesh_d7qno"]
 resource_name = "Cube"
 
-[node name="NavAgent" type="CharacterBody3D" unique_id=1375088675]
+[node name="NavAgent" type="CharacterBody3D" unique_id=1375088675 groups=["nav_agents"]]
 axis_lock_angular_x = true
 axis_lock_angular_y = true
 axis_lock_angular_z = true
@@ -40,16 +37,8 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.9, 0)
 visible = false
 mesh = SubResource("CapsuleMesh_body")
 
-[node name="Front" type="MeshInstance3D" parent="Skin" unique_id=1290971910]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.35, 0.35)
-mesh = SubResource("BoxMesh_nose")
-
 [node name="NavigationAgent3D" type="NavigationAgent3D" parent="." unique_id=964202831]
 unique_name_in_owner = true
-path_desired_distance = 0.5
-target_desired_distance = 0.5
-path_height_offset = 0.1
-path_max_distance = 3.0
 avoidance_enabled = true
 radius = 0.4
 max_speed = 3.0
