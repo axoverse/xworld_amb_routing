@@ -66,9 +66,13 @@ var target_global_position := Vector3.INF:
 				_nav.velocity_computed.connect(move)
 			_nav.target_position = new_target
 
+## Frames of failed NavMesh sampling before we assume it is misconfigured.
+const _WANDER_WARN_AFTER := 180
+
 @onready var _skin: Node3D = %Skin
 @onready var _nav: NavigationAgent3D = %NavigationAgent3D
 
+var _wander_retries := 0
 var _trail: MeshInstance3D
 var _trail_mesh: ImmediateMesh
 var _trail_material: StandardMaterial3D
@@ -151,6 +155,12 @@ func resume_wander() -> void:
 	_pick_random_target()
 
 
+## Recompute the route to the current target, e.g. after the NavMesh changed.
+func repath() -> void:
+	if target_global_position != Vector3.INF:
+		_nav.target_position = target_global_position
+
+
 ## Show or hide this agent's trail.
 func set_trail(is_visible: bool) -> void:
 	show_trail = is_visible
@@ -216,11 +226,23 @@ func _on_navigation_finished() -> void:
 
 func _pick_random_target() -> void:
 	var map: RID = _nav.get_navigation_map()
-	if not map.is_valid() or NavigationServer3D.map_get_iteration_id(map) == 0:
-		# Map not ready yet — retry next frame.
+	var point := Vector3.ZERO
+	if map.is_valid():
+		point = NavigationServer3D.map_get_random_point(map, wander_layers, false)
+
+	# map_get_random_point returns the origin when it finds nothing, and the map
+	# reports a non-zero iteration id a few frames before it can be sampled — so
+	# trust the point, not the id, or the whole crowd walks to (0, 0, 0).
+	if point == Vector3.ZERO:
+		_wander_retries += 1
+		if _wander_retries == _WANDER_WARN_AFTER:
+			push_warning(("%s: still no random NavMesh point. Check the region's " +
+				"navigation_layers against this agent's wander_layers.") % name)
 		await get_tree().physics_frame
 		# go_to() may have cleared `wander` while we waited.
 		if is_inside_tree() and wander:
 			_pick_random_target()
 		return
-	target_global_position = NavigationServer3D.map_get_random_point(map, wander_layers, false)
+
+	_wander_retries = 0
+	target_global_position = point

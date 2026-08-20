@@ -5,15 +5,19 @@
 [ext_resource type="Material" uid="uid://buelerjaqspi4" path="res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Materials/xw_DoorDefault.material" id="3_ldj73"]
 [ext_resource type="Material" uid="uid://cmbuya3lswiaw" path="res://Packages/io.axomem.xworld.assets/CoreBuildingPack/Materials/xw_generic_colors_gloss.material" id="4_xobf3"]
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_gu7oq"]
-size = Vector3(0.07961704, 2, 1.1188775)
-
 [node name="xw_door_std_left" type="Node3D" unique_id=1890444022]
 script = ExtResource("1_1hoaw")
 useLayers = true
+ObjectInstanceGuid = "23e105afd52e4edcc6e146d8daf322b0"
+ThingGuid = "23e105afd52e4edcc6e146d8daf322b0"
 Layers = "Doors"
 EdgeInstanceTypes = PackedStringArray()
 EdgeInstanceValues = PackedInt64Array()
+metadata/extras = {
+"ObjectInstanceGuid": "23e105afd52e4edcc6e146d8daf322b0",
+"PrefabPath": "",
+"ThingInstanceLabel": ""
+}
 
 [node name="MeshRenderer" type="MeshInstance3D" parent="." unique_id=918845531]
 gi_mode = 2
@@ -24,7 +28,3 @@ surface_material_override/1 = ExtResource("4_xobf3")
 [node name="MonoBehaviour" type="Node" parent="." unique_id=1209573916]
 
 [node name="BoxCollider" type="StaticBody3D" parent="." unique_id=323128204]
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="BoxCollider" unique_id=1152712037]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.015191479, 1, 0.54056126)
-shape = SubResource("BoxShape3D_gu7oq")
