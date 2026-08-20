@@ -7,6 +7,7 @@ extends CharacterBody3D
 ##
 ## Usage:
 ##   agent.target_global_position = some_vector3   # walks there
+##   agent.go_to(some_vector3)                     # walks there, stops wandering
 ##   agent.stop()                                  # halts
 ## Or tick `wander` in the inspector to have it roam the NavMesh on its own.
 
@@ -31,6 +32,27 @@ signal destination_reached
 ## How quickly the skin swivels to face the direction of travel.
 @export var turn_responsiveness: float = 10.0
 
+@export_group("Trail")
+## Draw the route still ahead of the agent, redrawn every physics frame.
+@export var show_trail: bool = true:
+	set(value):
+		show_trail = value
+		if is_instance_valid(_trail):
+			_trail.visible = value
+			if not value:
+				_clear_trail()
+## One colour is drawn from this at random per agent.
+@export var trail_palette: PackedColorArray = PackedColorArray([
+	Color(0.30, 0.85, 0.40, 0.9),
+	Color(0.98, 0.83, 0.20, 0.9),
+	Color(0.25, 0.60, 1.00, 0.9),
+])
+## Height above the floor the trail is drawn at, in metres.
+@export var trail_height: float = 0.15
+
+## Colour this agent drew from `trail_palette`.
+var trail_color := Color.WHITE
+
 ## Setting this starts the walk. Assign Vector3.INF to clear it.
 var target_global_position := Vector3.INF:
 	set(new_target):
@@ -47,10 +69,17 @@ var target_global_position := Vector3.INF:
 @onready var _skin: Node3D = %Skin
 @onready var _nav: NavigationAgent3D = %NavigationAgent3D
 
+var _trail: MeshInstance3D
+var _trail_mesh: ImmediateMesh
+var _trail_material: StandardMaterial3D
+
 
 func _ready() -> void:
 	_nav.navigation_finished.connect(_on_navigation_finished)
 	_nav.max_speed = speed
+	# The built-in debug path can't be trimmed, so draw our own.
+	_nav.debug_enabled = false
+	_make_trail()
 	set_physics_process(false)
 
 	if wander:
@@ -98,16 +127,19 @@ func move(safe_velocity: Vector3) -> void:
 
 	move_and_slide()
 
+	# After the move, so the trail starts exactly where the agent now is.
+	if show_trail:
+		_draw_trail()
+
 
 func stop() -> void:
 	set_physics_process(false)
 	set_avoidance_enabled(false)
+	_clear_trail()
 
 
-## Walk to an explicit world position, overriding whatever the agent was doing.
-##
-## Wandering is switched off so the agent stays put once it arrives; pass
-## `keep_wandering = true` if it should carry on roaming after reaching the spot.
+## Walk to a specific point. Wandering is switched off so the agent stays put
+## once it arrives.
 func go_to(world_position: Vector3, keep_wandering: bool = false) -> void:
 	wander = keep_wandering
 	target_global_position = world_position
@@ -117,6 +149,60 @@ func go_to(world_position: Vector3, keep_wandering: bool = false) -> void:
 func resume_wander() -> void:
 	wander = true
 	_pick_random_target()
+
+
+## Show or hide this agent's trail.
+func set_trail(is_visible: bool) -> void:
+	show_trail = is_visible
+
+
+func _make_trail() -> void:
+	if not trail_palette.is_empty():
+		trail_color = trail_palette[randi() % trail_palette.size()]
+
+	_trail_material = StandardMaterial3D.new()
+	_trail_material.albedo_color = trail_color
+	_trail_material.shading_mode = BaseMaterial3D.SHADING_MODE_UNSHADED
+	_trail_material.transparency = BaseMaterial3D.TRANSPARENCY_ALPHA
+	_trail_material.no_depth_test = true
+
+	_trail_mesh = ImmediateMesh.new()
+
+	_trail = MeshInstance3D.new()
+	_trail.name = "Trail"
+	_trail.mesh = _trail_mesh
+	_trail.cast_shadow = GeometryInstance3D.SHADOW_CASTING_SETTING_OFF
+	_trail.visible = show_trail
+	add_child(_trail)
+	# Vertices are world space, so detach from the agent's transform.
+	_trail.top_level = true
+	_trail.global_transform = Transform3D.IDENTITY
+
+
+## Redraw the route ahead, anchored at the agent's current position.
+func _draw_trail() -> void:
+	if not is_instance_valid(_trail_mesh):
+		return
+	_trail_mesh.clear_surfaces()
+
+	var path := _nav.get_current_navigation_path()
+	var index := _nav.get_current_navigation_path_index()
+	# stop() can run mid-frame from navigation_finished; without this the agent
+	# leaves a stub of trail at its destination.
+	if _nav.is_navigation_finished() or path.is_empty() or index >= path.size():
+		return
+
+	var lift := Vector3.UP * trail_height
+	_trail_mesh.surface_begin(Mesh.PRIMITIVE_LINE_STRIP, _trail_material)
+	_trail_mesh.surface_add_vertex(global_position + lift)
+	for i in range(index, path.size()):
+		_trail_mesh.surface_add_vertex(path[i] + lift)
+	_trail_mesh.surface_end()
+
+
+func _clear_trail() -> void:
+	if is_instance_valid(_trail_mesh):
+		_trail_mesh.clear_surfaces()
 
 
 func _on_navigation_finished() -> void:
@@ -133,7 +219,7 @@ func _pick_random_target() -> void:
 	if not map.is_valid() or NavigationServer3D.map_get_iteration_id(map) == 0:
 		# Map not ready yet — retry next frame.
 		await get_tree().physics_frame
-		# `wander` may have been cleared by go_to() while we were waiting.
+		# go_to() may have cleared `wander` while we waited.
 		if is_inside_tree() and wander:
 			_pick_random_target()
 		return
